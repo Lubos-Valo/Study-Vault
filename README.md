@@ -1,0 +1,1 @@
+This repository contains the resources for building study documents, exercises, and reference materials.

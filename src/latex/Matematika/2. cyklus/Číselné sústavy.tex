@@ -22,7 +22,7 @@
 
 \section{Číselné sústavy}
 
-Číslica je symbol, ktorým zapisujeme hodnotu v danej sústave.
+Číslica (alebo cifra) je symbol, ktorým zapisujeme hodnotu v danej sústave.
 
 Číselné sústavy vznikli z potreby človeka počítať, porovnávať množstvo a zaznamenávať údaje. Prvé spôsoby vyjadrovania počtu boli veľmi jednoduché. Pravekí ľudia používali napríklad zárezové značky do kostí, kameňov alebo dreva, pričom každý zárez predstavoval jednu vec. Tento spôsob bol vhodný len na malé počty, pretože pri väčších množstvách sa stal neprehľadným.
 
@@ -95,7 +95,7 @@ Mnemotechnická pomôcka: LaCo DoMa
 
 Rímska číselná sústava je o niečo zložitejšia. Nie je úplne čisto nepozičná, ak ju chápeme podľa všetkých historických pravidiel. Tradične sa označuje ako nepozičná sústava, pretože väčšina znakov má stálu hodnotu bez ohľadu na miesto. Číslica X má vždy hodnotu 10. Avšak existujú zápisy, kde poradie číslic určuje ich význam.
 
-Poznáme dva typy zápisu rímskych čísel: sčítací (tzv. aditívny) a odčítací (tzv. subtraktívny).
+Poznáme dva typy zápisu rímskych čísel: sčítací (alebo aditívny) a odčítací (alebo subtraktívny).
 
 V sčítacom tvare má každá číslica stálu hodnotu, bez ohľadu na jej pozíciu v čísle. Na zápis čísla \(3738\) v čo najkratšom tvare sa použijú tri symboly M, jeden symbol D, dva symboly C, tri symboly X, jeden symbol V a tri symboly I. Vznikne tak rímske číslo MMMDCCXXXVIII. Sčítaním jednotlivých číslic by sme dostali:
 
@@ -137,23 +137,60 @@ Nepozičné číselné sústavy majú oproti pozičným číselnym sústavam nev
 
 Pozičná číselná sústava je taká číselná sústava, v ktorej hodnota číslice závisí od jej polohy (pozície) v čísle. Každá pozícia má určitú hodnotu danú základom sústavy. Preto môže mať tá istá číslica rôznu hodnotu podľa toho, kde sa nachádza.
 
-Základ číselnej sústavy. Každá pozičná sústava má svoj základ. Základ určuje, koľko rôznych číslic sústava používa. Každá číslica sama o sebe vyjadruje nejakú určitú hodnotu. Napríklad čislica \(6\) v desiatkovej sústave vyjadruje početnosť šesť. Jej pozícia v čísle mení jej hodnotu. V čísle \(60\) je šestka na pozícií desiatok, vyjadruje teda desaťnásobne väčšiu hodnotu, ako je hodnota \(6\).
+\subsubsection{Základ číselnej sústavy}
 
-Pozícia (miesto) číslice. Pozícia určuje, akú hodnotu má číslica v čísle.
+Každá pozičná sústava má svoj základ. Základ určuje, koľko rôznych číslic sústava používa. Každá číslica sama o sebe vyjadruje nejakú určitú hodnotu. Napríklad v desiatkovej číselnej sústave vieme skupine objektov priradiť početnosť pomocou číslic, ak je ich menej ako desať. Pre väčšie počty používame všeobecný zápis čísla.
 
-Rád číslice. Rád určuje mocninu základu, ktorá patrí danej pozícii.
+\subsubsection{Rád číslice}
 
-Hodnota číslice v pozícii. Celková hodnota číslice vznikne vynásobením číslice hodnotou jej pozície.
+Rád číslice určuje, koľkokrát sa má hodnota číslice zväčšiť podľa základu sústavy. Celková hodnota číslice vznikne vynásobením číslice hodnotou jej rádu. Napríklad v desiatkovej sústave existuje rád jednotiek, desiatok, stoviek, tisícov, atď. Rád desiatok je desaťnásobné väčší ako rád jednotiek, rád stoviek je desaťnásobne väčši ako rád desiatok a pod. Týchto rádov je nekonečne veľa, vieme teda vyjadriť ľubovoľne veľké čísla.
 
-Nula ako zástupná číslica. Nula v pozičnej sústave označuje, že na určitej pozícii nie je žiadna hodnota, ale pozícia stále existuje.
+\subsubsection{Zápis čísla v pozičnej číselnej sústave}
 
-Rozvinutý zápis čísla. Je zápis čísla pomocou súčtu číslic vynásobených príslušnými mocninami základu.
+V pozičných číselných sústavách existujú dva základné spôsoby zápisu čísel: skrátený (alebo pozičný) zápis a rozvinutý (alebo polynomiálny) zápis.
+
+V skrátenom zápise sa číslo zapisuje ako usporiadaná postupnosť cifier, pričom hodnota každej cifry závisí od jej pozície (rádu) v čísle. Smerom doľava hodnoty rastú, smerom doprava sa hodnoty zmenšujú. Posledná číslica predstavuje rád jednotiek. Ostatné číslice nadobúdajú svoju hodnotu podľa svojej polohy vzhľadom na rád jednotiek. Napríklad číslo \(476\) má na pozícii stoviek cifru \(4\), na pozícii desiatok cifru \(7\) a na pozícii jednotiek cifru \(6\). Skrátený zápis je bežný spôsob zapisovania čísel.
+
+V rozvinutom zápise sa číslo zapisuje ako súčet jednotlivých cifier vynásobených hodnotou ich rádu. Napríklad číslo \(1\ 852\) by sa v rozvinutom zápise zapísalo ako
+
+\[
+1 \cdot 1\ 000 + 8 \cdot 100 + 5 \cdot 10 + 2 \cdot 1.
+\]
+
+Každá pozičná sústava používa nulu ako zástupnú číslicu na označenie, že určitý rád neobsahuje žiadnu hodnotu, pričom jeho pozícia v zápise zostáva zachovaná. Preto čísla ako \(102\) alebo \(3\ 000\) musia obsahovať nuly, aby bolo jednoznačné, že v príslušnom ráde nie je žiadna hodnota. Nuly v rádoch väčších ako rád poslednej nenulovej číslice sa pri bežnom zápise nepíšu, preto číslo \(56\) nezapisujeme ako \(056\) ani \(0056\) (v skutočnosti tam sú).
 
 \subsection{Desiatková pozičná sústava}
 
-Prijateľné množstvo symbolom a dostatočne vyjadrenie veľkých čísiel.
+Desiatková číselná sústava (alebo dekadická číselná sústava, zo starogr. deka ‒ 10) je pozičná číselná sústava so základom 10. Je to najpoužívanejšia sústava v každodennom živote a používa sa na zapisovanie a vykonávanie matematických operácií. Mnohé číselné sústavy starovekých civilizácií používajú desiatkovú sústavu, pravdepodobne preto, že na oboch rukách máme desať prstov a pre ľudí bolo prirodzené počítanie pomocou prstov. Počítanie v týchto sústavách bolo ťažké a iba skúsení matematici vedeli násobiť a deliť. Všetky ťažkosti ale vyriešila hinduisticko-arabská desiatková číselná sústava, ktorú používame dodnes. Európa ju prevzala od Arabov v 12. storočí, od ktorých tiež prevzala konkrétne tvary cifier. Preto sa cifry tejto sústavy nazývajú arabské číslice.
 
-V desiatkovej sústave je 10 rôznych číslic, \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\) a \(9\). 
+V desiatkovej sústave je desať rôznych číslic, \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\) a \(9\). Každá číslica vyjadruje určitú hodnotu. Napríklad čislica \(6\) v desiatkovej sústave vyjadruje početnosť šesť. Je to prijateľné množstvo symbolom na to, aby sme vedeli vyjadriť veľké čísla v krátkom zápise.
+
+\subsubsection{Zápis čísla v desiatkovej sústave}
+
+Desiatkový zápis (alebo desiatková notácia) je spôsob zápisu čísel v desiatkovej pozičnej sústave, pri ktorom sa číslo vyjadruje pomocou číslic 0 až 9 a ich pozícií. Desiatková sústava má základ \(10\), každý rád číslice je desaťnásobne väčší ako ten predchádzajúci. Sú to napríklad rády jednotiek, desiatok, stoviek, tisícov, desaťtisícov, stotisícov a ďalšie. Hodnoty týchto rádov sú nasledovné:
+
+\begin{center}
+\begin{tabular}{|r|r|}
+  \hline
+  \textbf{Číselný rád} & \textbf{Hodnota rádu} \\
+  \hline
+  Jednotky & \(1\) \\
+  \hline
+  Desiatky & \(10\) \\
+  \hline
+  Stovky & \(100\) \\
+  \hline
+  Tisíce & \(1\ 000\) \\
+  \hline
+  Desaťtisíce & \(10\ 000\) \\
+  \hline
+  Státisíce & \(100\ 000\) \\
+  \hline
+\end{tabular}
+\end{center}
+
+V čísle \(60\) je šestka na pozícií desiatok, vyjadruje teda desaťnásobne väčšiu hodnotu, ako je hodnota \(6\).
+
 
 \subsection{Šesťdesiatková pozičná sústava}
 

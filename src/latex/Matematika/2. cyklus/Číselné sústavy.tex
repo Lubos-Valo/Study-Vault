@@ -1,29 +1,40 @@
 \documentclass{article}
-\author{Mgr. Ľuboš Valo}
-\usepackage{ragged2e}
-\usepackage{showframe}
-\usepackage{amssymb}
-\usepackage[none]{hyphenat}
 \usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{amssymb}
 \usepackage{breqn}
+\usepackage[margin=1in]{geometry}
+% \usepackage{showframe}
+
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[none]{hyphenat}
 \usepackage{mathtools}
+\usepackage{flexisym}
+\usepackage{gensymb}
+
 \usepackage{makecell}
 \usepackage{rotating}
 \usepackage{csquotes}
 \usepackage{enumitem}
-\usepackage[slovak]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[backend=biber]{biblatex}
 
+\usepackage[backend=biber,sorting=none]{biblatex}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}[H]
 \usepackage{graphicx}
-\graphicspath{
-    {../../../media/images/}
-}
 
+
+\graphicspath{
+  {../../../media/images/}
+}
 \addbibresource{references.bib}
 \overfullrule=5pt
-
+\tolerance=2000
+\emergencystretch=2em
+  
+\author{Mgr. Ľuboš Valo}
 \title{Číselné sústavy}
 
 \begin{document}
@@ -32,25 +43,13 @@
 
 \section{Číselné sústavy}
 
-Číslica (alebo cifra) je symbol, ktorým zapisujeme hodnotu v danej sústave.
-
-Číselné sústavy vznikli z potreby človeka počítať, porovnávať množstvo a zaznamenávať údaje. Prvé spôsoby vyjadrovania počtu boli veľmi jednoduché. Pravekí ľudia používali napríklad zárezové značky do kostí, kameňov alebo dreva, pričom každý zárez predstavoval jednu vec. Tento spôsob bol vhodný len na malé počty, pretože pri väčších množstvách sa stal neprehľadným.
-
-Postupne vznikali dokonalejšie číselné sústavy, ktoré využívali skupiny znakov na označenie väčších hodnôt. Jednou z najstarších známych bola sumerská šesťdesiatková sústava, ktorá používala základ 60. Jej pozostatky sa zachovali napríklad v dnešnom meraní času (60 sekúnd v minúte, 60 minút v hodine) alebo uhlov (360 stupňov v kruhu).
-
-Starovekí Egypťania používali desiatkovú nepozičnú sústavu, v ktorej mali osobitné symboly pre jednotky, desiatky, stovky a ďalšie hodnoty. Hodnota znaku nezávisela od jeho polohy v zápise.
-
-Významným krokom vo vývoji bola rímska číselná sústava, ktorá používala znaky ako I, V, X, L, C, D a M. Táto sústava sa používa dodnes napríklad pri označovaní kapitol, hodín alebo významných udalostí, no pre zložitejšie výpočty nie je praktická.
-
-Neskôr vznikli pozičné číselné sústavy, pri ktorých hodnota číslice závisí od jej polohy v čísle. Najdôležitejšou z nich sa stala desiatková sústava, ktorú používame dnes. Jej základ tvorí desať číslic (0–9) a každá pozícia predstavuje určitú mocninu čísla 10.
-
-S rozvojom matematiky a techniky sa začali používať aj ďalšie pozičné sústavy, napríklad dvojková sústava, ktorá sa stala základom fungovania počítačov, pretože pracuje iba s dvoma hodnotami – 0 a 1. Okrem nej sa v informatike využívajú aj osmičková a šestnástková sústava, ktoré uľahčujú zápis dlhých binárnych čísel.
-
-Vývoj číselných sústav teda prešiel od jednoduchých značiek na počítanie až k moderným systémom, ktoré umožňujú fungovanie dnešných počítačov a digitálnych technológií.
+Číselná sústava je spôsob zápisu a vyjadrenia čísel pomocou vopred určeného súboru cifier a pravidiel ich používania. Určuje, aké cifry možno použiť a akým spôsobom sa z nich vytvárajú zápisy čísel. Číslica (alebo cifra) je symbol, ktorým zapisujeme hodnotu v danej sústave. Existujú dva typy číselných sústav: pozičné a nepozičné číselné sústavy.
 
 \subsection{Nepozičné číselné sústavy}
 
-\subsection{Unárna číselná sústava}
+Nepozičná číselná sústava je číselná sústava, v ktorej hodnota číslice nezávisí od jej pozície v zápise čísla. Každá číslica má vždy rovnakú hodnotu bez ohľadu na to, kde sa v zápise nachádza. Nepozičné číselné sústavy majú oproti pozičným číselnym sústavam nevýhodu v tom, že je zložité zapisovanie veľkých čísel a ťažšie sa s nimi vykonávajú matematické výpočty.
+
+\subsubsection{Unárna číselná sústava}
 
 Unárna číselná sústava (nazývaná aj jednotková číselná sústava) je najjednoduchšia a pravdepodobne najstaršia forma zapisovania čísel. Je to nepozičná číselná sústava, ktorá na vyjadrenie počtu používa iba jeden symbol. Hodnota čísla sa rovná počtu použitých symbolov.
 
@@ -71,25 +70,22 @@ Unárna sústava sa používala už v praveku, napríklad vo forme zárezov do k
 Hlavnou výhodou unárnej sústavy je jej jednoduchosť a názornosť. Nevýhodou je však neefektívnosť pri zapisovaní väčších čísel, pretože počet symbolov rýchlo narastá, a tiež problematický zápis čísel iných než celých. Preto bola nahradená číselnými sústavami, ako sú desiatková alebo dvojková sústava.
 
 
-\subsection{Aditívna číselná sústava}
+\subsubsection{Aditívna číselná sústava}
 
 Aditívna číselná sústava je typ nepozičnej číselnej sústavy, v ktorej sa hodnota čísla určuje sčítaním hodnôt jednotlivých symbolov bez ohľadu na ich pozíciu v zápise. Každý symbol má pevnú hodnotu a výsledné číslo vznikne súčtom všetkých použitých symbolov. Dodnes sa používajú napríklad pri peniazoch a rímskych číslach.
 
 Príkladom aditívnej sústavy je staroegyptská číselná sústava. Egypťania používali rôzne hieroglyfy pre jednotky, desiatky, stovky, tisíce a ďalšie hodnoty. Ak chceli zapísať číslo \(243\), použili dva symboly pre stovky, štyri symboly pre desiatky a tri symboly pre jednotky. Hodnota čísla sa získala ich sčítaním:
-
 \[
 243 = 200 + 40 + 3.
 \]
-
 Egyptský hieroglyfický číselný systém obsahoval čísla \(1\), \(10\), \(100\), \(1\ 000\), \(10\ 000\), atď.
-
-\includegraphics[width=100pt]{Staroegyptská číselná sústava.png}
-
-Egyptský číselný systém
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\textwidth]{Staroegyptská číselná sústava.png}
+    \caption{Egyptský číselný systém. \cite{Egyptský_číselný_systém}} 
+\end{figure}
 Podobný princíp využíva aj rímska číselná sústava. Rímska číselná sústava je historická nepozičná číselná sústava, ktorú používali obyvatelia starovekého Ríma. Na zapisovanie čísel využíva písmená latinskej abecedy, pričom každé písmeno má určenú číselnú hodnotu. Základné rímske číslice sú:
-
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{c|ccccccc}
 \hline
@@ -100,24 +96,15 @@ Hodnota & 1 & 5 & 10 & 50 & 100 & 500 & 1000 \\
 \end{tabular}
 \caption{Rímske číslice a ich hodnoty.}
 \end{table}
-Mnemotechnická pomôcka: LaCo DoMa
+Ľahká mnemotechnická pomôcka pre zapamätanie si hodnoty vyšších rímskych číslic: LaCo DoMa.
 
-
-Rímska číselná sústava je o niečo zložitejšia. Nie je úplne čisto nepozičná, ak ju chápeme podľa všetkých historických pravidiel. Tradične sa označuje ako nepozičná sústava, pretože väčšina znakov má stálu hodnotu bez ohľadu na miesto. Číslica X má vždy hodnotu 10. Avšak existujú zápisy, kde poradie číslic určuje ich význam.
-
-Poznáme dva typy zápisu rímskych čísel: sčítací (alebo aditívny) a odčítací (alebo subtraktívny).
+Rímska číselná sústava je o niečo zložitejšia. Nie je úplne čisto nepozičná, ak ju chápeme podľa všetkých historických pravidiel. Tradične sa označuje ako nepozičná sústava, pretože väčšina znakov má stálu hodnotu bez ohľadu na miesto. Číslica X má vždy hodnotu 10. Avšak existujú zápisy, kde poradie číslic určuje ich význam. Poznáme dva typy zápisu rímskych čísel: sčítací (alebo aditívny) a odčítací (alebo subtraktívny).
 
 V sčítacom tvare má každá číslica stálu hodnotu, bez ohľadu na jej pozíciu v čísle. Na zápis čísla \(3738\) v čo najkratšom tvare sa použijú tri symboly M, jeden symbol D, dva symboly C, tri symboly X, jeden symbol V a tri symboly I. Vznikne tak rímske číslo MMMDCCXXXVIII. Sčítaním jednotlivých číslic by sme dostali:
-
 \begin{align*}
   MMMDCCXXXVIII &= MMM + D + CC + XXX + V + III, \\
   3738 &= 3000 + 500 + 200 + 30 + 5 + 3.
 \end{align*}
-
-\[
-3738 = 3000 + 500 + 200 + 30 + 5 + 3
-\]
-
 Toto číslo by sa dalo zapísať aj ako MMDMCXIXVIXIC. Z dôvodu prehľadnosti sa najväčšie číslice vždy píšu pred menšími.
 
 V odčítacom tvare záleži na tom, či je menšia číslica pred väčšou. Ak sa menšia rímska číslica nachádza pred väčšou, jej hodnota sa od väčšej odčíta namiesto toho, aby sa sčítala. Napríklad číslo \(9\) by sa v odčítacom tvare zapísalo ako IX.
@@ -141,8 +128,6 @@ Iné odčítacie kombinácie sa nepoužívajú.
 
 Rímske číslice sa používajú dodnes najmä na označovanie, nie na bežné počítanie. V modernej matematike ich nahradila desiatková pozičná sústava, ale zostali zachované v niektorých oblastiach tradície a označovania. Najčastejšie sa používajú na ciferníky hodín, označenie panovníkov a pápežov, číslovanie kapitol a častí kníh, filmy, seriály a pokračovania diel, športové a kultúrne podujatia, roky na budovách a pamätníkoch a chemické, vedecké a technické označenia.
 
-Nepozičné číselné sústavy majú oproti pozičným číselnym sústavam nevýhodu v tom, že je zložité zapisovanie veľkých čísel a ťažšie sa s nimi vykonávajú matematické výpočty.
-
 \subsection{Pozičné číselné sústavy}
 
 Pozičná číselná sústava je taká číselná sústava, v ktorej hodnota číslice závisí od jej polohy (pozície) v čísle. Každá pozícia má určitú hodnotu danú základom sústavy. Preto môže mať tá istá číslica rôznu hodnotu podľa toho, kde sa nachádza.
@@ -161,39 +146,17 @@ Rád číslice určuje, koľkokrát sa má hodnota číslice zväčšiť podľa 
   \item číslica \(2\) číselný rád jednotiek a jej hodnota je \(2 \cdot 1 = 2\).
 \end{itemize}
 
-Niektoré hodnoty rádov v desiatkovej číselnej sústave:
-
-\begin{center}
-\begin{tabular}{|r|r|}
-  \hline
-  \textbf{Číselný rád} & \textbf{Hodnota rádu} \\
-  \hline
-  Jednotky & \(1\) \\
-  \hline
-  Desiatky & \(10\) \\
-  \hline
-  Stovky & \(100\) \\
-  \hline
-  Tisíce & \(1\ 000\) \\
-  \hline
-  Desaťtisíce & \(10\ 000\) \\
-  \hline
-  Státisíce & \(100\ 000\) \\
-  \hline
-\end{tabular}
-\end{center}
-
 \subsubsection{Zápis čísla v pozičnej číselnej sústave}
 
 V pozičných číselných sústavách existujú dva základné spôsoby zápisu čísel: skrátený (alebo pozičný) zápis a rozvinutý (alebo polynomiálny) zápis.
 
 V skrátenom zápise sa číslo zapisuje ako usporiadaná postupnosť cifier, pričom hodnota každej cifry závisí od jej pozície (rádu) v čísle. Smerom doľava hodnoty rastú, smerom doprava sa hodnoty zmenšujú. Posledná číslica predstavuje rád jednotiek. Ostatné číslice nadobúdajú svoju hodnotu podľa svojej polohy vzhľadom na rád jednotiek. Napríklad číslo \(476\) má na pozícii stoviek cifru \(4\), na pozícii desiatok cifru \(7\) a na pozícii jednotiek cifru \(6\). Skrátený zápis je bežný spôsob zapisovania čísel.
 
-V rozvinutom zápise sa číslo zapisuje ako súčet jednotlivých cifier vynásobených hodnotou ich rádu. Napríklad číslo \(1\ 852\) by sa v rozvinutom zápise zapísalo ako
-
+V rozvinutom zápise sa číslo zapisuje ako súčet jednotlivých cifier vynásobených hodnotou ich rádu. Sú v ňom všetky číslice daného čísla zapísané od najvyššieho číselného rádu po najnižši (jednotky). Číslo nemusíme počítať, stačí číslice opísať. Aby bol rozvinutý zápis čísla správny, musia v ňom byť zapísané všetky číslice tohto čísla, teda aj nuly. Napríklad číslo \(1\ 052\) by sa v rozvinutom zápise zapísalo ako
 \[
-1 \cdot 1\ 000 + 8 \cdot 100 + 5 \cdot 10 + 2 \cdot 1.
+1 \cdot 1\ 000 + 0 \cdot 100 + 5 \cdot 10 + 2 \cdot 1.
 \]
+V tomto zápise sú aj nulové číslice daného čísla. Číslo vieme podľa tohto zápisu vypočítať. Rozvinutý zápis názorne ukazuje, ako je číslo vytvorené z jednotlivých rádov a predstavuje základný princíp pozičných číselných sústav.
 
 Každá pozičná sústava používa nulu ako zástupnú číslicu na označenie, že určitý rád neobsahuje žiadnu hodnotu, pričom jeho pozícia v zápise zostáva zachovaná. Preto čísla ako \(102\) alebo \(3\ 000\) musia obsahovať nuly, aby bolo jednoznačné, že v príslušnom ráde nie je žiadna hodnota. Nuly v rádoch väčších ako rád poslednej nenulovej číslice sa pri bežnom zápise nepíšu, preto číslo \(56\) nezapisujeme ako \(056\) ani \(0056\) (v skutočnosti tam sú).
 
@@ -215,6 +178,8 @@ Desiatkový zápis (alebo desiatková notácia) je spôsob zápisu čísel v des
 \end{itemize}
 zapíšeme ako \(7\ 623\).
 
+Pre lepšiu prehľadnosť sa na oddelenie skupín číslic používa medzera. Medzery zlepšujú čitateľnosť veľkých čísel a uľahčujú určenie jednotlivých rádov. Číslice sa zoskupujú po troch, pričom sa začína sprava od jednotiek. Príklady zápisov čísel s medzerou: \(1\ 000\), \(12\ 563\), \(300\ 187\), \(1\ 000\ 000\), \(684\ 170\ 385\), \(3\ 158\ 032\ 902\).
+
 Okrem zápisu čísla pomocou cifier môžeme číslo vyjadriť aj slovne. Pravopis čísloviek sa riadi pravidlami slovenského pravopisu. Niektoré pravidlá sú uvedené nižšie.
 
 \begin{displayquote}
@@ -234,23 +199,91 @@ Poznámka. – Číslovky označujúce stovky a tisícky sa píšu spolu, napr. 
 
 \subsubsection{Zápis čísla v rozvinutom tvare}
 
+V desiatkovej číselnej sústave sa číslo zapisuje v rozvinutom tvare ako súčet hodnôt jednotlivých cifier podľa ich rádov. Každá cifra sa vynásobí hodnotou rádu, na ktorom sa nachádza. Niektoré hodnoty rádov v desiatkovej číselnej sústave sú:
+
+\begin{center}
+\begin{tabular}{|r|r|}
+  \hline
+  \textbf{Číselný rád} & \textbf{Hodnota rádu} \\
+  \hline
+  Jednotky & \(1\) \\
+  \hline
+  Desiatky & \(10\) \\
+  \hline
+  Stovky & \(100\) \\
+  \hline
+  Tisíce & \(1\ 000\) \\
+  \hline
+  Desaťtisíce & \(10\ 000\) \\
+  \hline
+  Státisíce & \(100\ 000\) \\
+  \hline
+\end{tabular}
+\end{center}
+
+Číslo \(70\ 208\) má rozvinutý tvar:
+\[
+70\ 208 = 7 \cdot 10\ 000 + 0 \cdot 1\ 000 + 2 \cdot 100 + 0 \cdot 10 + 8 \cdot 1.
+\]
+Aj keď niektoré členy majú hodnotu nula, v rozvinutom zápise sa ponechávajú, pretože jasne ukazujú, že dané rády existujú, ale neobsahujú žiadnu hodnotu.
 
 
 \subsection{Šesťdesiatková pozičná sústava}
 
-Sumeri, ťažké si zapamätať malú násobilku.
+Šesťdesiatková číselná sústava (alebo sexagesimálna sústava) je pozičná číselná sústava so základom \(60\). Je to jedna z najstarších známych pozičných číselných sústav. Vznikla približne pred 4 000 rokmi v starovekej Mezopotámii, kde ju používali Sumeri a neskôr Babylončania. Slúžila na obchod, astronómiu, geometriu a meranie času. Starovekí Babylončania nepoužívali číslice \(0\) až \(59\), ako ich zapisujeme dnes. Mali iba dva základné klinové znaky: znak pre jednotku a znak pre desiatku. Pomocou ich kombinácií vytvárali všetky hodnoty od \(1\) do \(59\). Napríklad číslo \(47\) by malo štyri znaky pre desiatku a sedem znakov pre jednotku.
 
-\subsection{Dvojková pozičná sústava}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Babylónske číslice.png}
+    \caption{Babylónske číslice. \cite{wikimedia:Babylonian_numerals}} 
+\end{figure}
 
-Len štyri spoje sčítania \(0 + 0, 1 + 0, 0 + 1, 1 + 1\), kvôli veľkým číslam sa nepoužíva.
+Hlavnou nevýhodou šesťdesiatkovej číselnej sústavy je veľké množstvo znakov a obtiažnosť zapamätania si malej násobilky. Dodnes sa používa napríklad na meranie času a uhlov.
 
-\subsection{Oktálna pozičná sústava}
+\subsubsection{Zápis čísla v šesťdesiatková sústave}
 
-\subsection{Šesťnásková pozičná sústava}
+Čísla v šesťdesiatkovej sústave sa zapisujú ako postupnosť číslic oddelenými čiarkami alebo dvojbodkami, pričom každá číslica predstavuje hodnotu od \(0\) do \(59\). Po dosiahnutí hodnoty \(60\) vzniká nový rád. Hodnota číslice závisí od jej pozície (rádu), podobne ako v desiatkovej sústave. Príklady niektorých čísel zapísaných v desiatkovej a šesťdesiatkovej číselnej sústave:
+\begin{center}
+\begin{tabular}{r|l}
 
+\textbf{Desiatková sústava} & \textbf{Šesťdesiatková sústava} \\
+\hline
+\(25\) & \(25\) \\
 
+\(60\) & \(1,0\)  \\
 
+\(75\) & \(1,15\)  \\
 
+\(125\) & \(2,5\) \\
+
+\(3600\) & \(1,0,0\)  \\
+
+\(3665\) & \(1,1,5\)  \\
+
+\end{tabular}
+\end{center}
+
+V oblastiach, kde šesťdesiatková sústava prežila (čas a uhly), majú niektoré rády vlastné názvy:
+\begin{itemize}
+  \item 1 hodina = 60 minút,
+  \item 1 minúta = 60 sekúnd,
+  \item 1 stupeň = 60 uhlových minút,
+  \item 1 uhlová minúta = 60 uhlových sekúnd.
+\end{itemize}
+Číslo \(12, 25, 45\) má \(12\) hodín, \(25\) minút a \(45\) sekúnd. Pri meraní uhlov sa používajú uhlové minúty označované ako \textprime\ a uhlové sekundy označované ako \textprime\textprime. Číslo \(60, 12, 36\) by sa v uhlovej miere zapísalo ako \(60 \degree 12^{\prime} 36^{\prime\prime}\).
+
+\subsection{Iné pozičné sústavy}
+
+Existuje ešte niekoľko praktických pozičných číselných sústav. Dvojková číselná sústava (alebo binárna sústava) je pozičná číselná sústava so základom 2. Používajú sa v nej iba dve cifry \(0\) a \(1\). Preto sa nazýva dvojková. V dvojkovej sústave je každý vyšší rád dvakrát väčší ako predchádzajúci. Číslo \(11\) by sa v dvojkovej sústave zapísalo ako \(1011\). Výhodou dvojkovej sústavy je malý počet číslic a jednoduché výpočty. Existujú v nej len štyri spoje sčítania a násobenia:
+\[
+\begin{aligned}
+0+0 &= 0 &\qquad 1+0 &= 1 \\
+0+1 &= 1 &\qquad 1+1 &= 10 \\[4pt]
+0\cdot0 &= 0 &\qquad 1\cdot0 &= 0 \\
+0\cdot1 &= 0 &\qquad 1\cdot1 &= 1
+\end{aligned}
+\]
+Pre nepraktický zápis veľkých čísel sa nepoužíva v bežnom živote. Osmičková číselná sústava (alebo oktálna sústava) je pozičná číselná sústava so základom 8. Používa iba cifry od \(0\) do \(8\). Šesťnásková pozičná sústava (alebo hexadecimálna sústava ) je pozičná číselná sústava so základom 16. Okrem arabských číslic používa písmena abecedy pre hodnoty väčšie ako \(9\). Tieto písmená sú \(A, B, C, D, E, F\) s hodnotami \(10, 11, 12, 13, 14, 15\). Dvojková, osmičková a šesťnásková sústava sa používajú najmä v informatike pri digitálnych počítačoch a elektronike.
 
 \printbibliography
 

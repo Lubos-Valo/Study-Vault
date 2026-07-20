@@ -1,40 +1,13 @@
 \documentclass{article}
-\usepackage{microtype}
-\usepackage{ragged2e}
-\usepackage{amssymb}
-\usepackage{breqn}
-\usepackage[margin=1in]{geometry}
-% \usepackage{showframe}
 
-\usepackage[slovak]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[none]{hyphenat}
-\usepackage{mathtools}
-\usepackage{flexisym}
-\usepackage{gensymb}
-
-\usepackage{makecell}
-\usepackage{rotating}
-\usepackage{csquotes}
-\usepackage{enumitem}
-
-\usepackage[backend=biber,sorting=none]{biblatex}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{float}[H]
-\usepackage{graphicx}
+\usepackage{../../common}
 
 
 \graphicspath{
   {../../../media/images/}
 }
-\addbibresource{references.bib}
-\overfullrule=5pt
-\tolerance=2000
-\emergencystretch=2em
-  
-\author{Mgr. Ľuboš Valo}
+\addbibresource{../../references.bib}
+
 \title{Číselné sústavy}
 
 \begin{document}
@@ -270,7 +243,7 @@ V oblastiach, kde šesťdesiatková sústava prežila (čas a uhly), majú niekt
   \item 1 stupeň = 60 uhlových minút,
   \item 1 uhlová minúta = 60 uhlových sekúnd.
 \end{itemize}
-Číslo \(12, 25, 45\) má \(12\) hodín, \(25\) minút a \(45\) sekúnd. Pri meraní uhlov sa používajú uhlové minúty označované ako \textprime\ a uhlové sekundy označované ako \textprime\textprime. Číslo \(60, 12, 36\) by sa v uhlovej miere zapísalo ako \(60 \degree 12^{\prime} 36^{\prime\prime}\).
+Číslo \(12, 25, 45\) má \(12\) hodín, \(25\) minút a \(45\) sekúnd. Pri meraní uhlov sa používajú uhlové minúty označované ako \SI{}{\arcminute} a uhlové sekundy označované ako \SI{}{\arcsecond}. Číslo \(60, 12, 36\) by sa v uhlovej miere zapísalo ako \(\SI{60}{\degree} \SI{12}{\arcminute} \SI{36}{\arcsecond}\). 
 
 \subsection{Iné pozičné sústavy}
 

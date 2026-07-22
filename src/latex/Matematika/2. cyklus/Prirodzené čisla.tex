@@ -1,26 +1,346 @@
 \documentclass{article}
-\author{Mgr. Ľuboš Valo}
-\usepackage{ragged2e}
-\usepackage{microtype}
-\usepackage{showframe}
-\usepackage{amssymb}
 
-\overfullrule=5pt
+\usepackage{../../common}
+
+\graphicspath{
+  {../../../media/images/}
+}
+\addbibresource{../../references.bib}
 
 \title{Prirodzené čísla}
 \begin{document}
 
 \maketitle
 
+\section{Prirodzené čísla}
+
+Čísla $1$, $2$, $3$, $4$\dots\ sa nazývajú \textbf{prirodzené čísla}. Prirodzené čísla sa používajú na počítanie množstva vecí (jeden, dva, tri\dots) a na označenie poradia (prvý, druhý, tretí\dots). Najčastejšie sa označujú symbolom $\mathbb{N}$. V niektorých prípadoch sa uvádza aj číslo $0$ ako prirodzené číslo, vtedy používame na označenie prirodzených čísel symbol $\mathbb{N}_0$.
+
+Prirodzené čísla patria medzi \textbf{základné matematické pojmy}. Na ich poznaní sa stavajú ďalšie matematické poznatky, ako sú celé čísla, zlomky, desatinné čísla atď. Nazývajú sa prirodzené, pretože \textbf{vznikli prirodzenou potrebou ľudí počítať predmety a určovať ich počet}. Už v dávnej minulosti ich ľudia používali na počítanie zvierat, úrody, ľudí alebo dní, ešte skôr, ako vznikli zložitejšie druhy čísel. Preto dostali názov prirodzené čísla. Sú to čísla, ktoré sa objavili prirodzene v každodennom živote.
+
+Prirodzené čísla používame v matematike dvoma rôznymi spôsobmi. Môžeme ich chápať ako kardinálne čísla a ako ordinálne čísla. Kardinalita (číselnosť, početnosť) vyjadruje počet prvkov v súbore. Kardinalita nezávisí od toho, aké prvky v súbore sú, ale iba od ich počtu. Používame základné číslovky ako napríklad jeden, dva, tri, desať, päťnásť, sto, atď. Ordinalita (poradové číslo, usporiadanie) vyjadruje poradie alebo pozíciu prvku v usporiadanom rade. Má zmysel iba v postupnostiach. Používame radové číslovky ako napríklad prvý, druhý, tretí, štvrtý, stí, atď.
+
+Podľa počtu číslic (cifier) určujeme, o \textbf{koľkociferné prirodzené číslo} ide. Poznáme napríklad prirodzené čísla:
+\begin{itemize}
+  \item jednociferné: \(0, 1, 2, 3, 4, 5, 6, 7, 8, 9\),
+  \item dvojciferné: \(10, 11, 12, \dots, 97, 98, 99\),
+  \item trojciferné: \(100, 101, 102, \dots, 997, 998, 999\) atď.
+\end{itemize}
+Počet cifier prirodzeného čísla je vždy vyjadrený prirodzeným číslom.
+
+\subsection{Čítanie a zapisovanie prirodzených čísel}
+
+Prirodzené čísla zapisujeme v desiatkovej číselnej sústave pomocou číslic \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\) a \(9\). Pri zápise väčších čísel rozdeľujeme číslice do trojíc (rádov) sprava. Zoskupujeme rád jednotiek, desiatok a stoviek, potom rád tisícov, desaťtisícov, stotisícov, ďalej miliónov, desať miliónov, sto miliónov atď. Napríklad čísla \(1\ 240\), \(28\ 305\), \(364\ 989\), \(3\ 204\ 019\), atď. Medzery zlepšujú čitateľnosť veľkých čísel a uľahčujú určenie jednotlivých rádov.
+
+Okrem zápisu čísla pomocou cifier môžeme číslo vyjadriť aj slovne. Pravopis čísloviek sa riadi pravidlami slovenského pravopisu. Niektoré pravidlá sú uvedené nižšie.
+
+\begin{displayquote}
+  Dovedna (spolu) sa píšu číslovky v základnom tvare, napr. pätnásť, dvadsaťsedem, stojeden, sedemstodvadsať, tisícpäť, sedemtisícdesať. V zložitých prípadoch možno na zvýšenie prehľadnosti oddeľovať tisícky, stovky a desiatky s jednotkami, napr. 7 283 – sedemtisíc dvesto osemdesiattri, 15 348 848 – pätnásť miliónov tristoštyridsaťosemtisíc osemsto štyridsaťosem.
+
+  Poznámka. – Čísla s viac ako tromi číslicami sa členia do skupín po troch čísliciach od poslednej číslice alebo od desatinnej čiarky doľava, alebo od desatinnej čiarky doprava a jednotlivé skupiny sa oddeľujú medzerou, napr. 5 328, 28 565, 139 824, 2 785 632; 37 582,628; 3,141 592 65. Letopočty sa píšu bez medzery, napr. v roku 1848, na začiatku roka 2001.
+
+  V číslovkách od 21 vyššie píšeme oddelene od ostatnej časti jednotky:
+
+  \begin{enumerate}[label=\alph*)]
+  \item pri skloňovaní základných čísloviek, napr. stodvadsiati štyria muži, stodvadsiatich štyroch mužov, so stodvadsiatimi štyrmi mužmi;
+  \item v radových číslovkách, napr. stodvadsiaty štvrtý účastník, stodvadsiateho štvrtého účastníka, v tisícdeväťstoosemdesiatom piatom roku.
+  \end{enumerate}
+
+  Poznámka. – Číslovky označujúce stovky a tisícky sa píšu spolu, napr. dvesto, sedemsto, tritisíc, dvadsaťsedemtisíc, stoosemdesiatdvatisíc. Spolu sa píšu aj radové číslovky zložené z jednotiek, stovák a tisícok, napr. stoprvý, dvetisícdruhý. Číslovky označujúce milióny, miliardy, bilióny sa píšu oddelene, napr. štyri milióny, päť miliónov, tri miliardy, sedem biliónov. \cite{psp2000}
+\end{displayquote}
+
+Pri pomenúvaní veľkých čísel používame čísla od \(1\) do \(999\), ktoré určujú násobok základnej jednotky (tisíc, milión, miliarda, bilión\dots). Najčastejšie sa používajú ako predpony alebo násobky veľkých čísel. Napríklad číslo \(238\ 571\ 690\) čítame ako dvestotridsaťosem miliónov päťstosedemdesiatjeden tisíc šestodeväťdesiat. V tabuľke je prehľad písania čísloviek od jedna do sto.
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|cl|cl|cl|cl|}
+    \hline
+    1 & Jeden & 26 & Dvadsaťšesť & 51 & Päťdesiatjeden & 76 & Sedemdesiatšesť \\
+    \hline
+    2 & Dva & 27 & Dvadsaťsedem & 52 & Päťdesiatdva & 77 & Sedemdesiatsedem \\
+    \hline
+    3 & Tri & 28 & Dvadsaťosem & 53 & Päťdesiattri & 78 & Sedemdesiatosem \\
+    \hline
+    4 & Štyri & 29 & Dvadsaťdeväť & 54 & Päťdesiatštyri & 79 & Sedemdesiatdeväť \\
+    \hline
+    5 & Päť & 30 & Tridsať & 55 & Päťdesiatpäť & 80 & Osemdesiat \\
+    \hline
+    6 & Šesť & 31 & Tridsaťjeden & 56 & Päťdesiatšesť & 81 & Osemdesiatjeden \\
+    \hline
+    7 & Sedem & 32 & Tridsaťdva & 57 & Päťdesiatsedem & 82 & Osemdesiatdva \\
+    \hline
+    8 & Osem & 33 & Tridsaťtri & 58 & Päťdesiatosem & 83 & Osemdesiattri \\
+    \hline
+    9 & Deväť & 34 & Tridsaťštyri & 59 & Päťdesiatdeväť & 84 & Osemdesiatštyri \\
+    \hline
+    10 & Desať & 35 & Tridsaťpäť & 60 & Šesťdesiat & 85 & Osemdesiatpäť \\
+    \hline
+    11 & Jedenásť & 36 & Tridsaťšesť & 61 & Šesťdesiatjeden & 86 & Osemdesiatšesť \\
+    \hline
+    12 & Dvanásť & 37 & Tridsaťsedem & 62 & Šesťdesiatdva & 87 & Osemdesiatsedem \\
+    \hline
+    13 & Trinásť & 38 & Tridsaťosem & 63 & Šesťdesiattri & 88 & Osemdesiatosem \\
+    \hline
+    14 & Štrnásť & 39 & Tridsaťdeväť & 64 & Šesťdesiatštyri & 89 & Osemdesiatdeväť \\
+    \hline
+    15 & Pätnásť & 40 & Štyridsať & 65 & Šesťdesiatpäť & 90 & Deväťdesiat \\
+    \hline
+    16 & Šestnásť & 41 & Štyridsaťjeden & 66 & Šesťdesiatšesť & 91 & Deväťdesiatjeden \\
+    \hline
+    17 & Sedemnásť & 42 & Štyridsaťdva & 67 & Šesťdesiatsedem & 92 & Deväťdesiatdva \\
+    \hline
+    18 & Osemnásť & 43 & Štyridsaťtri & 68 & Šesťdesiatosem & 93 & Deväťdesiattri \\
+    \hline
+    19 & Devätnásť & 44 & Štyridsaťštyri & 69 & Šesťdesiatdeväť & 94 & Deväťdesiatštyri \\
+    \hline
+    20 & Dvadsať & 45 & Štyridsaťpäť & 70 & Sedemdesiat & 95 & Deväťdesiatpäť \\
+    \hline
+    21 & Dvadsaťjeden & 46 & Štyridsaťšesť & 71 & Sedemdesiatjeden & 96 & Deväťdesiatšesť \\
+    \hline
+    22 & Dvadsaťdva & 47 & Štyridsaťsedem & 72 & Sedemdesiatdva & 97 & Deväťdesiatsedem \\
+    \hline
+    23 & Dvadsaťtri & 48 & Štyridsaťosem & 73 & Sedemdesiattri & 98 & Deväťdesiatosem \\
+    \hline
+    24 & Dvadsaťštyri & 49 & Štyridsaťdeväť & 74 & Sedemdesiatštyri & 99 & Deväťdesiatdeväť \\
+    \hline
+    25 & Dvadsaťpäť & 50 & Päťdesiat & 75 & Sedemdesiatpäť & 100 & Sto \\
+    \hline
+  \end{tabular}
+  \caption{Názvy prirodzených čísel do sto.}
+\end{table}
+
+V slovenčine používame na pomenovanie veľkých prirodzených čísel dlhú číselnú sústavu. Dlhá číselná sústava je spôsob pomenovania veľkých čísel, ktorý sa používa na Slovensku a vo viacerých európskych krajinách. V tejto sústave sa názvy čísel striedajú na -lión a -liarda. Každý nový -lión je miliónkrát väčší ako predchádzajúci -lión, medzi dvoma -liónmi sa nachádza príslušná -liarda, ktorá je tisíckrát väčšia.
+
+Existuje aj krátka číselná sústava (short scale), ktorá sa používa najmä v USA, vo väčšine anglicky hovoriacich krajín a v modernej medzinárodnej vedeckej komunikácii. V nej každý nový názov končiaci na -illion predstavuje násobenie o tisíc. Najčastejší zdroj nedorozumenia je slovo billion. V angličtine (krátka sústava) znamená \(1\ 000\ 000\ 000\), teda po slovensky miliarda, nie bilión. V súčasnosti používa Slovensko, Česko, Nemecko, Francúzsko a väčšina kontinentálnej Európy dlhú sústavu, zatiaľ čo USA, Kanada, Austrália a Spojené kráľovstvo používajú krátku sústavu. Pri preklade ekonomických alebo vedeckých textov z angličtiny je preto potrebné venovať týmto názvom zvýšenú pozornosť. V tabuľke je prehľad niektorých názvov prirodzených čísel.
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|r|c|l|r|c|l|}
+    \hline
+    \textbf{Názov} & \textbf{Núl} & \textbf{Číslo} &
+    \textbf{Názov} & \textbf{Núl} & \textbf{Číslo} \\
+    \hline
+    Jedna & 0 & \(1\) &
+    Trilión & 18 & \(10^{18}\) \\
+    \hline
+    Desať & 1 & \(10\) &
+    Triliarda & 21 & \(10^{21}\) \\
+    \hline
+    Sto & 2 & \(100\) &
+    Kvadrilión & 24 & \(10^{24}\) \\
+    \hline
+    Tisíc & 3 & \(1\ 000\) &
+    Kvadriliarda & 27 & \(10^{27}\) \\
+    \hline
+    Desaťtisíc & 4 & \(10\ 000\) &
+    Kvintilión & 30 & \(10^{30}\) \\
+    \hline
+    Stotisíc & 5 & \(100\ 000\) &
+    Kvintiliarda & 33 & \(10^{33}\) \\
+    \hline
+    Milión & 6 & \(1\ 000\ 000\) &
+    Sextilión & 36 & \(10^{36}\) \\
+    \hline
+    Desať miliónov & 7 & \(10\ 000\ 000\) &
+    Sextiliarda & 39 & \(10^{39}\) \\
+    \hline
+    Sto miliónov & 8 & \(100\ 000\ 000\) &
+    Septilión & 42 & \(10^{42}\) \\
+    \hline
+    Miliarda & 9 & \(1\ 000\ 000\ 000\) &
+    Septiliarda & 45 & \(10^{45}\) \\
+    \hline
+    Desať miliárd & 10 & \(10\ 000\ 000\ 000\) &
+    Oktilión & 48 & \(10^{48}\) \\
+    \hline
+    Sto miliárd & 11 & \(100\ 000\ 000\ 000\) &
+    Oktiliarda & 51 & \(10^{51}\) \\
+    \hline
+    Bilión & 12 & \(1\ 000\ 000\ 000\ 000\) &
+    Nonilión & 54 & \(10^{54}\) \\
+    \hline
+    Desať biliónov & 13 & \(10\ 000\ 000\ 000\ 000\) &
+    Noniliarda & 57 & \(10^{57}\) \\
+    \hline
+    Sto biliónov & 14 & \(100\ 000\ 000\ 000\ 000\) &
+    Decilión & 60 & \(10^{60}\) \\
+    \hline
+    Biliarda & 15 & \(1\ 000\ 000\ 000\ 000\ 000\) &
+    Deciliarda & 63 & \(10^{63}\) \\
+    \hline
+    Desať biliárd & 16 & \(10\ 000\ 000\ 000\ 000\ 000\) &
+    Google & 100 & \(10^{100}\) \\
+    \hline
+    Sto biliárd & 17 & \(100\ 000\ 000\ 000\ 000\ 000\) &
+    Centilión & 600 & \(10^{600}\) \\
+    \hline
+  \end{tabular}
+  \caption{Názvy veľkých prirodzených čísel.}
+\end{table}
+
+Príklady zápisu a čítania niektorých prirodzených čísel:
+\begin{itemize}
+  \item \(42\), čítame: štyridsaťdva
+  \item \(125\), čítame: stodvadsaťpäť
+  \item \(3\ 850\), čítame: tritisíc osemstopäťdesiat
+  \item \(56\ 823\), čítame: päťdesiatšesťtisíc osemstodvadsaťtri
+  \item \(804\ 256\), čítame: osemstoštyritisíc dvestopäťdesiatšesť
+  \item \(1\ 354\ 672\), čítame: jeden milión tristopäťdesiatštyritisíc šesťstosedemdesiatdva
+  \item \(4\ 506\ 321\), čítame: štyri milióny päťstotisíc šesťtisíc tristo dvadsaťjeden
+  \item \(12\ 450\ 678\), čítame: dvanásť miliónov štyristopäťdesiattisíc šesťstosedemdesiatosem
+  \item \(35\ 627\ 002\), čítame: tridsaťpäť miliónov šesťstodvadsaťsedemtisíc dva
+  \item \(78\ 305\ 412\), čítame: sedemdesiatosem miliónov tristopäťtisíc štyristodvanásť
+  \item \(125\ 678\ 904\), čítame: stodvadsaťpäť miliónov šesťstosedemdesiatosemtisíc deväťstoštyri
+  \item \(832\ 102\ 098\), čítame: osemstotridsaťdva miliónov stodvatisíc deväťdesiatosem
+  \item \(1\ 250\ 000\ 000\), čítame: jedna miliarda dvestopäťdesiat miliónov
+  \item \(3\ 456\ 789\ 012\), čítame: tri miliardy štyristopäťdesiatšesť miliónov sedemstoosemdesiatdeväťtisíc dvanásť
+  \item \(25\ 804\ 321\ 765\), čítame: dvadsaťpäť miliárd osemstoštyri miliónov tristodvadsaťjedentisíc sedemstošesťdesiatpäť
+  \item \(100\ 000\ 000\ 000\), čítame: sto miliárd
+  \item \(7\ 250\ 600\ 400\ 000\), čítame: sedem biliónov dvestopäťdesiat miliárd šesťsto miliónov štyristotisíc
+  \item \(45\ 678\ 901\ 234\ 567\), čítame: štyridsaťpäť biliónov šesťstoosemdesiatsedem miliárd deväťsto jeden miliónov dvestotridsaťštyritisíc päťstošesťdesiatsedem
+\end{itemize}
 
 
-\section{Číselné sústavy}
 
-\section{Desiatková pozičná sústava}
+\subsubsection{Rozvinutý zápis prirodzeného čísla}
 
-Čísla $1$, $2$, $3$, $4$\dots sa nazývajú prirodzené čísla. Prirodzené čísla sa používajú na počítanie množstva vecí (jeden, dva, tri\dots) a na označenie poradia. Najčastejšie sa označujú symbolom $\mathbb{N}$. V niektorých prípadoch sa uvádza aj číslo $0$ ako prirodzené číslo, vtedy používame na označenie prirodzených čísel symbol $\mathbb{N}_0$.
+V prirodzených číslach rozlišujeme rád jednotiek, desiatok, stoviek, tisícov, atď. Každý rád je desaťnásobne väčší ako predchádzajúci.
 
+\subsection{Zobrazenie prirodzených čísel na číselnej osi}
 
+\textbf{Číselná os} je priamka, na ktorej zobrazujeme čísla. Sú na nej usporiadané čísla podľa ich veľkosti. Používa sa na znázornenie čísel a na jednoduchšie porovnávanie, ktoré číslo je väčšie alebo menšie. Obrazom čísla je bod na číselnej osi. Obrazmi prirodzených čísel sú body ležiace na číselnej osi vpravo od bodu nula. Bod, ktorý patrí menšiemu číslu, leží bližšie k nule.
 
+Znázornenie čísel na číselnej osi si môžeme prispôsobiť podľa toho, ktoré čísla potrebujeme zobraziť. Pri znázornení musia byť splnené nasledovné podmienky:
+\begin{itemize}
+  \item Každému číslu zodpovedá práve jeden bod na číselnej osi a každému bodu na osi zodpovedá práve jedno číslo.
+  \item Vzdialenosť medzi dvoma susednými číslami musí byť vždy rovnaká.
+  \item Smerom doprava sa čísla zväčšujú a smerom doľava zmenšujú.
+\end{itemize}
+Priamka môže byť na konci označená šípkou, ktorá naznačuje, že pokračuje do nekonečna.
+
+Príklady niektorých znázornení prirodzených čísel na číselnej osi:
+
+\begin{center}
+  Počítame od nuly po jednotkách. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x in {0,1,...,9}
+    {
+      \draw (\x,0.1) -- (\x,-0.1);
+      \node[below] at (\x,-0.1) {\small $\x$};
+    }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od nuly po desiatkach. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/0,1/10,2/20,3/30,4/40,5/50,6/60,7/70,8/80,9/90}
+    {
+      \draw (\x,0.1) -- (\x,-0.1);
+      \node[below] at (\x,-0.1) {\small \label};
+    }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od nuly po stovkách. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/0,1/100,2/200,3/300,4/400,5/500,6/600,7/700,8/800,9/900}
+    {
+      \draw (\x,0.1) -- (\x,-0.1);
+      \node[below] at (\x,-0.1) {\small \label};
+    }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od nuly po dvojkách. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/0,1/2,2/4,3/6,4/8,5/10,6/12,7/14,8/16,9/18}
+    {
+      \draw (\x,0.1) -- (\x,-0.1);
+      \node[below] at (\x,-0.1) {\small \label};
+    }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od nuly po sedmičkách. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/0,2/7,4/14,6/21,8/35}
+      {
+        \draw (\x,0.1) -- (\x,-0.1);
+        \node[below] at (\x,-0.1) {\small \label};
+      }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od čísla 45 po päťkách. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/45,2/50,4/55,6/60,8/75}
+      {
+        \draw (\x,0.1) -- (\x,-0.1);
+        \node[below] at (\x,-0.1) {\small \label};
+      }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od čísla 10 po desiatkách. Znázorňujeme každé druhé číslo. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/10,1/,2/30,3/,4/50,5/,6/70,7/,8/90,9/}
+      {
+        \draw (\x,0.1) -- (\x,-0.1);
+        \node[below] at (\x,-0.1) {\small \label};
+      }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od čísla 2 po šestkách. Znázorňujeme každé tretie číslo. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/2,1/,2/,3/20,4/,5/,6/38,7/,8/,9/56}
+      {
+        \draw (\x,0.1) -- (\x,-0.1);
+        \node[below] at (\x,-0.1) {\small \label};
+      }
+  \end{tikzpicture}
+\end{center}
+
+\begin{center}
+  Počítame od čísla 90 po deviatkách. Znázorňujeme každé tretie číslo od čísla 108. \vspace{5mm}
+
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x/\label in {0/,1/,2/108,3/,4/,5/135,6/,7/,8/162,9/}
+      {
+        \draw (\x,0.1) -- (\x,-0.1);
+        \node[below] at (\x,-0.1) {\small \label};
+      }
+  \end{tikzpicture}
+\end{center}
+
+\subsection{Párne a nepárne čísla}
+
+\printbibliography
 
 \end{document}

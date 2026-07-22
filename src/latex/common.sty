@@ -1,6 +1,7 @@
 
 % Page layout
 \RequirePackage[margin=1in]{geometry}
+\RequirePackage{changepage}
 
 % Fonts and typography
 \RequirePackage{microtype}
@@ -10,24 +11,37 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{mathtools}
+\RequirePackage{amsthm}
 
 % Symbols and units
 \RequirePackage{siunitx}
+\RequirePackage{glossaries-extra}
 
-% Lists and tables
+% Lists
 \RequirePackage{enumitem}
+
+% Tables
+\RequirePackage{booktabs}
+\RequirePackage{array}
 \RequirePackage{makecell}
+\RequirePackage{multirow}
+\RequirePackage{tabularx}
 
 % Figures
 \RequirePackage{graphicx}
+\RequirePackage{xcolor}
 \RequirePackage{float}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 \RequirePackage{rotating}
+\RequirePackage{tikz}
 
 % Bibliography
 \RequirePackage{csquotes}
-\RequirePackage[backend=biber,sorting=none]{biblatex}
+\RequirePackage[
+    backend=biber,
+    sorting=none
+]{biblatex}
 
 % Line breaking
 \RequirePackage[none]{hyphenat}
@@ -43,6 +57,7 @@
     citecolor=black,
     urlcolor=blue
 ]{hyperref}
+\RequirePackage{cleveref}
 
 
 \overfullrule=5pt
@@ -50,3 +65,8 @@
 \emergencystretch=2em
   
 \author{Mgr. Ľuboš Valo}
+
+\newtheorem{theorem}{Veta}
+\newtheorem{definition}{Definícia}
+\newtheorem{remark}{Poznámka}
+\newtheorem{example}{Príklad}

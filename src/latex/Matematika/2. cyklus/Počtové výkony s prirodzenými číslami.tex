@@ -14,17 +14,68 @@
 
 \section{Porovnávanie a usporiadanie prirodzených čísel}
 
+Porovnávanie prirodzených čísel znamená určiť, ktoré číslo je väčšie, menšie alebo či sú obe čísla rovnaké. V desiatkovej číselnej sústave je desať rôznych číslic v poradí od najmenšej po najväčšiu: \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\) a \(9\). Každá číslica vyjadruje určitú hodnotu. Väčšie čísla sú tvorené kombináciou týchto desiatich číslic.
+
+Každé číslo dokážeme usporiadať tak, aby výsledná postupnosť čísel bola zoradená podľa veľkosti. Usporiadanie znamená vytvorenie určitej postupnosti. Usporiadaním prirodzených čísel vytvoríme postupnosť čísel \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\), \(9\), \(10\), \(11\), \(12\)\dots atď. Susedné čísla sa líšia o hodnotu jeden. Graficky by sa táto postupnosť dala znázorniť ako číselná os.
+
+\begin{center}
+  \begin{tikzpicture}[>=stealth]
+    \draw[->] (0,0) -- (10,0);
+    \foreach \x in {0,1,...,9}
+    {
+      \draw (\x,0.1) -- (\x,-0.1);
+      \node[below] at (\x,-0.1) {\small $\x$};
+    }
+  \end{tikzpicture}
+\end{center}
+
+Usporiadania môžu byť dvojakého typu: od najmenšieho čísla po najväčšie číslo, nazývané ako vzostupné, a od najväčšieho čísla po najmenšie číslo, nazývané ako zostupné. Pre potreby porovnávania sa používa vzostupné usporiadanie čísel.
+
+Vzostupné usporiadanie prirodzených čísel umožňuje zaviesť vzťahy, pomocou ktorých porovnávame čísla na základe ich veľkosti. Pre dve prirodzené čísla \(a\) a \(b\) môžeme zaviesť nasledovné vzťahy:
+\begin{itemize}
+  \item Číslo \(a\) je väčšie ako číslo \(b\), ak sa na číselnej osi nachádza napravo od čísla \(b\).
+  \item Číslo \(a\) je menšie ako číslo \(b\), ak sa na číselnej osi nachádza naľavo od čísla \(b\).
+  \item Číslo \(a\) sa rovná číslu \(b\), ak sa na číselnej osi nachádzajú v tom istom bode.
+\end{itemize}
+
+Na základe týchto vzťahov vieme vytvoriť šesť typov porovnávania čísel: väčší ako, menší ako, rovná sa, väčší alebo rovná sa, menší alebo rovná sa a nerovná sa. V tabuľke sú ku každému porovnávaniu priradené aj symbolické zápisy.
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{|l|c|}
+    \hline
+    \multicolumn{1}{|c|}{Porovnávanie} &
+    \multicolumn{1}{c|}{Znak} \\
+    \hline
+    Väčší ako & \(>\) \\
+    Menší ako & \(<\) \\
+    Rovná sa & \(=\) \\
+    Väčší alebo rovná sa & \(\geq\) \\
+    Menší alebo rovná sa & \(\leq\) \\
+    Nerovná sa & \(\neq\) \\
+    \hline
+  \end{tabular}
+  \caption{Prehľad porovnávaní a ich symbolický zápis.}
+\end{table}
+
+Porovnávanie prirodzených čísel sa riadi týmito pravidlami:
+\begin{itemize}
+  \item Číslo s väčším počtom číslic je väčšie.
+  \item Ak majú čísla rovnaký počet číslic, porovnávame ich zľava doprava.
+  \item Ak sú všetky číslice rovnaké, čísla sú rovnaké.
+\end{itemize}
+
+
 \section{Zaokrúhľovanie prirodzených čísel}
 
 \section{Operácie s prirodzenými číslami}
 
 Operácia je postup, podľa ktorého z jedného alebo viacerých matematických objektov (napríklad čísel) vytvoríme nový matematický objekt. Každá operácia má operandy a výsledok.
 
-Nasledovník –  Pomocou nasledovníka vieme definovať operáciu sčítania a násobenia:
-
 \subsection{Sčítanie prirodzených čísel}
 
-Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Operáciu sčítania zapisujeme symbolom \enquote{\(+\)}. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet.
+Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Operáciu sčítania zapisujeme znakom \enquote{\(+\)}. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet.
 
 V matematike sa sčítanie prirodzených čísel dá presne definovať pomocou pojmu nasledovník. Nasledovník prirodzeného čísla je číslo, ktoré vznikne pridaním jednotky k danému číslu. Každé prirodzené číslo má priradené číslo, ktoré nasleduje za ním. Prirodzené číslo \(0\) má nasledovníka číslo \(1\), prirodzené číslo \(1\) má nasledovníka číslo \(2\) atď. Takto vznikne postupnosť čísel \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\), \(9\), \(10\), \(11\), \(12\)\dots Nasledovníka nejakého prirodzeného čísla \(a\) budeme označovať \(S(a)\). Nasledovníci niektorých prirodzených čísel sú:
 \[

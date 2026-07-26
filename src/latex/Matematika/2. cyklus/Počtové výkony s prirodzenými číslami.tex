@@ -37,8 +37,7 @@ Vzostupné usporiadanie prirodzených čísel umožňuje zaviesť vzťahy, pomoc
   \item Číslo \(a\) je menšie ako číslo \(b\), ak sa na číselnej osi nachádza naľavo od čísla \(b\).
   \item Číslo \(a\) sa rovná číslu \(b\), ak sa na číselnej osi nachádzajú v tom istom bode.
 \end{itemize}
-
-Na základe týchto vzťahov vieme vytvoriť šesť typov porovnávania čísel: väčší ako, menší ako, rovná sa, väčší alebo rovná sa, menší alebo rovná sa a nerovná sa. V tabuľke sú ku každému porovnávaniu priradené aj symbolické zápisy.
+Zhrnutím do jednej vety môžeme povedať, že z dvoch prirodzených čísel je väčšie to, ktorého obraz na číselnej osi je ďalej od nuly. Na základe tohto môžeme definovať šesť typov porovnávania čísel: väčší ako, menší ako, rovná sa, väčší alebo rovná sa, menší alebo rovná sa a nerovná sa. V tabuľke sú ku každému porovnávaniu priradené aj symbolické zápisy.
 
 \begin{table}[H]
   \centering
@@ -59,15 +58,36 @@ Na základe týchto vzťahov vieme vytvoriť šesť typov porovnávania čísel:
   \caption{Prehľad porovnávaní a ich symbolický zápis.}
 \end{table}
 
-Porovnávanie prirodzených čísel sa riadi týmito pravidlami:
+Pre dve prirodzené čísla \(a\) a \(b\), kde:
 \begin{itemize}
+  \item číslo \(a\) je väčšie ako číslo \(b\), platí \(a > b\),
+  \item číslo \(a\) je menšie ako číslo \(b\), platí \(a < b\),
+  \item číslo \(a\) sa rovná číslu \(b\), platí \(a = b\),
+  \item číslo \(a\) je väčšie alebo sa rovná číslu \(b\), platí \(a \geq b\),
+  \item číslo \(a\) je menšie alebo sa rovná číslu \(b\), platí \(a \leq b\),
+  \item číslo \(a\) sa nerovná číslu \(b\), platí \(a \neq b\).
+\end{itemize}
+Porovnávať dve ľubovoľné prirodzené čísla môžeme týmto postupom v tomto poradí:
+\begin{enumerate}[label=\arabic*)]
   \item Číslo s väčším počtom číslic je väčšie.
-  \item Ak majú čísla rovnaký počet číslic, porovnávame ich zľava doprava.
+  \item Ak majú čísla rovnaký počet číslic, porovnávame ich číslice zľava doprava. Číslo je väčšie, ak má väčšiu číslicu v prvej nezhode.
   \item Ak sú všetky číslice rovnaké, čísla sú rovnaké.
+\end{enumerate}
+
+\section{Zaokrúhľovanie prirodzených čísel}
+
+Zaokrúhľovanie je postup, kde nahrádzame číslo iným menej presným číslom, ktoré je jednoduchšie na čítanie, zapisovanie alebo počítanie. Používa sa vtedy, keď nepotrebujeme pracovať s úplne presnou hodnotu. Zaokrúhľovanie používame pri bežných odhadoch (napríklad koľko približne stojí nákup), pri meraní (dĺžka, hmotnosť, teplota), v štatistikách alebo pri rýchlych výpočtoch. Pri zaokrúhľovaní sa snažíme zmeniť číslo čo najmenej, aby sa výsledok čo najpresnejšie približoval k reálnej hodnote.
+
+Pri zaokrúhľovaní nahradíme zaokrúhľované číslo jemu blízkym číslom. Zaokrúhľujeme najčastejšie na určitý číselný rád. Zaokrúhľovaním na určitý čiselný rád musíme dostať číslo, ktoré je násobkom tohto číselného rádu. Pri zaokrúhľovaní čísla na desiatky bude výsledok násobkom desiatky, pri zaokrúhľovaní čísla na stovky bude výsledok násobkom stovky atď. Na aký násobok číselného rádu zaokrúhľujeme číslo má vplyv číslica nižšieho rádu, ktorá sa nazýva rozhodujúca číslica. Pri zaokrúhľovaní na desiatky je rozhodujúca číslica rádu jednotiek, pri zaokrúhľovaní na stovky je rozhodujúca číslica rádu desiatok atď. Výsledkom zaokrúhľovania je číslo, v ktorom sú rozhodujúca číslica a všetky číslice nižších rádov nahradené nulami.
+
+Podľa toho, či zaokrúhľujeme na menší alebo väčší násobok, rozlišujeme tri typy zaokrúhľovania čísel: zaokrúhľovanie nadol, zaokrúhľovanie nahor a aritmetické zaokrúhľovanie.
+\begin{itemize}
+  \item Pri zaokrúhľovaní nadol je výsledkom najbližšie prirodzené číslo, ktoré je menšie alebo sa rovná zaokrúhľovanému číslu.
+  \item Pri zaokrúhľovaní nahor je výsledkom najbližšie prirodzené číslo, ktoré je väčšie alebo sa rovná zaokrúhľovanému číslu.
+  \item Pri aritmetickom zaokrúhľovaní sa zaokrúhľuje buď nahor alebo nadol. Ak rozhodujúca číslica je \(0\), \(1\), \(2\), \(3\), \(4\), zaokrúhľujeme nadol. Ak rozhodujúca číslica je \(5\), \(6\), \(7\), \(8\), \(9\), zaokrúhľujeme nahor. Prívlastok aritmetické sa zvykne vynechávať, teda ak je v úlohe uvedené "zaokrúhlite", ide o aritmetické zaokrúhľovanie.
 \end{itemize}
 
 
-\section{Zaokrúhľovanie prirodzených čísel}
 
 \section{Operácie s prirodzenými číslami}
 

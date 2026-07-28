@@ -84,14 +84,47 @@ Podľa toho, či zaokrúhľujeme na menší alebo väčší násobok, rozlišuje
 \begin{itemize}
   \item Pri zaokrúhľovaní nadol je výsledkom najbližšie prirodzené číslo, ktoré je menšie alebo sa rovná zaokrúhľovanému číslu.
   \item Pri zaokrúhľovaní nahor je výsledkom najbližšie prirodzené číslo, ktoré je väčšie alebo sa rovná zaokrúhľovanému číslu.
-  \item Pri aritmetickom zaokrúhľovaní sa zaokrúhľuje buď nahor alebo nadol. Ak rozhodujúca číslica je \(0\), \(1\), \(2\), \(3\), \(4\), zaokrúhľujeme nadol. Ak rozhodujúca číslica je \(5\), \(6\), \(7\), \(8\), \(9\), zaokrúhľujeme nahor. Prívlastok aritmetické sa zvykne vynechávať, teda ak je v úlohe uvedené "zaokrúhlite", ide o aritmetické zaokrúhľovanie.
+  \item Pri aritmetickom zaokrúhľovaní sa zaokrúhľuje buď nahor alebo nadol. Ak rozhodujúca číslica je \(0\), \(1\), \(2\), \(3\), \(4\), zaokrúhľujeme nadol. Ak rozhodujúca číslica je \(5\), \(6\), \(7\), \(8\), \(9\), zaokrúhľujeme nahor. Prívlastok aritmetické sa zvykne vynechávať, teda ak je uvedené "zaokrúhlite", ide o aritmetické zaokrúhľovanie.
 \end{itemize}
+Aritmetické zaokrúhľovanie je bežný spôsob zaokrúhľovania. Poskytuje najbližší násobok desiatky, stovky, tisícky atď. k pôvodnému číslu. Má ale jeden problém pri číslach, ktoré sú rovnakej vzdialenosti na číselnej osi od najbližších násobkoch. Nastáva to pri číslach \(5\) pri zaokrúhľovaní na desiatky, \(50\) pri zaokrúhľovaní na stovky, \(500\) pri zaokrúhľovaní na tisícky atď. V týchto prípadoch platí zásada, že zaokrúhľujeme nahor.
 
+K 1. júlu 2022 nadobudla účinnosť novela zákona o cenách, ktorá má za cieľ obmedziť obeh jednocentových a dvojcentových mincí na Slovensku. Tieto mince ale naďalej zostali zákonným platidlom a je ich tak možné vydávať aj prijímať. Pri platbe nákupu v hotovosti sa uplatňuje zaokrúhľovanie eurocentov. Keď je konečná suma v obchode necelým násobkom 5 centov, zaokrúhli sa podľa poslednej číslice:
 
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Posledná číslica & Zaokrúhľovanie & Príklad \\
+    \hline
+    1 alebo 2 & Nadol na 0 & \euro 1.22 \(\rightarrow\) \euro 1.20 \\
+    3 alebo 4 & Nahor na 5 & \euro 1.24 \(\rightarrow\) \euro 1.25 \\
+    6 alebo 7 & Nadol na 5 & \euro 1.37 \(\rightarrow\) \euro 1.35 \\
+    8 alebo 9 & Nahor na 10 & \euro 1.89 \(\rightarrow\) \euro 1.90 \\
+    \hline
+  \end{tabular}
+  \caption{Tabuľka zaokrúhľovania eurocentov.}
+\end{table}
 
 \section{Operácie s prirodzenými číslami}
 
-Operácia je postup, podľa ktorého z jedného alebo viacerých matematických objektov (napríklad čísel) vytvoríme nový matematický objekt. Každá operácia má operandy a výsledok.
+Operácia je postup, podľa ktorého z jedného alebo viacerých matematických výrazov (napríklad čísel) vytvoríme nový matematický objekt. Každá operácia má svoj vstup a výstup. Vstupom pre operácie sú jeden, dva alebo viac výrazov, ktoré nazývame operandy. Výstupom operácie je výsledok, ktorý dostaneme po vykonaní tejto operácie. Operáciu označujeme zástupným znakom, ktorý nazývame operátor.
+
+Poznáme štyri základné operácie s prirodzenými číslami: sčítanie, odčítanie, násobenie, delenie.
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{c|c|c|c|c}
+    Operácia & Operand & Operátor & Operand & Výsledok \\
+    \hline
+    Sčítanie & Sčítanec & \(+\) & Sčítanec & Súčet \\
+    Odčítanie & Menšenec & \(-\) & Menšiteľ & Rozdiel \\
+    Násobenie & Činiteľ & \(\cdot\) & Činiteľ & Súčin \\
+    Delenie & Delenec & \(:\) & Deliteľ & Podiel \\
+  \end{tabular}
+  \caption{Tabuľka štyroch základných operácií s prirodzenými číslami.}
+\end{table}
 
 \subsection{Sčítanie prirodzených čísel}
 
@@ -137,24 +170,24 @@ Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripo�
 Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Je to zdĺhavý postup sčítania dvoch čísel, a preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel. Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke.
 
 \begin{table}[H]
-\centering
-\renewcommand{\arraystretch}{1.3}
-\newcolumntype{C}{>{\centering\arraybackslash}m{1em}}
-\begin{tabular}{C|CCCCCCCCCC}
-\(+\) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
-\hline
-0 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
-1 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
-2 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
-3 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
-4 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 \\
-5 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 \\
-6 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
-7 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
-8 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 \\
-9 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
-\end{tabular}
-\caption{Tabuľka súčtov čísel od 0 do 9.}
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \newcolumntype{C}{>{\centering\arraybackslash}m{1em}}
+  \begin{tabular}{C|CCCCCCCCCC}
+    \(+\) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+    \hline
+    0 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+    1 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    2 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+    3 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+    4 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 \\
+    5 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 \\
+    6 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
+    7 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+    8 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 \\
+    9 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+  \end{tabular}
+  \caption{Tabuľka súčtov čísel od 0 do 9.}
 \end{table}
 
 \subsection{Odčítanie prirodzených čísel}

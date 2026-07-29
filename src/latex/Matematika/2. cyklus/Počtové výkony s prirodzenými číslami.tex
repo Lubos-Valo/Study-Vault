@@ -128,7 +128,10 @@ Poznáme štyri základné operácie s prirodzenými číslami: sčítanie, odč
 
 \subsection{Sčítanie prirodzených čísel}
 
-Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Operáciu sčítania zapisujeme znakom \enquote{\(+\)}. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet.
+Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operáciu sčítania zapisujeme znakom \enquote{\(+\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako
+\[
+a + b.
+\]
 
 V matematike sa sčítanie prirodzených čísel dá presne definovať pomocou pojmu nasledovník. Nasledovník prirodzeného čísla je číslo, ktoré vznikne pridaním jednotky k danému číslu. Každé prirodzené číslo má priradené číslo, ktoré nasleduje za ním. Prirodzené číslo \(0\) má nasledovníka číslo \(1\), prirodzené číslo \(1\) má nasledovníka číslo \(2\) atď. Takto vznikne postupnosť čísel \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\), \(9\), \(10\), \(11\), \(12\)\dots Nasledovníka nejakého prirodzeného čísla \(a\) budeme označovať \(S(a)\). Nasledovníci niektorých prirodzených čísel sú:
 \[
@@ -167,8 +170,7 @@ Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripo�
   &7.
 \end{aligned}
 \]
-Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Je to zdĺhavý postup sčítania dvoch čísel, a preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel. Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke.
-
+Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Je to zdĺhavý postup sčítania dvoch čísel, a preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel. Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke. Pri súčtoch niektorých cifier si môžeme všimnúť, že potrebujeme v ráde desiatok zapísať jednotku. Túto jednotku budeme musieť pri sčítaní dvoch väčších čísel zarátavať do výsledku.
 \begin{table}[H]
   \centering
   \renewcommand{\arraystretch}{1.3}
@@ -187,8 +189,90 @@ Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druh
     8 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 \\
     9 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
   \end{tabular}
-  \caption{Tabuľka súčtov čísel od 0 do 9.}
+  \caption{Tabuľka súčtov čísel od \(0\) do \(9\).}
 \end{table}
+
+Pri viacciferných číslach je metóda transformácie čísla na jednotky a následného vytvárania nasledovníkov veľmi nepraktická. Na sčítanie ľubovoľných viacciferných prirodzených čísel preto používame nasledujúci algoritmus:
+\begin{enumerate}[label=\arabic*)]
+  \item Začneme od číslic najnižšieho rádu (jednotiek).
+  \item Opakujeme cyklus, kým nespracujeme všetky rády oboch sčítancov:
+  \begin{enumerate}
+    \item Sčítame číslice oboch sčítancov v aktuálnom ráde, vzniknutý súčet bude medzivýsledok. Ak existuje prenos z predchádzajúceho cyklu, pripočítame ho k tomuto medzivýsledku.
+    \item Číslicu na mieste jednotiek medzivýsledku zapíšeme do príslušného rádu výsledku sčítania.
+    \item Ak je medzivýsledok väčší alebo rovný \(10\), prenesieme číslicu rádu desiatok do nasledujúceho vyššieho rádu.
+    \item Pokračujeme spracovaním nasledujúceho vyššieho rádu.
+  \end{enumerate}
+  \item Výsledok je súčet oboch sčítancov.
+\end{enumerate}
+
+Pre ľahšiu manipuláciu číslic a ich rádov sa pri tomto algoritme využíva zápis čísel pod seba. Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov bol v tom istom stĺpci. Pod druhý sčítanec sa urobí vodorovná čiara, aby sme odlíšili sčítance od súčtu. Výsledné číslice súčtu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad sčítance sa môže urobiť pomocný riadok pre zapisovanie prenesenej číslice z predošlého medzivýsledku, nie je ale nutný. Znak sčítania zapisujeme nad vodorovnú čiaru pred druhý sčítanec. Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Príklad zápisu sčítania čísel \(347 + 58\) pod seba:
+\begin{table}[H]
+  \centering
+  \[
+  \begin{array}{r}
+    \text{Prechod} \rightarrow \\
+    \text{Sčítanec} \rightarrow \\
+    \text{Sčítanec} \rightarrow \\
+    \text{Súčet} \rightarrow \\
+  \end{array}
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & 1 & 1 &  \\
+      & 3 & 4 & 7 \\
+    + &   & 5 & 8 \\
+    \hline
+      & 4 & 0 & 5
+  \end{array}
+  \]
+\end{table}
+
+\subsubsection{Vlastnosti sčítania prirodzených čísel}
+
+Pri skúmaní vlastností sčítania vychádzame z jej definície. Každé prirodzené číslo môžeme vyjadriť ako súčet jeho predchodcu a jednotky. Napríklad číslo \(5\) môžeme vyjadriť ako \(4 + 1\). Takto môžeme každé prirodzené číslo vyjadriť ako súčet jednotiek, kde počet jednotiek dáva výsledné číslo. Prevod čísla \(5\) na jednotky vypadá nasledovne:
+\[
+\begin{aligned}
+  &5, \\
+  &4 + 1, \\
+  &3 + 1 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\]
+Týmto môžeme previesť čísla v sčítaní na sčítanie postupnosti jednotiek. Napríklad sčítanie \(2 + 3\) môžeme previesť takto:
+\[
+\begin{aligned}
+  &2 + 3, \\
+  &2 + 2 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\]
+Pri zámene sčítancov v sčítaní môžeme túto postupnosť jednotiek porovnať medzi sebou. Ak je výsledok tá istá postupnosť sčítania jednotiek, súčty dvoch čísel sa musia rovnať. Zámenou sčítancov v sčítaní \(2 + 3\) dostaneme \(3 + 2\). Po prevode oboch operácií dostaneme:
+\[
+\begin{aligned}
+  &2 + 3, \\
+  &2 + 2 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\hspace{5em}
+\begin{aligned}
+  &3 + 2, \\
+  &3 + 1 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\]
+Oba prevody vedú na tú istú postupnosť sčítania jednotiek, ich súčty sa teda musia rovnať. Táto vlasnosť sa nazýva komutatívnosť a je to jedna zo základných vlastností operácie sčítania.
+
+Komutatívnosť znamená, že súčet sa nezmení, ak poradie sčítancov zameníme. Platí:
+\[
+a + b = b + a
+\]
+
+Pri sčítaní troch a viacerých prirodzených čísel môžeme vybrať postup sčítania. Táto vlastnosť sa nazýva asociatívnosť. Asociatívnosť znamená, že súčet sa nezmení, ak sčítance združíme. Platí:
+\[
+(a + b) + c = a + (b + c)
+\]
 
 \subsection{Odčítanie prirodzených čísel}
 

@@ -88,7 +88,9 @@ Podľa toho, či zaokrúhľujeme na menší alebo väčší násobok, rozlišuje
 \end{itemize}
 Aritmetické zaokrúhľovanie je bežný spôsob zaokrúhľovania. Poskytuje najbližší násobok desiatky, stovky, tisícky atď. k pôvodnému číslu. Má ale jeden problém pri číslach, ktoré sú rovnakej vzdialenosti na číselnej osi od najbližších násobkoch. Nastáva to pri číslach \(5\) pri zaokrúhľovaní na desiatky, \(50\) pri zaokrúhľovaní na stovky, \(500\) pri zaokrúhľovaní na tisícky atď. V týchto prípadoch platí zásada, že zaokrúhľujeme nahor.
 
-K 1. júlu 2022 nadobudla účinnosť novela zákona o cenách, ktorá má za cieľ obmedziť obeh jednocentových a dvojcentových mincí na Slovensku. Tieto mince ale naďalej zostali zákonným platidlom a je ich tak možné vydávať aj prijímať. Pri platbe nákupu v hotovosti sa uplatňuje zaokrúhľovanie eurocentov. Keď je konečná suma v obchode necelým násobkom 5 centov, zaokrúhli sa podľa poslednej číslice:
+Zaokrúhľovanie ako matematickú operáciu zapisujeme pomocou znaku \enquote{\(\doteq\)}. Pôvodné číslo, ktoré zaokrúhľujeme, sa píše na ľavej strane znaku a číslo, ktoré je výsledkom zaokrúhľovania, sa píše na pravej strane. Napríklad číslo \(45\) zaokrúhlené na desiatky sa zapíše ako \(45 \doteq 50\). To, na aký číselný rád zaokrúhľujeme, sa v zápise nešpecifikuje, táto informácia musí vychádzať z kontextu, v ktorom sa zápis nachádza.
+
+K 1. júlu 2022 nadobudla účinnosť novela zákona o cenách, ktorá má za cieľ obmedziť obeh jednocentových a dvojcentových mincí na Slovensku. Tieto mince ale naďalej zostali zákonným platidlom a je ich tak možné vydávať aj prijímať. Pri platbe nákupu v hotovosti sa uplatňuje zaokrúhľovanie eurocentov. Keď je konečná suma v obchode necelým násobkom 5 centov, zaokrúhli sa podľa poslednej číslice tak, ako je uvedené v tabuľke.
 
 \begin{table}[H]
   \centering
@@ -110,7 +112,7 @@ K 1. júlu 2022 nadobudla účinnosť novela zákona o cenách, ktorá má za ci
 
 Operácia je postup, podľa ktorého z jedného alebo viacerých matematických výrazov (napríklad čísel) vytvoríme nový matematický objekt. Každá operácia má svoj vstup a výstup. Vstupom pre operácie sú jeden, dva alebo viac výrazov, ktoré nazývame operandy. Výstupom operácie je výsledok, ktorý dostaneme po vykonaní tejto operácie. Operáciu označujeme zástupným znakom, ktorý nazývame operátor.
 
-Poznáme štyri základné operácie s prirodzenými číslami: sčítanie, odčítanie, násobenie, delenie.
+Poznáme štyri základné aritmetické operácie s prirodzenými číslami: sčítanie, odčítanie, násobenie, delenie.
 
 \begin{table}[H]
   \centering
@@ -123,8 +125,10 @@ Poznáme štyri základné operácie s prirodzenými číslami: sčítanie, odč
     Násobenie & Činiteľ & \(\cdot\) & Činiteľ & Súčin \\
     Delenie & Delenec & \(:\) & Deliteľ & Podiel \\
   \end{tabular}
-  \caption{Tabuľka štyroch základných operácií s prirodzenými číslami.}
+  \caption{Tabuľka štyroch základných aritmetických operácií s prirodzenými číslami.}
 \end{table}
+
+V matematike sa všetky tieto aritmetické operácie nad prirodzenými číslami dajú presne definovať pomocou dvoch pojmov: nasledovník a predchodca. Nasledovník prirodzeného čísla je číslo, ktoré nasleduje za toto prirodzené číslo v postupnosti čísel \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\), \(9\), \(10\), \(11\), \(12\)\dots Každé prirodzené číslo má svojho nasledovníka. Prirodzené číslo \(0\) má nasledovníka číslo \(1\), prirodzené číslo \(1\) má nasledovníka číslo \(2\) atď. S pojmom nasledovníka súvisí aj pojem predchodca. Predchodca prirodzeného čísla je číslo, ktorého nasledovník je pôvodné prirodzené číslo. Napríklad predchodca čísla \(2\) je číslo \(1\), predchodca čísla \(1\) je číslo \(0\). Číslo \(0\) nemá predchodcu (v prirodzených číslach).
 
 \subsection{Sčítanie prirodzených čísel}
 
@@ -133,26 +137,11 @@ Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedné
 a + b.
 \]
 
-V matematike sa sčítanie prirodzených čísel dá presne definovať pomocou pojmu nasledovník. Nasledovník prirodzeného čísla je číslo, ktoré vznikne pridaním jednotky k danému číslu. Každé prirodzené číslo má priradené číslo, ktoré nasleduje za ním. Prirodzené číslo \(0\) má nasledovníka číslo \(1\), prirodzené číslo \(1\) má nasledovníka číslo \(2\) atď. Takto vznikne postupnosť čísel \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\), \(9\), \(10\), \(11\), \(12\)\dots Nasledovníka nejakého prirodzeného čísla \(a\) budeme označovať \(S(a)\). Nasledovníci niektorých prirodzených čísel sú:
-\[
-\begin{aligned}
-  S(0) &= 1, \\
-  S(1) &= 2, \\
-  S(2) &= 3, \\
-  S(3) &= 4, \\
-  S(4) &= 5, \\
-  S(5) &= 6, \\
-  S(6) &= 7, \\
-  S(7) &= 8, \\
-  S(8) &= 9, \\
-  S(9) &= 10.
-\end{aligned}
-\]
 Sčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
 \[
 \begin{aligned}
   \text{(1)}\quad a + 0 &= a \\
-  \text{(2)}\quad a + 1 &= S(a)
+  \text{(2)}\quad a + 1 &= \text{nasledovník}(a)
 \end{aligned}
 \]
 Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripočítame nulu, hodnota čísla sa nezmení. Nula teda pri sčítaní neovplyvňuje výsledok. Pravidlo (2) vyjadruje vzťah medzi sčítaním a pojmom nasledovníka. Ak k číslu \(a\) pripočítame jednotku, dostaneme jeho nasledovníka. Zároveň platí aj opak, akékoľvek prirodzené číslo väčšie ako nula môžeme vyjadriť ako súčet predchodcu a jednotky. Tieto dve pravidlá nám umožňujú postupne definovať súčet ľubovoľných dvoch prirodzených čísel. Ak chceme vypočítať súčet čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované pridávanie jednotky. Každá pripočítaná jednotka posunie číslo \(a\) k jeho ďalšiemu nasledovníkovi. Ako konkrétny príklad si môžeme zobrať čísla \(2\) a \(5\).
@@ -170,7 +159,7 @@ Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripo�
   &7.
 \end{aligned}
 \]
-Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Je to zdĺhavý postup sčítania dvoch čísel, a preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel. Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke. Pri súčtoch niektorých cifier si môžeme všimnúť, že potrebujeme v ráde desiatok zapísať jednotku. Túto jednotku budeme musieť pri sčítaní dvoch väčších čísel zarátavať do výsledku.
+Výsledok sčítania \(2 + 5\) je číslo \(7\). Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Je to zdĺhavý postup sčítania dvoch čísel, a preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel. Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke. Pri súčtoch niektorých cifier si môžeme všimnúť, že potrebujeme v ráde desiatok zapísať jednotku. Túto jednotku budeme musieť pri sčítaní dvoch väčších čísel zarátavať do výsledku.
 \begin{table}[H]
   \centering
   \renewcommand{\arraystretch}{1.3}
@@ -275,6 +264,74 @@ Pri sčítaní troch a viacerých prirodzených čísel môžeme vybrať postup 
 \]
 
 \subsection{Odčítanie prirodzených čísel}
+
+Odčítanie je operácia, pri ktorej od jedného čísla odoberáme iné číslo, aby sme zistili rozdiel medzi nimi. Prvý operand sa nazýva menšenec a druhý operand sa nazýva menšiteľ. Výsledok odčítania sa nazýva rozdiel. Slovom rozdiel označujeme tiež zápis odčítania. Operátor odčítania je znak mínus \enquote{\(-\)}. Odčítanie čísla \(a\) a čísla \(b\) zapisujeme ako
+\[
+a - b.
+\]
+
+Odčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
+\[
+\begin{aligned}
+  \text{(1)}\quad a - 0 &= a \\
+  \text{(2)}\quad a - 1 &= \text{predchodca}(a)
+\end{aligned}
+\]
+Pravidlo (1) hovorí, že ak od ľubovoľného prirodzeného čísla \(a\) odčítame nulu, hodnota čísla sa nezmení. Nula teda pri odčítaní neovplyvňuje výsledok. Pravidlo (2) vyjadruje vzťah medzi odčítaním a pojmom predchodca. Ak od čísla \(a\) odpočítame jednotku, dostaneme jeho predchodcu. Ak chceme vypočítať rozdiel čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované odčítanie jednotky. Každá odčítaná jednotka posunie číslo \(a\) k jeho ďalšiemu predchodcovi. Ako konkrétny príklad si môžeme zobrať čísla \(6\) a \(3\).
+\[
+\begin{aligned}
+  &6 - 3, \\
+  &6 - 2 - 1, \\
+  &6 - 1 - 1 - 1, \\
+  &5 - 1 - 1. \\
+  &4 - 1. \\
+  &3. \\
+\end{aligned}
+\]
+Výsledok odčítania \(6 - 3\) je číslo \(3\). Podobne ako pri sčítaní môžeme odčítanie chápať ako postupné vytváranie predchodcov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho predchodcom. Výsledok odčítania dvoch prirodzených čísel \(a - b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na rozdiel jednotiek a postupným prevodom čísla \(a\) na predchodcov.
+
+Existujú algoritmy, ako efektívne odčítať dve ľubovoľné prirodzené čísla bez zdĺhavého odčítania jednotiek. Pri odčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje odčítania. V tabuľke sú ukázané jednociferné spoje odčítania podľa riadku a stĺpca, teda od hodnoty riadku sa odčíta hodnota stĺpca.
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \newcolumntype{C}{>{\centering\arraybackslash}m{0.8em}}
+  \begin{tabular}{C|CCCCCCCCCC}
+    \(-\) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+    \hline
+    0 & 0 &   &   &   &   &   &   &   &   &   \\
+    1 & 1 & 0 &   &   &   &   &   &   &   &   \\
+    2 & 2 & 1 & 0 &   &   &   &   &   &   &   \\
+    3 & 3 & 2 & 1 & 0 &   &   &   &   &   &   \\
+    4 & 4 & 3 & 2 & 1 & 0 &   &   &   &   &   \\
+    5 & 5 & 4 & 3 & 2 & 1 & 0 &   &   &   &   \\
+    6 & 6 & 5 & 4 & 3 & 2 & 1 & 0 &   &   &   \\
+    7 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 &   &   \\
+    8 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 &   \\
+    9 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\
+  \end{tabular}
+  \caption{Tabuľka rozdielov čísel od \(0\) do \(9\).}
+\end{table}
+
+Pre odčítanie viacciferných čísel používame nasledujúci algoritmus:
+\begin{enumerate}[label=\arabic*)]
+  \item Začneme od číslic najnižšieho rádu (jednotiek).
+  \item Opakujeme cyklus, kým nespracujeme všetky rády menšenca:
+  \begin{enumerate}
+    \item Ak je číslica menšiteľa menšia alebo sa rovná číslici menšenca aktuálneho rádu, od číslice menšenca odčítame číslicu menšiteľa. V opačnom prípade ak je číslica menšiteľa väčšia ako číslica menšenca aktuálneho rádu, k hodnote číslici menšenca pričítame číslo \(10\) a potom od tejto hodnoty odčítame číslicu menšiteľa.
+    \item Výslednú číslicu tohto rozdielu zapíšeme do príslušného rádu výsledku odčítania.
+    \item Ak sme pričítali k hodnote menšenca číslo \(10\), k číslici vyššieho rádu menšiteľa pripočítame jednotku.
+    \item Pokračujeme spracovaním nasledujúceho vyššieho rádu.
+  \end{enumerate}
+  \item Výsledok je rozdiel menšenca a menšiteľa.
+\end{enumerate}
+
+
+\subsubsection{Vlastnosti odčítania prirodzených čísel}
+
+Pri odčítaní rozlišujeme poradie operandov. Menšenec je to číslo, od ktorého odčítame hodnotu menšiteľa. Odčítanie nie je komutatívne, ak zameníme menšenca a menšiteľa, rozdiel bude iné číslo. V prípadoch, kde od daného čísla ‒ menšenca, odčítame viacero čísel ‒ menšíteľov, môžeme meniť poradie odčítania. Príklad zámeny poradia menšiteľov:
+\[
+320 - 70 - 15 = 250 - 15 = 235, \hspace{5em} 320 - 15 - 70 = 305 - 70 = 235.
+\]
 
 \subsection{Násobenie prirodzených čísel}
 

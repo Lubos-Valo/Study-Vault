@@ -132,10 +132,7 @@ V matematike sa všetky tieto aritmetické operácie nad prirodzenými číslami
 
 \subsection{Sčítanie prirodzených čísel}
 
-Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operáciu sčítania zapisujeme znakom \enquote{\(+\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako
-\[
-a + b.
-\]
+Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operáciu sčítania zapisujeme znakom \enquote{\(+\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako \(a + b\).
 
 Sčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
 \[
@@ -144,7 +141,17 @@ Sčítanie prirodzených čísel môžeme definovať pomocou dvoch základných 
   \text{(2)}\quad a + 1 &= \text{nasledovník}(a)
 \end{aligned}
 \]
-Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripočítame nulu, hodnota čísla sa nezmení. Nula teda pri sčítaní neovplyvňuje výsledok. Pravidlo (2) vyjadruje vzťah medzi sčítaním a pojmom nasledovníka. Ak k číslu \(a\) pripočítame jednotku, dostaneme jeho nasledovníka. Zároveň platí aj opak, akékoľvek prirodzené číslo väčšie ako nula môžeme vyjadriť ako súčet predchodcu a jednotky. Tieto dve pravidlá nám umožňujú postupne definovať súčet ľubovoľných dvoch prirodzených čísel. Ak chceme vypočítať súčet čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované pridávanie jednotky. Každá pripočítaná jednotka posunie číslo \(a\) k jeho ďalšiemu nasledovníkovi. Ako konkrétny príklad si môžeme zobrať čísla \(2\) a \(5\).
+Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripočítame nulu, hodnota čísla sa nezmení. Nula teda pri sčítaní neovplyvňuje výsledok. Pravidlo (2) vyjadruje vzťah medzi sčítaním a pojmom nasledovníka. Ak k číslu \(a\) pripočítame jednotku, dostaneme jeho nasledovníka. Zároveň platí aj opak, akékoľvek prirodzené číslo väčšie ako nula môžeme vyjadriť ako súčet predchodcu a jednotky. Napríklad číslo \(5\) môžeme vyjadriť ako \(4 + 1\). Takto môžeme každé prirodzené číslo vyjadriť ako súčet jednotiek, kde počet jednotiek dáva výsledné číslo. Prevod čísla \(5\) na jednotky vypadá nasledovne:
+\[
+\begin{aligned}
+  &5, \\
+  &4 + 1, \\
+  &3 + 1 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\]
+Tieto dve pravidlá nám umožňujú postupne definovať súčet ľubovoľných dvoch prirodzených čísel. Ak chceme vypočítať súčet čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované pridávanie jednotky. Každá pripočítaná jednotka posunie číslo \(a\) k jeho ďalšiemu nasledovníkovi. Ako konkrétny príklad si môžeme zobrať čísla \(2\) a \(5\).
 \[
 \begin{aligned}
   &2 + 5, \\
@@ -193,8 +200,13 @@ Pri viacciferných číslach je metóda transformácie čísla na jednotky a ná
   \end{enumerate}
   \item Výsledok je súčet oboch sčítancov.
 \end{enumerate}
+Pre ľahšiu manipuláciu číslic a ich rádov sa pri tomto algoritme využíva písomné sčítanie.
 
-Pre ľahšiu manipuláciu číslic a ich rádov sa pri tomto algoritme využíva zápis čísel pod seba. Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov bol v tom istom stĺpci. Pod druhý sčítanec sa urobí vodorovná čiara, aby sme odlíšili sčítance od súčtu. Výsledné číslice súčtu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad sčítance sa môže urobiť pomocný riadok pre zapisovanie prenesenej číslice z predošlého medzivýsledku, nie je ale nutný. Znak sčítania zapisujeme nad vodorovnú čiaru pred druhý sčítanec. Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Príklad zápisu sčítania čísel \(347 + 58\) pod seba:
+\subsubsection{Písomné sčítanie prirodzených čísel} 
+
+Písomné sčítanie čísel je spôsob sčítania, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a sčítavame ich postupne sprava doľava.
+
+Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov bol v tom istom stĺpci. Pod druhý sčítanec sa urobí vodorovná čiara, aby sme odlíšili sčítance od súčtu. Výsledné číslice súčtu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad sčítance sa môže urobiť pomocný riadok pre zapisovanie prenesenej číslice z predošlého medzivýsledku, nie je ale nutný. Znak sčítania zapisujeme nad vodorovnú čiaru pred druhý sčítanec. Znamienko sčítania môžeme pri písomnom sčítaní vynechať. Príklad písomného sčítania čísel \(347 + 58\):
 \begin{table}[H]
   \centering
   \[
@@ -214,19 +226,99 @@ Pre ľahšiu manipuláciu číslic a ich rádov sa pri tomto algoritme využíva
   \]
 \end{table}
 
+Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Postup písomného sčítania čísel \(156 + 278\) je nasledovný:
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.55\textwidth}
+  Sčítance napíšeme pod seba a podčiarkneme.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & 1 & 5 & 6 \\
+    + & 2 & 7 & 8 \\
+    \hline
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.55\textwidth}
+  Sčítame číslice na mieste jednotiek.
+  \[
+  8 + 6 = 14.
+  \]
+  Číslicu \(4\) zapíšeme do súčtu na mieste jednotiek. \\
+  Číslicu \(1\) zapíšeme nad číslice na mieste desiatok.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      &   & \textcolor{red}{1} &   \\
+      & 1 & 5 & 6 \\
+    + & 2 & 7 & 8 \\
+    \hline
+      &   &   & 4 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.55\textwidth}
+  Sčítame číslice na mieste desiatok aj s preneseným číslom.
+  \[
+  7 + 5 + 1 = 13
+  \]
+  Číslicu \(3\) zapíšeme do súčtu na mieste desiatok. \\
+  Číslicu \(1\) zapíšeme nad číslice na mieste stoviek.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & \textcolor{red}{1} & 1 &   \\
+      & 1 & 5 & 6 \\
+    + & 2 & 7 & 8 \\
+    \hline
+      &   & 3  & 4 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.55\textwidth}
+  Sčítame číslice na mieste stoviek aj s preneseným číslom.
+  \[
+  2 + 1 + 1 = 4
+  \]
+  Číslicu \(4\) zapíšeme do súčtu na mieste stoviek.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & 1 & 1 &   \\
+      & 1 & 5 & 6 \\
+    + & 2 & 7 & 8 \\
+    \hline
+      & 4 & 3  & 4 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1em}
+
 \subsubsection{Vlastnosti sčítania prirodzených čísel}
 
-Pri skúmaní vlastností sčítania vychádzame z jej definície. Každé prirodzené číslo môžeme vyjadriť ako súčet jeho predchodcu a jednotky. Napríklad číslo \(5\) môžeme vyjadriť ako \(4 + 1\). Takto môžeme každé prirodzené číslo vyjadriť ako súčet jednotiek, kde počet jednotiek dáva výsledné číslo. Prevod čísla \(5\) na jednotky vypadá nasledovne:
-\[
-\begin{aligned}
-  &5, \\
-  &4 + 1, \\
-  &3 + 1 + 1, \\
-  &2 + 1 + 1 + 1, \\
-  &1 + 1 + 1 + 1 + 1. \\
-\end{aligned}
-\]
-Týmto môžeme previesť čísla v sčítaní na sčítanie postupnosti jednotiek. Napríklad sčítanie \(2 + 3\) môžeme previesť takto:
+Každé prirodzené číslo môžeme vyjadriť ako postupné sčítanie jednotiek. Platí to aj pri sčítaní ľubovoľných čísel, napríklad sčítanie \(2 + 3\) môžeme previesť takto:
 \[
 \begin{aligned}
   &2 + 3, \\
@@ -234,8 +326,7 @@ Týmto môžeme previesť čísla v sčítaní na sčítanie postupnosti jednoti
   &2 + 1 + 1 + 1, \\
   &1 + 1 + 1 + 1 + 1. \\
 \end{aligned}
-\]
-Pri zámene sčítancov v sčítaní môžeme túto postupnosť jednotiek porovnať medzi sebou. Ak je výsledok tá istá postupnosť sčítania jednotiek, súčty dvoch čísel sa musia rovnať. Zámenou sčítancov v sčítaní \(2 + 3\) dostaneme \(3 + 2\). Po prevode oboch operácií dostaneme:
+\] Pri zámene sčítancov v sčítaní môžeme túto postupnosť jednotiek porovnať medzi sebou. Ak je výsledok tá istá postupnosť sčítania jednotiek, súčty dvoch čísel sa musia rovnať. Zámenou sčítancov v sčítaní \(2 + 3\) dostaneme \(3 + 2\). Po prevode oboch operácií dostaneme:
 \[
 \begin{aligned}
   &2 + 3, \\
@@ -261,6 +352,17 @@ a + b = b + a
 Pri sčítaní troch a viacerých prirodzených čísel môžeme vybrať postup sčítania. Táto vlastnosť sa nazýva asociatívnosť. Asociatívnosť znamená, že súčet sa nezmení, ak sčítance združíme. Platí:
 \[
 (a + b) + c = a + (b + c)
+\]
+
+Skúšku správnosti pri sčítaní robíme zámenou poradia sčítancov.
+\[
+\begin{aligned}
+  348 + 961 = 1309
+\end{aligned}
+\hspace{5em}
+\begin{aligned}
+  961 + 348 = 1309
+\end{aligned}
 \]
 
 \subsection{Odčítanie prirodzených čísel}
@@ -324,7 +426,129 @@ Pre odčítanie viacciferných čísel používame nasledujúci algoritmus:
   \end{enumerate}
   \item Výsledok je rozdiel menšenca a menšiteľa.
 \end{enumerate}
+Pri odčítaní konkrétnych čísel týmto algoritmom sa využíva písomné odčítanie čísel podobne ako u sčítania.
 
+\subsubsection{Písomné odčítanie prirodzených čísel}
+
+Písomné odčítanie čísel je spôsob odčítania, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a odčítavame ich postupne sprava doľava. Menšiteľ sa zapíše pod menšenca tak, aby každý rád oboch operandov bol v tom istom stĺpci. Pod menšiteľa sa urobí vodorovná čiara. Výsledné číslice rozdielu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad menšenca sa môže urobiť pomocný riadok pre zapisovanie jednotky z vyššieho rádu, nie je ale nutný. Znak odčítania zapisujeme nad vodorovnú čiaru pred menšiteľa. Príklad písomného odčítania čísel \(634 - 147\):
+\begin{table}[H]
+  \centering
+  \[
+  \begin{array}{r}
+    \text{Prenesenie} \rightarrow \\
+    \text{Menšenec} \rightarrow \\
+    \text{Menšiteľ} \rightarrow \\
+    \text{Rozdiel} \rightarrow \\
+  \end{array}
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & 1 & 1 &  \\
+      & 6 & 3 & 4 \\
+    - & 1 & 4 & 7 \\
+    \hline
+      & 4 & 8 & 7
+  \end{array}
+  \]
+\end{table}
+
+Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Postup písomného odčítania čísel \(514 - 168\) je nasledovný:
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Menšiteľa napíšeme pod menšenca, napíšeme znamienko odčítania a podčiarkneme.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & 5 & 1 & 4 \\
+    - & 1 & 6 & 8 \\
+    \hline
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Odčítame číslicu na mieste jednotiek menšiteľa od číslice na mieste jednotiek menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta desiatok a pripočítame ju k číslici menšenca.
+  \[
+  \begin{aligned}
+    4 + 10 &= 14, \\
+    14 - 8 &= 6. \\
+  \end{aligned}
+  \]
+  Číslicu \(6\) zapíšeme do rozdielu na mieste jednotiek. \\
+  Číslicu \(1\) zapíšeme nad číslice na mieste desiatok.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      &   & \textcolor{red}{1} &   \\
+      & 5 & 1 & 4 \\
+    - & 1 & 6 & 8 \\
+    \hline
+      &   &   & 6 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Odčítame číslicu na mieste desiatok menšiteľa, aj s preneseným číslom, od číslice na mieste desiatok menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta stoviek a pripočítame ju k číslici menšenca.
+  \[
+  \begin{aligned}
+    6 + 1 &= 7, \\
+    1 + 10 &= 11, \\
+    11 - 7 &= 4. \\
+  \end{aligned}
+  \]
+  Číslicu \(4\) zapíšeme do rozdielu na mieste desiatok. \\
+  Číslicu \(1\) zapíšeme nad číslice na mieste stoviek.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & \textcolor{red}{1} & 1 &   \\
+      & 5 & 1 & 4 \\
+    - & 1 & 6 & 8 \\
+    \hline
+      &   & 4 & 6 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Odčítame číslicu na mieste stoviek menšiteľa, aj s preneseným číslom, od číslice na mieste stoviek menšenca.
+  \[
+  \begin{aligned}
+    1 + 1 &= 2 \\
+    5 - 2 &= 3 \\
+  \end{aligned}
+  \]
+  Číslicu \(3\) zapíšeme do rozdielu na mieste stoviek.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+      & 1 & 1 &   \\
+      & 5 & 1 & 4 \\
+    - & 1 & 6 & 8 \\
+    \hline
+      & 3 & 4 & 6 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1em}
 
 \subsubsection{Vlastnosti odčítania prirodzených čísel}
 

@@ -128,17 +128,19 @@ Poznáme štyri základné aritmetické operácie s prirodzenými číslami: sč
   \caption{Tabuľka štyroch základných aritmetických operácií s prirodzenými číslami.}
 \end{table}
 
+Tieto aritmetické operácie priraďujú dvom operandom jeden výsledok. Vo výrazoch s viacnásobnými operáciami ako napríklad \(4 + 5 + 11 + 7\) sa počíta postupne zľava doprava, sčítajú sa prvé dve čísla, výsledok sa sčíta s tretím číslom, tento výsledok sa sčíta so štvrtým číslom atď. Nie je možné spočítať naraz tri a viac čísel.
+
 V matematike sa všetky tieto aritmetické operácie nad prirodzenými číslami dajú presne definovať pomocou dvoch pojmov: nasledovník a predchodca. Nasledovník prirodzeného čísla je číslo, ktoré nasleduje za toto prirodzené číslo v postupnosti čísel \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\), \(9\), \(10\), \(11\), \(12\)\dots Každé prirodzené číslo má svojho nasledovníka. Prirodzené číslo \(0\) má nasledovníka číslo \(1\), prirodzené číslo \(1\) má nasledovníka číslo \(2\) atď. S pojmom nasledovníka súvisí aj pojem predchodca. Predchodca prirodzeného čísla je číslo, ktorého nasledovník je pôvodné prirodzené číslo. Napríklad predchodca čísla \(2\) je číslo \(1\), predchodca čísla \(1\) je číslo \(0\). Číslo \(0\) nemá predchodcu (v prirodzených číslach).
 
 \subsection{Sčítanie prirodzených čísel}
 
-Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operáciu sčítania zapisujeme znakom \enquote{\(+\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako \(a + b\).
+Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operátor sčítania je znak plus \enquote{\(+\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako \(a + b\).
 
 Sčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
 \[
 \begin{aligned}
-  \text{(1)}\quad a + 0 &= a \\
-  \text{(2)}\quad a + 1 &= \text{nasledovník}(a)
+  \text{(1)}\quad a + 0 &= a, \\
+  \text{(2)}\quad a + 1 &= \text{nasledovník}(a).
 \end{aligned}
 \]
 Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripočítame nulu, hodnota čísla sa nezmení. Nula teda pri sčítaní neovplyvňuje výsledok. Pravidlo (2) vyjadruje vzťah medzi sčítaním a pojmom nasledovníka. Ak k číslu \(a\) pripočítame jednotku, dostaneme jeho nasledovníka. Zároveň platí aj opak, akékoľvek prirodzené číslo väčšie ako nula môžeme vyjadriť ako súčet predchodcu a jednotky. Napríklad číslo \(5\) môžeme vyjadriť ako \(4 + 1\). Takto môžeme každé prirodzené číslo vyjadriť ako súčet jednotiek, kde počet jednotiek dáva výsledné číslo. Prevod čísla \(5\) na jednotky vypadá nasledovne:
@@ -367,16 +369,13 @@ Skúšku správnosti pri sčítaní robíme zámenou poradia sčítancov.
 
 \subsection{Odčítanie prirodzených čísel}
 
-Odčítanie je operácia, pri ktorej od jedného čísla odoberáme iné číslo, aby sme zistili rozdiel medzi nimi. Prvý operand sa nazýva menšenec a druhý operand sa nazýva menšiteľ. Výsledok odčítania sa nazýva rozdiel. Slovom rozdiel označujeme tiež zápis odčítania. Operátor odčítania je znak mínus \enquote{\(-\)}. Odčítanie čísla \(a\) a čísla \(b\) zapisujeme ako
-\[
-a - b.
-\]
+Odčítanie je operácia, pri ktorej od jedného čísla odoberáme iné číslo, aby sme zistili rozdiel medzi nimi. Prvý operand sa nazýva menšenec a druhý operand sa nazýva menšiteľ. Výsledok odčítania sa nazýva rozdiel. Slovom rozdiel označujeme tiež zápis odčítania. Operátor odčítania je znak mínus \enquote{\(-\)}. Odčítanie čísla \(b\) od čísla \(a\) zapisujeme ako \(a - b\).
 
 Odčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
 \[
 \begin{aligned}
-  \text{(1)}\quad a - 0 &= a \\
-  \text{(2)}\quad a - 1 &= \text{predchodca}(a)
+  \text{(1)}\quad a - 0 &= a, \\
+  \text{(2)}\quad a - 1 &= \text{predchodca}(a).
 \end{aligned}
 \]
 Pravidlo (1) hovorí, že ak od ľubovoľného prirodzeného čísla \(a\) odčítame nulu, hodnota čísla sa nezmení. Nula teda pri odčítaní neovplyvňuje výsledok. Pravidlo (2) vyjadruje vzťah medzi odčítaním a pojmom predchodca. Ak od čísla \(a\) odpočítame jednotku, dostaneme jeho predchodcu. Ak chceme vypočítať rozdiel čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované odčítanie jednotky. Každá odčítaná jednotka posunie číslo \(a\) k jeho ďalšiemu predchodcovi. Ako konkrétny príklad si môžeme zobrať čísla \(6\) a \(3\).
@@ -430,7 +429,9 @@ Pri odčítaní konkrétnych čísel týmto algoritmom sa využíva písomné od
 
 \subsubsection{Písomné odčítanie prirodzených čísel}
 
-Písomné odčítanie čísel je spôsob odčítania, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a odčítavame ich postupne sprava doľava. Menšiteľ sa zapíše pod menšenca tak, aby každý rád oboch operandov bol v tom istom stĺpci. Pod menšiteľa sa urobí vodorovná čiara. Výsledné číslice rozdielu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad menšenca sa môže urobiť pomocný riadok pre zapisovanie jednotky z vyššieho rádu, nie je ale nutný. Znak odčítania zapisujeme nad vodorovnú čiaru pred menšiteľa. Príklad písomného odčítania čísel \(634 - 147\):
+Písomné odčítanie čísel je spôsob odčítania, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a odčítavame ich postupne sprava doľava.
+
+Menšiteľ sa zapíše pod menšenca tak, aby každý rád oboch operandov bol v tom istom stĺpci. Pod menšiteľa sa urobí vodorovná čiara. Výsledné číslice rozdielu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad menšenca sa môže urobiť pomocný riadok pre zapisovanie jednotky z vyššieho rádu, nie je ale nutný. Znak odčítania zapisujeme nad vodorovnú čiaru pred menšiteľa. Príklad písomného odčítania čísel \(634 - 147\):
 \begin{table}[H]
   \centering
   \[
@@ -558,6 +559,189 @@ Pri odčítaní rozlišujeme poradie operandov. Menšenec je to číslo, od ktor
 \]
 
 \subsection{Násobenie prirodzených čísel}
+
+Násobenie je operácia, pri ktorej jedno číslo sčítame samo so sebou určítý počet krát. Čísla, ktoré násobíme, sa nazývajú činitele a výsledok násobenia sa nazýva súčin. Slovom súčin označujeme tiež zápis násobenia. Operátor násobenia je znak \enquote{\(\ \cdot\ \)}. Násobenie čísla \(a\) a čísla \(b\) zapisujeme ako \(a \cdot b\) alebo aj bez znamienka krát ako \(ab\).
+
+Násobenie prirodzených čísel môžeme definovať ako opakované sčítanie rovnakého čísla:
+\[
+\begin{aligned}
+  a \cdot b &= \underbrace{b + b + \cdots + b}_{a\text{-krát}}.
+\end{aligned}
+\]
+Číslo \(b\) sčítame samo so sebou \(a\)-krát. Každé násobenie môžeme previesť na postupné sčítanie čísla \(b\), kde \(a\) udáva počet čísla \(b\) vo výraze. Napríklad násobenie \(3 \cdot 5\) môžeme vyjadriť ako \(5 + 5 + 5\). Činitele môžu byť akékoľvek prirodzené čísla. Opakované sčítanie čísel môže byť zdĺhavé a nepraktické, hlavne u väčších čísel. U menších čísel do desať je najvýhodnejšie zapamätanie si spojov násobenia, nazývaných ako malá násobilka. V tabuľke je prehľad malej násobilky do \(10\).
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \newcolumntype{C}{>{\centering\arraybackslash}m{1.5em}}
+  \begin{tabular}{C|CCCCCCCCCCC}
+    \(\cdot\) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \hline
+    0  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    1  & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    2  & 0 & 2 & 4 & 6 & 8 & 10 & 12 & 14 & 16 & 18 & 20 \\
+    3  & 0 & 3 & 6 & 9 & 12 & 15 & 18 & 21 & 24 & 27 & 30 \\
+    4  & 0 & 4 & 8 & 12 & 16 & 20 & 24 & 28 & 32 & 36 & 40 \\
+    5  & 0 & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\
+    6  & 0 & 6 & 12 & 18 & 24 & 30 & 36 & 42 & 48 & 54 & 60 \\
+    7  & 0 & 7 & 14 & 21 & 28 & 35 & 42 & 49 & 56 & 63 & 70 \\
+    8  & 0 & 8 & 16 & 24 & 32 & 40 & 48 & 56 & 64 & 72 & 80 \\
+    9  & 0 & 9 & 18 & 27 & 36 & 45 & 54 & 63 & 72 & 81 & 90 \\
+    10 & 0 & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100 \\
+  \end{tabular}
+  \caption{Prehľad malej násobilky.}
+\end{table}
+
+Existujú aj spoje násobenia prirodzených čísel v rozsahu od \(11\) do \(20\). Týmto spojom sa nazýva veľká násobilka. V tabuľke je prehľad veľkej násobilky od \(11\) do \(20\).
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \newcolumntype{C}{>{\centering\arraybackslash}m{1.5em}}
+  \begin{tabular}{C|CCCCCCCCCC}
+    \(\cdot\) & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+    \hline
+    11 & 121 & 132 & 143 & 154 & 165 & 176 & 187 & 198 & 209 & 220 \\
+    12 & 132 & 144 & 156 & 168 & 180 & 192 & 204 & 216 & 228 & 240 \\
+    13 & 143 & 156 & 169 & 182 & 195 & 208 & 221 & 234 & 247 & 260 \\
+    14 & 154 & 168 & 182 & 196 & 210 & 224 & 238 & 252 & 266 & 280 \\
+    15 & 165 & 180 & 195 & 210 & 225 & 240 & 255 & 270 & 285 & 300 \\
+    16 & 176 & 192 & 208 & 224 & 240 & 256 & 272 & 288 & 304 & 320 \\
+    17 & 187 & 204 & 221 & 238 & 255 & 272 & 289 & 306 & 323 & 340 \\
+    18 & 198 & 216 & 234 & 252 & 270 & 288 & 306 & 324 & 342 & 360 \\
+    19 & 209 & 228 & 247 & 266 & 285 & 304 & 323 & 342 & 361 & 380 \\
+    20 & 220 & 240 & 260 & 280 & 300 & 320 & 340 & 360 & 380 & 400 \\
+  \end{tabular}
+  \caption{Prehľad veľkej násobilky.}
+\end{table}
+
+Pre násobenie dvoch ľubovoľných prirodzených čísel používame nasledovný algoritmus:
+\begin{enumerate}[label=\arabic*)]
+  \item Začneme od číslic najnižšieho rádu (jednotiek).
+  \item Opakujeme cyklus, kým nespracujeme všetky rády druhého činiteľa:
+  \begin{enumerate}
+    \item Vynásobíme prvého činiteľa číslicou aktuálneho rádu.
+    \item Čiastkový súčin vynásobíme hodnotou aktuálneho rádu číslice druhého činiteľa a zapíšeme si ho.
+    \item Pokračujeme spracovaním nasledujúceho vyššieho rádu druhého činiteľa.
+  \end{enumerate}
+  \item Všetky čiastkové súčiny sčítame.
+  \item Výsledok je súčin oboch činiteľov.
+\end{enumerate}
+
+\subsubsection{Písomné násobenie prirodzených čísel}
+
+Písomné násobenie čísel je spôsob násobenia, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a postupne násobíme jednotlivé číslice podľa ich rádov.
+
+Dva činitele sa zapíšu jeden pod druhým tak, aby každý rád činiteľov bol v tom istom stĺpci. Pod druhého činiteľa sa urobí vodorovná čiara, aby sme odlíšili činitele od čiastkových súčinov. Výsledné čiastkové súčiny sa zapisujú pod túto čiaru do príslušných stĺpcov. Znak násobenia zapisujeme nad vodorovnú čiaru pred druhého činiteľa. Čiastkové súčiny zapisujeme pod seba, druhý čiastkový súčin pod prvý čiastkový súčin, tretí čiastkový súčin pod druhý čiastkový súčin atď. Dbáme na to, aby rády v čiastkových súčinoch zodpovedali konkrétnym stĺpcom v zápise. Nuly, ktoré vzniknú vynásobením čiastkového súčinu hodnotou rádu číslice druhého činiteľa, sa zvyčajne nepíšu. Po zapísaní všetkých čiastkových súčinov sa pod posledný čiastkový súčin urobí vodorvná čiara, aby sme odlíšili čiastkové súčiny od výsledného súčinu. Výsledok sa zapíše pod túto čiaru, prihliadame na správny zápis číslic do stĺpcov. Príklad písomného násobenia čísel \(23 \cdot 14\):
+\begin{table}[H]
+  \centering
+  \[
+  \begin{array}{r}
+    \text{Činiteľ} \rightarrow \\
+    \text{Činiteľ} \rightarrow \\
+    \text{1. čiastkový súčin} \rightarrow \\
+    \text{2. čiastkový súčin} \rightarrow \\
+    \text{Súčin} \rightarrow \\
+  \end{array}
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+    &   & 2 & 3 \\
+    & \cdot  & 1 & 4 \\
+    \hline
+    &   & 9 & 2 \\
+    & 2 & 3 &   \\
+    \hline
+    & 3 & 2 & 2
+  \end{array}
+  \]
+\end{table}
+
+Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Postup písomného násobenia čísel \(231 \cdot 56\) je nasledovný:
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Druhého činiteľa napíšeme pod prvého činiteľa, napíšeme znamienko násobenia a podčiarkneme.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+          & 2 & 3 & 1 \\
+    \cdot &   & 5 & 6 \\
+    \hline
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Vynásobíme prvého činiteľa číslicou druhého činiteľa na mieste jednotiek.
+  \[
+    231 \cdot 6 = 1\ 386. \\
+  \]
+  Prvý čiastkový súčin zapíšeme pod druhého činiteľa.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c}
+          & 2 & 3 & 1 \\
+    \cdot &   & 5 & 6 \\
+    \hline
+        1 & 3 & 8 & 6 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Vynásobíme prvého činiteľa číslicou druhého činiteľa na mieste desiatok.
+  \[
+    231 \cdot 5 = 1\ 155. \\
+  \]
+  Druhý čiastkový súčin zapíšeme pod prvý čiastkový súčin o jednu číslicu doľava.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c}
+      &   & 2 & 3 & 1 \\
+      & \cdot &   & 5 & 6 \\
+    \hline
+      & 1 & 3 & 8 & 6 \\
+    1 & 1 & 5 & 5 & \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.75\textwidth}
+  Druhý čiastkový súčin podčiarkneme, dva čiastkové súčiny sčítame.
+  \[
+    1\ 386 + 11\ 550 = 12\ 936. \\
+  \]
+  Výsledný súčet zapíšeme pod čiaru.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{5em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c}
+      &   & 2 & 3 & 1 \\
+      & \cdot &   & 5 & 6 \\
+    \hline
+      & 1 & 3 & 8 & 6 \\
+    1 & 1 & 5 & 5 & \\
+    \hline
+    1 & 2 & 9 & 3 & 6 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1em}
 
 \subsection{Delenie prirodzených čísel}
 

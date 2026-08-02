@@ -560,7 +560,7 @@ Pri odčítaní rozlišujeme poradie operandov. Menšenec je to číslo, od ktor
 
 \subsection{Násobenie prirodzených čísel}
 
-Násobenie je operácia, pri ktorej jedno číslo sčítame samo so sebou určítý počet krát. Čísla, ktoré násobíme, sa nazývajú činitele a výsledok násobenia sa nazýva súčin. Slovom súčin označujeme tiež zápis násobenia. Operátor násobenia je znak \enquote{\(\ \cdot\ \)}. Násobenie čísla \(a\) a čísla \(b\) zapisujeme ako \(a \cdot b\) alebo aj bez znamienka krát ako \(ab\).
+Násobenie je operácia, pri ktorej jedno číslo sčítame samo so sebou určítý počet krát. Čísla, ktoré násobíme, sa nazývajú činitele a výsledok násobenia sa nazýva súčin. Slovom súčin označujeme tiež zápis násobenia. Operátor násobenia je buď znak bodka \enquote{\(\, \cdot\, \)} alebo znak násobenia \enquote{\(\times\)}. Násobenie čísla \(a\) a čísla \(b\) zapisujeme ako \(a \cdot b\) alebo aj bez znamienka krát ako \(ab\).
 
 Násobenie prirodzených čísel môžeme definovať ako opakované sčítanie rovnakého čísla:
 \[
@@ -744,5 +744,40 @@ Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuj
 \vspace{1em}
 
 \subsection{Delenie prirodzených čísel}
+
+Delenie je operácia, pri ktorej zisťujeme, koľkokrát sa jedno číslo nachádza v druhom, alebo rozdeľujeme dané množstvo na rovnaké časti. Prvý operand sa nazýva delenec a druhý operand sa nazýva deliteľ. Výsledok delenia sa nazýva podiel. Slovom podiel označujeme tiež zápis delenia. Operátor delenia je buď znak dvojbodka \enquote{\(\, :\, \)} alebo znak delenia \enquote{\(\div\)}. Delenia čísla \(a\) číslom \(b\) zapisujeme ako \(a : b\).
+
+Delenie prirodzených čísel môžeme definovať ako opakované odčítanie rovnakého čísla určitý počet krát:
+\[
+\begin{aligned}
+  a : b &= n \quad \text{tak, že}\\
+  a \underbrace{- b - b - \cdots - b}_{n\text{-krát}} &= 0.
+\end{aligned}
+\]
+Číslo \(a\) vydelíme číslom \(b\) tak, že od čísla \(a\) odčítame nejaké číslo \(n\), až kým nedosiahneme nulu. Nie každé prirodzené číslo môžeme deliť číslom \(b\) tak, aby výsledok opakovaného odčítania bol presne nula. V takom prípade hovoríme o neúplnom podiele, pretože číslo \(a\) nedokážeme deliť číslom \(b\) bezo zvyšku. Zvyšok pri delení je číslo, ktoré zostane po vykonaní delenia, keď delenec nemožno rozdeliť úplne bez ďalších častí. So zvyškom \(z\) sa definícia delenia dá rozšíriť na skoro všetky prirodzené čísla.
+\[
+\begin{aligned}
+  a : b &= n + z \quad \text{tak, že}\\
+  a \underbrace{- b - b - \cdots - b}_{n\text{-krát}} &= z, \\
+  z &< b.
+\end{aligned}
+\]
+Zvyšok \(z\) je vždy číslo menšie ako deliteľ. Číslo \(a\) je vždy väčšie alebo sa rovná výsledku delenia. Číslo \(b\) môže byť ľubovoľné prirodzené číslo okrem nuly. Delenie nulou nie je definované. Nulu nemôžeme od čísla \(a\) odčítať konečný počet krát, aby sme sa dostali k výsledku. Akékoľvek číslo \(n\) splňuje podmienku, že odčítanie nuly od čísla \(a\) \(n\)-krát sa rovná číslu \(z\). Toto je v rozpore s tým, že výsledok operácie dvoch rovnakých čísel musí byť jedno a to isté prirodzené číslo.
+
+Pre delenie dvoch ľubovoľných prirodzených čísel okrem nuly ako deliteľa používame nasledovný algoritmus:
+\begin{enumerate}[label=\arabic*)]
+  \item Začneme od číslic najvyššieho rádu delenca.
+  \item Opakujeme cyklus, kým nespracujeme všetky rády delenca:
+  \begin{enumerate}
+    \item K medzivýsledku pripojíme číslicu delenca aktuálneho rádu sprava.
+    \item Medzivýsledok vydelíme deliteľom a podiel zapíšeme do výsledku delenia za ostatné číslice.
+    \item Zvyšok po tomto delení bude nový medzivýsledok.
+    \item Pokračujeme spracovaním nasledujúceho nižšieho rádu delenca.
+  \end{enumerate}
+  \item Posledný medzivýsledok bude zvyšok po delení.
+  \item Výsledok je podiel delenca deliteľom.
+\end{enumerate}
+
+\subsubsection{Písomné násobenie prirodzených čísel}
 
 \end{document}

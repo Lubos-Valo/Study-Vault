@@ -208,6 +208,8 @@ Pre ľahšiu manipuláciu číslic a ich rádov sa pri tomto algoritme využíva
 
 Písomné sčítanie čísel je spôsob sčítania, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a sčítavame ich postupne sprava doľava.
 
+
+
 Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov bol v tom istom stĺpci. Pod druhý sčítanec sa urobí vodorovná čiara, aby sme odlíšili sčítance od súčtu. Výsledné číslice súčtu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad sčítance sa môže urobiť pomocný riadok pre zapisovanie prenesenej číslice z predošlého medzivýsledku, nie je ale nutný. Znak sčítania zapisujeme nad vodorovnú čiaru pred druhý sčítanec. Znamienko sčítania môžeme pri písomnom sčítaní vynechať. Príklad písomného sčítania čísel \(347 + 58\):
 \begin{table}[H]
   \centering
@@ -230,93 +232,72 @@ Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov b
 
 Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Postup písomného sčítania čísel \(156 + 278\) je nasledovný:
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.55\textwidth}
-  Sčítance napíšeme pod seba a podčiarkneme.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      & 1 & 5 & 6 \\
-    + & 2 & 7 & 8 \\
-    \hline
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1.5em}
+\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.55\textwidth}
-  Sčítame číslice na mieste jednotiek.
-  \[
-  8 + 6 = 14.
-  \]
-  Číslicu \(4\) zapíšeme do súčtu na mieste jednotiek. \\
-  Číslicu \(1\) zapíšeme nad číslice na mieste desiatok.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      &   & \textcolor{red}{1} &   \\
-      & 1 & 5 & 6 \\
-    + & 2 & 7 & 8 \\
-    \hline
-      &   &   & 4 \\
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1.5em}
+Sčítance napíšeme pod seba a podčiarkneme.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    & 1 & 5 & 6 \\
+  + & 2 & 7 & 8 \\
+  \hline
+\end{array}
+\]
+\\[6em]
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.55\textwidth}
-  Sčítame číslice na mieste desiatok aj s preneseným číslom.
-  \[
-  7 + 5 + 1 = 13
-  \]
-  Číslicu \(3\) zapíšeme do súčtu na mieste desiatok. \\
-  Číslicu \(1\) zapíšeme nad číslice na mieste stoviek.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      & \textcolor{red}{1} & 1 &   \\
-      & 1 & 5 & 6 \\
-    + & 2 & 7 & 8 \\
-    \hline
-      &   & 3  & 4 \\
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1.5em}
+Sčítame číslice na mieste jednotiek.
+\[
+8+6=14
+\]
+Číslicu \(4\) zapíšeme do súčtu na mieste jednotiek.
+Číslicu \(1\) zapíšeme nad číslice na mieste desiatok.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    &   & \textcolor{red}{1} &   \\
+    & 1 & 5 & 6 \\
+  + & 2 & 7 & 8 \\
+  \hline
+    &   &   & 4 \\
+\end{array}
+\]
+\\[6em]
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.55\textwidth}
-  Sčítame číslice na mieste stoviek aj s preneseným číslom.
-  \[
-  2 + 1 + 1 = 4
-  \]
-  Číslicu \(4\) zapíšeme do súčtu na mieste stoviek.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      & 1 & 1 &   \\
-      & 1 & 5 & 6 \\
-    + & 2 & 7 & 8 \\
-    \hline
-      & 4 & 3  & 4 \\
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1em}
+Sčítame číslice na mieste desiatok aj s preneseným číslom.
+\[
+7+5+1=13
+\]
+Číslicu \(3\) zapíšeme do súčtu na mieste desiatok.
+Číslicu \(1\) zapíšeme nad číslice na mieste stoviek.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    & \textcolor{red}{1} & 1 &   \\
+    & 1 & 5 & 6 \\
+  + & 2 & 7 & 8 \\
+  \hline
+    &   & 3 & 4 \\
+\end{array}
+\]
+\\[6em]
+
+Sčítame číslice na mieste stoviek aj s preneseným číslom.
+\[
+2+1+1=4
+\]
+Číslicu \(4\) zapíšeme do súčtu na mieste stoviek.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    & 1 & 1 &   \\
+    & 1 & 5 & 6 \\
+  + & 2 & 7 & 8 \\
+  \hline
+    & 4 & 3 & 4 \\
+\end{array}
+\]
+
+\end{longtable}
 
 \subsubsection{Vlastnosti sčítania prirodzených čísel}
 
@@ -453,103 +434,80 @@ Menšiteľ sa zapíše pod menšenca tak, aby každý rád oboch operandov bol v
 
 Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Postup písomného odčítania čísel \(514 - 168\) je nasledovný:
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.75\textwidth}
-  Menšiteľa napíšeme pod menšenca, napíšeme znamienko odčítania a podčiarkneme.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      & 5 & 1 & 4 \\
-    - & 1 & 6 & 8 \\
-    \hline
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1.5em}
+\begin{longtable}{p{0.65\textwidth} p{0.35\textwidth}}
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.75\textwidth}
-  Odčítame číslicu na mieste jednotiek menšiteľa od číslice na mieste jednotiek menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta desiatok a pripočítame ju k číslici menšenca.
-  \[
-  \begin{aligned}
-    4 + 10 &= 14, \\
-    14 - 8 &= 6. \\
-  \end{aligned}
-  \]
-  Číslicu \(6\) zapíšeme do rozdielu na mieste jednotiek. \\
-  Číslicu \(1\) zapíšeme nad číslice na mieste desiatok.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      &   & \textcolor{red}{1} &   \\
-      & 5 & 1 & 4 \\
-    - & 1 & 6 & 8 \\
-    \hline
-      &   &   & 6 \\
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1.5em}
+Menšiteľa napíšeme pod menšenca, napíšeme znamienko odčítania a podčiarkneme.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    & 5 & 1 & 4 \\
+  - & 1 & 6 & 8 \\
+  \hline
+\end{array}
+\]
+\\[1em]
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.75\textwidth}
-  Odčítame číslicu na mieste desiatok menšiteľa, aj s preneseným číslom, od číslice na mieste desiatok menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta stoviek a pripočítame ju k číslici menšenca.
-  \[
-  \begin{aligned}
-    6 + 1 &= 7, \\
-    1 + 10 &= 11, \\
-    11 - 7 &= 4. \\
-  \end{aligned}
-  \]
-  Číslicu \(4\) zapíšeme do rozdielu na mieste desiatok. \\
-  Číslicu \(1\) zapíšeme nad číslice na mieste stoviek.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      & \textcolor{red}{1} & 1 &   \\
-      & 5 & 1 & 4 \\
-    - & 1 & 6 & 8 \\
-    \hline
-      &   & 4 & 6 \\
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1.5em}
+Odčítame číslicu na mieste jednotiek menšiteľa od číslice na mieste jednotiek menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta desiatok a pripočítame ju k číslici menšenca.
+\[
+\begin{aligned}
+  4 + 10 &= 14, \\
+  14 - 8 &= 6. \\
+\end{aligned}
+\]
+Číslicu \(6\) zapíšeme do rozdielu na mieste jednotiek. Číslicu \(1\) zapíšeme nad číslice na mieste desiatok.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    &   & \textcolor{red}{1} &   \\
+    & 5 & 1 & 4 \\
+  - & 1 & 6 & 8 \\
+  \hline
+    &   &   & 6 \\
+\end{array}
+\]
+\\[11em]
 
-\noindent
-\hspace{2em}
-\begin{minipage}{0.75\textwidth}
-  Odčítame číslicu na mieste stoviek menšiteľa, aj s preneseným číslom, od číslice na mieste stoviek menšenca.
-  \[
-  \begin{aligned}
-    1 + 1 &= 2 \\
-    5 - 2 &= 3 \\
-  \end{aligned}
-  \]
-  Číslicu \(3\) zapíšeme do rozdielu na mieste stoviek.
-\end{minipage}
-\hspace{1em}
-\begin{minipage}{5em}
-  \[
-  \begin{array}{c@{\;}c@{\;}c@{\;}c}
-      & 1 & 1 &   \\
-      & 5 & 1 & 4 \\
-    - & 1 & 6 & 8 \\
-    \hline
-      & 3 & 4 & 6 \\
-  \end{array}
-  \]
-\end{minipage}
-\vspace{1em}
+Odčítame číslicu na mieste desiatok menšiteľa, aj s preneseným číslom, od číslice na mieste desiatok menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta stoviek a pripočítame ju k číslici menšenca.
+\[
+\begin{aligned}
+  6 + 1 &= 7, \\
+  1 + 10 &= 11, \\
+  11 - 7 &= 4. \\
+\end{aligned}
+\]
+Číslicu \(4\) zapíšeme do rozdielu na mieste desiatok. Číslicu \(1\) zapíšeme nad číslice na mieste stoviek.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    & \textcolor{red}{1} & 1 &   \\
+    & 5 & 1 & 4 \\
+  - & 1 & 6 & 8 \\
+  \hline
+    &   & 4 & 6 \\
+\end{array}
+\]
+\\[6em]
+
+Odčítame číslicu na mieste stoviek menšiteľa, aj s preneseným číslom, od číslice na mieste stoviek menšenca.
+\[
+\begin{aligned}
+  1 + 1 &= 2 \\
+  5 - 2 &= 3 \\
+\end{aligned}
+\]
+Číslicu \(3\) zapíšeme do rozdielu na mieste stoviek. Výsledok je rozdiel dvoch čísel.
+&
+\[
+\begin{array}{c@{\;}c@{\;}c@{\;}c}
+    & 1 & 1 &   \\
+    & 5 & 1 & 4 \\
+  - & 1 & 6 & 8 \\
+  \hline
+    & 3 & 4 & 6 \\
+\end{array}
+\]
+
+\end{longtable}
 
 \subsubsection{Vlastnosti odčítania prirodzených čísel}
 
@@ -754,10 +712,10 @@ Delenie prirodzených čísel môžeme definovať ako opakované odčítanie rov
   a \underbrace{- b - b - \cdots - b}_{n\text{-krát}} &= 0.
 \end{aligned}
 \]
-Číslo \(a\) vydelíme číslom \(b\) tak, že od čísla \(a\) odčítame nejaké číslo \(n\), až kým nedosiahneme nulu. Nie každé prirodzené číslo môžeme deliť číslom \(b\) tak, aby výsledok opakovaného odčítania bol presne nula. V takom prípade hovoríme o neúplnom podiele, pretože číslo \(a\) nedokážeme deliť číslom \(b\) bezo zvyšku. Zvyšok pri delení je číslo, ktoré zostane po vykonaní delenia, keď delenec nemožno rozdeliť úplne bez ďalších častí. So zvyškom \(z\) sa definícia delenia dá rozšíriť na skoro všetky prirodzené čísla.
+Číslo \(a\) vydelíme číslom \(b\) tak, že od čísla \(a\) odčítame nejaké číslo \(n\), až kým nedosiahneme nulu. Nie každé prirodzené číslo môžeme deliť číslom \(b\) tak, aby výsledok opakovaného odčítania bol presne nula. V takom prípade hovoríme o neúplnom podiele, pretože číslo \(a\) nedokážeme deliť číslom \(b\) bezo zvyšku. Zvyšok pri delení je číslo, ktoré zostane po vykonaní delenia, keď delenec nemožno rozdeliť úplne bez ďalších častí. So zvyškom \(z\) sa definícia delenia dá rozšíriť na skoro všetky prirodzené čísla.\footnote{Výraz \(\frac{z}{b}\) vyjadruje zvyšok \(z\) ako časť deliteľa \(b\).}
 \[
 \begin{aligned}
-  a : b &= n + z \quad \text{tak, že}\\
+  a : b &= n + \frac{z}{b} \quad \text{tak, že}\\
   a \underbrace{- b - b - \cdots - b}_{n\text{-krát}} &= z, \\
   z &< b.
 \end{aligned}
@@ -769,15 +727,148 @@ Pre delenie dvoch ľubovoľných prirodzených čísel okrem nuly ako deliteľa 
   \item Začneme od číslic najvyššieho rádu delenca.
   \item Opakujeme cyklus, kým nespracujeme všetky rády delenca:
   \begin{enumerate}
-    \item K medzivýsledku pripojíme číslicu delenca aktuálneho rádu sprava.
-    \item Medzivýsledok vydelíme deliteľom a podiel zapíšeme do výsledku delenia za ostatné číslice.
-    \item Zvyšok po tomto delení bude nový medzivýsledok.
+    \item K čiastočnému delencu pripojíme číslicu delenca aktuálneho rádu sprava.
+    \item Čiastočný delenec vydelíme deliteľom a podiel zapíšeme do výsledku delenia za ostatné číslice.
+    \item Zvyšok po tomto delení bude nový čiastočný delenec.
     \item Pokračujeme spracovaním nasledujúceho nižšieho rádu delenca.
   \end{enumerate}
-  \item Posledný medzivýsledok bude zvyšok po delení.
+  \item Posledný čiastočný delenec bude zvyšok po delení.
   \item Výsledok je podiel delenca deliteľom.
 \end{enumerate}
 
-\subsubsection{Písomné násobenie prirodzených čísel}
+\subsubsection{Písomné delenie prirodzených čísel}
+
+Písomné delenia čísel je spôsob delenia, pri ktorom zapisujeme čiastočné delence pod seba a postupne ich delíme deliteľom.
+
+Delenec a deliteľ sa zapíšu vedľa seba s operátorom delenia medzi nimi ako bežný zápis operácie. Za operáciou píšeme znak rovnosti, za ktorým bude výsledok. Postupujeme od číslice delenca najvyššieho rádu smerom k rádu jednotiek. Zisťujeme, koľkokrát sa deliteľ nachádza v čiastočnom delenci. Výsledné číslice zapisujeme do výsledku delenia. Zvyšok po delení zisťujeme tak, že násobok deliteľa zapíšeme pod čiastočný delenec vo forme odčítania. Od čiastočného delenca odčítame tento násobok a výsledok je zvyšok po delení, ten zapíšeme pod toto odčítanie. Pokračujeme v pripájaní číslic delenca k čiastočnému delencovi a počítaní násobkov. Výsledok je podiel delenca a deliteľa. Posledný čiastočný delenec je zvyšok po delení.
+Príklad písomného delenia čísel \(7\ 625 : 56\):
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.6\textwidth}
+  Delenca a deliteľa zapíšeme vedľa seba s operátorom delenia medzi nimi a na koniec napíšeme znak rovnosti.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{0.3\textwidth}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
+    7 & 6 & 2 & 5 & : & 5 & 6 & = \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.6\textwidth}
+  K čiastočnému delencu pripojíme číslicu na mieste tisícov. Čiastočný delenec má hodnotu \(7\). \\
+  Vydelíme čiastočný delenec deliteľom.
+  \[
+    7 : 56 = 0 \quad \text{zvyšok: } 7.
+  \]
+  Číslica \(0\) na začiatku čísla nemení hodnotu čísla. \\
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{10em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
+    \overline{7} & 6 & 2 & 5 & : & 5 & 6 & = & \color{red}{0} \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.6\textwidth}
+  K čiastočnému delencu pripojíme číslicu na mieste stoviek. Čiastočný delenec má hodnotu \(76\). \\
+  Vydelíme čiastočný delenec deliteľom.
+  \[
+  \begin{aligned}
+    76 : 56 &= 1, \\
+    1 \cdot 56 &= 56, \\
+    76 - 56 &= 20.
+  \end{aligned}
+  \]
+  Číslicu \(1\) zapíšeme do výsledku delenia. \\
+  Zvyšok \(20\) zapíšeme pod čiaru.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{10em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
+      & 7 & \overline{6} & 2 & 5 & : & 5 & 6 & = & 1 \\
+    - & 5 & 6 \\
+    \cline{1-3}
+      & 2 & 0 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.6\textwidth}
+  K čiastočnému delencu pripojíme číslicu na mieste desiatok. Čiastočný delenec má hodnotu \(202\). \\
+  Vydelíme čiastočný delenec deliteľom.
+  \[
+  \begin{aligned}
+    202 : 56 &= 3, \\
+    3 \cdot 56 &= 168, \\
+    202 - 168 &= 34.
+  \end{aligned}
+  \]
+  Číslicu \(3\) zapíšeme do výsledku delenia za číslicou \(1\). \\
+  Zvyšok \(34\) zapíšeme pod čiaru.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{10em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
+      & 7 & 6 & \overline{2} & 5 & : & 5 & 6 & = & 1 & 3 \\
+    - & 5 & 6 \\
+    \cline{1-3}
+      & 2 & 0 & 2 \\
+    - & 1 & 6 & 8 \\
+    \cline{1-4}
+      &   & 3 & 4 \\
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
+
+\noindent
+\hspace{2em}
+\begin{minipage}{0.6\textwidth}
+  K čiastočnému delencu pripojíme číslicu na mieste jednotiek. Čiastočný delenec má hodnotu \(345\). \\
+  Vydelíme čiastočný delenec deliteľom.
+  \[
+  \begin{aligned}
+    345 : 56 &= 6, \\
+    6 \cdot 56 &= 336, \\
+    345 - 336 &= 9.
+  \end{aligned}
+  \]
+  Číslicu \(6\) zapíšeme do výsledku delenia za číslicou \(3\). \\
+  Podiel čísel je \(136\). Zvyšok \(9\) je zvyšok po delení.
+\end{minipage}
+\hspace{1em}
+\begin{minipage}{15em}
+  \[
+  \begin{array}{c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c@{\;}c}
+      & 7 & 6 & 2 & \overline{5} & : & 5 & 6 & = & 1 & 3 & 6 \\
+    - & 5 & 6 \\
+    \cline{1-3}
+      & 2 & 0 & 2 \\
+    - & 1 & 6 & 8 \\
+    \cline{1-4}
+      &   & 3 & 4 & 5 \\
+      & - & 3 & 3 & 6\\
+    \cline{2-5}
+      &   &   &   & 9
+  \end{array}
+  \]
+\end{minipage}
+\vspace{1.5em}
 
 \end{document}

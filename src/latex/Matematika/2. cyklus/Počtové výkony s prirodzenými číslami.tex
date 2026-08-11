@@ -88,7 +88,7 @@ Podľa toho, či zaokrúhľujeme na menší alebo väčší násobok, rozlišuje
 \end{itemize}
 Aritmetické zaokrúhľovanie je bežný spôsob zaokrúhľovania. Poskytuje najbližší násobok desiatky, stovky, tisícky atď. k pôvodnému číslu. Má ale jeden problém pri číslach, ktoré sú rovnakej vzdialenosti na číselnej osi od najbližších násobkoch. Nastáva to pri číslach \(5\) pri zaokrúhľovaní na desiatky, \(50\) pri zaokrúhľovaní na stovky, \(500\) pri zaokrúhľovaní na tisícky atď. V týchto prípadoch platí zásada, že zaokrúhľujeme nahor.
 
-Zaokrúhľovanie ako matematickú operáciu zapisujeme pomocou znaku \enquote{\(\doteq\)}. Pôvodné číslo, ktoré zaokrúhľujeme, sa píše na ľavej strane znaku a číslo, ktoré je výsledkom zaokrúhľovania, sa píše na pravej strane. Napríklad číslo \(45\) zaokrúhlené na desiatky sa zapíše ako \(45 \doteq 50\). To, na aký číselný rád zaokrúhľujeme, sa v zápise nešpecifikuje, táto informácia musí vychádzať z kontextu, v ktorom sa zápis nachádza.
+Zaokrúhľovanie ako matematickú operáciu zapisujeme pomocou znaku \enquote{\(\, \doteq \,\)}. Pôvodné číslo, ktoré zaokrúhľujeme, sa píše na ľavej strane znaku a číslo, ktoré je výsledkom zaokrúhľovania, sa píše na pravej strane. Napríklad číslo \(45\) zaokrúhlené na desiatky sa zapíše ako \(45 \doteq 50\). To, na aký číselný rád zaokrúhľujeme, sa v zápise nešpecifikuje, táto informácia musí vychádzať z kontextu, v ktorom sa zápis nachádza.
 
 K 1. júlu 2022 nadobudla účinnosť novela zákona o cenách, ktorá má za cieľ obmedziť obeh jednocentových a dvojcentových mincí na Slovensku. Tieto mince ale naďalej zostali zákonným platidlom a je ich tak možné vydávať aj prijímať. Pri platbe nákupu v hotovosti sa uplatňuje zaokrúhľovanie eurocentov. Keď je konečná suma v obchode necelým násobkom 5 centov, zaokrúhli sa podľa poslednej číslice tak, ako je uvedené v tabuľke.
 
@@ -134,7 +134,7 @@ V matematike sa všetky tieto aritmetické operácie nad prirodzenými číslami
 
 \subsection{Sčítanie prirodzených čísel}
 
-Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operátor sčítania je znak plus \enquote{\(+\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako \(a + b\).
+Sčítanie je operácia, pri ktorej spájame dve alebo viac množstiev do jedného celku. Čísla, ktoré sčítavame, sa nazývajú sčítance a výsledok sčítania sa nazýva súčet. Slovom súčet označujeme tiež zápis sčítania. Operátor sčítania je znak plus \enquote{\(\, + \,\)}. Sčítanie čísla \(a\) a čísla \(b\) zapisujeme ako \(a + b\).
 
 Sčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
 \[
@@ -153,7 +153,7 @@ Pravidlo (1) hovorí, že ak k ľubovoľnému prirodzenému číslu \(a\) pripo�
   &1 + 1 + 1 + 1 + 1. \\
 \end{aligned}
 \]
-Tieto dve pravidlá nám umožňujú postupne definovať súčet ľubovoľných dvoch prirodzených čísel. Ak chceme vypočítať súčet čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované pridávanie jednotky. Každá pripočítaná jednotka posunie číslo \(a\) k jeho ďalšiemu nasledovníkovi. Ako konkrétny príklad si môžeme zobrať čísla \(2\) a \(5\).
+Tieto dve pravidlá nám umožňujú definovať súčet ľubovoľných dvoch prirodzených čísel. Ak chceme vypočítať súčet čísel \(a\) a \(b\), môžeme číslo \(b\) chápať ako opakované pridávanie jednotky. Každá pripočítaná jednotka posunie číslo \(a\) k jeho ďalšiemu nasledovníkovi. Ako konkrétny príklad si môžeme zobrať čísla \(2\) a \(5\).
 \[
 \begin{aligned}
   &2 + 5, \\
@@ -168,7 +168,27 @@ Tieto dve pravidlá nám umožňujú postupne definovať súčet ľubovoľných 
   &7.
 \end{aligned}
 \]
-Výsledok sčítania \(2 + 5\) je číslo \(7\). Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Je to zdĺhavý postup sčítania dvoch čísel, a preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel. Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke. Pri súčtoch niektorých cifier si môžeme všimnúť, že potrebujeme v ráde desiatok zapísať jednotku. Túto jednotku budeme musieť pri sčítaní dvoch väčších čísel zarátavať do výsledku.
+Výsledok sčítania \(2 + 5\) je číslo \(7\). Sčítanie teda môžeme chápať ako postupné vytváranie nasledovníkov: druhé číslo \(b\) určuje, koľkokrát máme od čísla \(a\) prejsť k jeho nasledovníkom. Výsledok sčítania dvoch prirodzených čísel \(a + b\) je číslo \(c\), ktoré dostaneme po prevedení čísla \(b\) na súčet jednotiek a postupným prevodom čísla \(a\) na nasledovníkov. Pri viacciferných číslach je táto metóda transformácie čísla na jednotky a následného vytvárania nasledovníkov veľmi nepraktická a zdĺhavá, preto existujú efektívne algoritmy na sčítanie ľubovoľných prirodzených čísel.
+
+Pri zámene sčítancov v sčítaní môžeme túto postupnosť jednotiek porovnať medzi sebou. Ak je výsledok tá istá postupnosť sčítania jednotiek, súčty dvoch čísel sa musia rovnať. Napríklad zámenou sčítancov v sčítaní \(2 + 3\) dostaneme \(3 + 2\). Po prevode oboch operácií dostaneme:
+\[
+\begin{aligned}
+  &2 + 3, \\
+  &2 + 2 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\hspace{5em}
+\begin{aligned}
+  &3 + 2, \\
+  &3 + 1 + 1, \\
+  &2 + 1 + 1 + 1, \\
+  &1 + 1 + 1 + 1 + 1. \\
+\end{aligned}
+\]
+Oba prevody vedú na tú istú postupnosť sčítania jednotiek, ich súčty sa teda musia rovnať. Táto vlasnosť sa nazýva komutatívnosť a je to jedna zo základných vlastností operácie sčítania.
+
+Pri sčítaní jednociferných čísel je časovo najvýhodnejšie zapamätať si základné spoje ščítania, ktoré sú ukázané v tabuľke. Pri súčtoch niektorých cifier si môžeme všimnúť, že potrebujeme v ráde desiatok zapísať jednotku. Túto jednotku budeme musieť pri sčítaní dvoch väčších čísel zarátavať do výsledku.
 \begin{table}[H]
   \centering
   \renewcommand{\arraystretch}{1.3}
@@ -190,7 +210,7 @@ Výsledok sčítania \(2 + 5\) je číslo \(7\). Sčítanie teda môžeme chápa
   \caption{Tabuľka súčtov čísel od \(0\) do \(9\).}
 \end{table}
 
-Pri viacciferných číslach je metóda transformácie čísla na jednotky a následného vytvárania nasledovníkov veľmi nepraktická. Na sčítanie ľubovoľných viacciferných prirodzených čísel preto používame nasledujúci algoritmus:
+Na sčítanie ľubovoľných viacciferných prirodzených čísel používame nasledujúci algoritmus:
 \begin{enumerate}[label=\arabic*)]
   \item Začneme od číslic najnižšieho rádu (jednotiek).
   \item Opakujeme cyklus, kým nespracujeme všetky rády oboch sčítancov:
@@ -207,8 +227,6 @@ Pre ľahšiu manipuláciu číslic a ich rádov sa pri tomto algoritme využíva
 \subsubsection{Písomné sčítanie prirodzených čísel} 
 
 Písomné sčítanie čísel je spôsob sčítania, pri ktorom zapisujeme čísla pod seba podľa rádov (jednotky pod jednotkami, desiatky pod desiatkami, stovky pod stovkami atď.) a sčítavame ich postupne sprava doľava.
-
-
 
 Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov bol v tom istom stĺpci. Pod druhý sčítanec sa urobí vodorovná čiara, aby sme odlíšili sčítance od súčtu. Výsledné číslice súčtu sa zapisujú pod túto čiaru do príslušných stĺpcov. Nad sčítance sa môže urobiť pomocný riadok pre zapisovanie prenesenej číslice z predošlého medzivýsledku, nie je ale nutný. Znak sčítania zapisujeme nad vodorovnú čiaru pred druhý sčítanec. Znamienko sčítania môžeme pri písomnom sčítaní vynechať. Príklad písomného sčítania čísel \(347 + 58\):
 \begin{table}[H]
@@ -232,7 +250,7 @@ Dva sčítance sa zapíšu jeden pod druhým tak, aby každý rád sčítancov b
 
 Tento grafický zápis uľahčuje prácu s jednotlivými číslicami a zabraňuje častým chybám. Postup písomného sčítania čísel \(156 + 278\) je nasledovný:
 
-\begin{longtable}{p{0.45\textwidth} p{0.45\textwidth}}
+\begin{longtable}{p{0.65\textwidth} p{0.35\textwidth}}
 
 Sčítance napíšeme pod seba a podčiarkneme.
 &
@@ -243,7 +261,7 @@ Sčítance napíšeme pod seba a podčiarkneme.
   \hline
 \end{array}
 \]
-\\[6em]
+\\
 
 Sčítame číslice na mieste jednotiek.
 \[
@@ -261,7 +279,7 @@ Sčítame číslice na mieste jednotiek.
     &   &   & 4 \\
 \end{array}
 \]
-\\[6em]
+\\
 
 Sčítame číslice na mieste desiatok aj s preneseným číslom.
 \[
@@ -279,7 +297,7 @@ Sčítame číslice na mieste desiatok aj s preneseným číslom.
     &   & 3 & 4 \\
 \end{array}
 \]
-\\[6em]
+\\
 
 Sčítame číslice na mieste stoviek aj s preneseným číslom.
 \[
@@ -301,56 +319,28 @@ Sčítame číslice na mieste stoviek aj s preneseným číslom.
 
 \subsubsection{Vlastnosti sčítania prirodzených čísel}
 
-Každé prirodzené číslo môžeme vyjadriť ako postupné sčítanie jednotiek. Platí to aj pri sčítaní ľubovoľných čísel, napríklad sčítanie \(2 + 3\) môžeme previesť takto:
+Sčítanie je komutatívne. Komutatívnosť znamená, že súčet sa nezmení, ak poradie sčítancov zameníme. Sčítance môžeme sčítať v ľubovoľnom poradí. Platí:
 \[
-\begin{aligned}
-  &2 + 3, \\
-  &2 + 2 + 1, \\
-  &2 + 1 + 1 + 1, \\
-  &1 + 1 + 1 + 1 + 1. \\
-\end{aligned}
-\] Pri zámene sčítancov v sčítaní môžeme túto postupnosť jednotiek porovnať medzi sebou. Ak je výsledok tá istá postupnosť sčítania jednotiek, súčty dvoch čísel sa musia rovnať. Zámenou sčítancov v sčítaní \(2 + 3\) dostaneme \(3 + 2\). Po prevode oboch operácií dostaneme:
-\[
-\begin{aligned}
-  &2 + 3, \\
-  &2 + 2 + 1, \\
-  &2 + 1 + 1 + 1, \\
-  &1 + 1 + 1 + 1 + 1. \\
-\end{aligned}
-\hspace{5em}
-\begin{aligned}
-  &3 + 2, \\
-  &3 + 1 + 1, \\
-  &2 + 1 + 1 + 1, \\
-  &1 + 1 + 1 + 1 + 1. \\
-\end{aligned}
+a + b = b + a.
 \]
-Oba prevody vedú na tú istú postupnosť sčítania jednotiek, ich súčty sa teda musia rovnať. Táto vlasnosť sa nazýva komutatívnosť a je to jedna zo základných vlastností operácie sčítania.
-
-Komutatívnosť znamená, že súčet sa nezmení, ak poradie sčítancov zameníme. Platí:
+Sčítanie je asociatívne. Asociatívnosť znamená, že súčet sa nezmení, ak sčítance združíme. Pri sčítaní troch a viacerých prirodzených čísel môžeme vybrať postup sčítania. Platí:
 \[
-a + b = b + a
+(a + b) + c = a + (b + c).
 \]
-
-Pri sčítaní troch a viacerých prirodzených čísel môžeme vybrať postup sčítania. Táto vlastnosť sa nazýva asociatívnosť. Asociatívnosť znamená, že súčet sa nezmení, ak sčítance združíme. Platí:
-\[
-(a + b) + c = a + (b + c)
-\]
-
 Skúšku správnosti pri sčítaní robíme zámenou poradia sčítancov.
 \[
 \begin{aligned}
-  348 + 961 = 1309
+  348 + 961 = 1309,
 \end{aligned}
 \hspace{5em}
 \begin{aligned}
-  961 + 348 = 1309
+  961 + 348 = 1309.
 \end{aligned}
 \]
 
 \subsection{Odčítanie prirodzených čísel}
 
-Odčítanie je operácia, pri ktorej od jedného čísla odoberáme iné číslo, aby sme zistili rozdiel medzi nimi. Prvý operand sa nazýva menšenec a druhý operand sa nazýva menšiteľ. Výsledok odčítania sa nazýva rozdiel. Slovom rozdiel označujeme tiež zápis odčítania. Operátor odčítania je znak mínus \enquote{\(-\)}. Odčítanie čísla \(b\) od čísla \(a\) zapisujeme ako \(a - b\).
+Odčítanie je operácia, pri ktorej od jedného čísla odoberáme iné číslo, aby sme zistili rozdiel medzi nimi. Prvý operand sa nazýva menšenec a druhý operand sa nazýva menšiteľ. Výsledok odčítania sa nazýva rozdiel. Slovom rozdiel označujeme tiež zápis odčítania. Operátor odčítania je znak mínus \enquote{\(\, - \,\)}. Odčítanie čísla \(b\) od čísla \(a\) zapisujeme ako \(a - b\).
 
 Odčítanie prirodzených čísel môžeme definovať pomocou dvoch základných pravidiel:
 \[
@@ -445,7 +435,7 @@ Menšiteľa napíšeme pod menšenca, napíšeme znamienko odčítania a podčia
   \hline
 \end{array}
 \]
-\\[1em]
+\\
 
 Odčítame číslicu na mieste jednotiek menšiteľa od číslice na mieste jednotiek menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta desiatok a pripočítame ju k číslici menšenca.
 \[
@@ -465,7 +455,7 @@ Odčítame číslicu na mieste jednotiek menšiteľa od číslice na mieste jedn
     &   &   & 6 \\
 \end{array}
 \]
-\\[11em]
+\\
 
 Odčítame číslicu na mieste desiatok menšiteľa, aj s preneseným číslom, od číslice na mieste desiatok menšenca. Číslica menšiteľa je väčšia, preto prenesieme jednotku z miesta stoviek a pripočítame ju k číslici menšenca.
 \[
@@ -486,7 +476,7 @@ Odčítame číslicu na mieste desiatok menšiteľa, aj s preneseným číslom, 
     &   & 4 & 6 \\
 \end{array}
 \]
-\\[6em]
+\\
 
 Odčítame číslicu na mieste stoviek menšiteľa, aj s preneseným číslom, od číslice na mieste stoviek menšenca.
 \[
@@ -511,14 +501,22 @@ Odčítame číslicu na mieste stoviek menšiteľa, aj s preneseným číslom, o
 
 \subsubsection{Vlastnosti odčítania prirodzených čísel}
 
-Pri odčítaní rozlišujeme poradie operandov. Menšenec je to číslo, od ktorého odčítame hodnotu menšiteľa. Odčítanie nie je komutatívne, ak zameníme menšenca a menšiteľa, rozdiel bude iné číslo. V prípadoch, kde od daného čísla ‒ menšenca, odčítame viacero čísel ‒ menšíteľov, môžeme meniť poradie odčítania. Príklad zámeny poradia menšiteľov:
+Pri odčítaní rozlišujeme poradie operandov, menšenec je to číslo, od ktorého odčítame hodnotu menšiteľa. Odčítanie nie je komutatívne, ak zameníme menšenca a menšiteľa, rozdiel môže byť iné číslo. Odčítanie je ľavo-združované (ľavo-asociatívne). To znamená, že pri viacerých odčítaniach sa štandardne počíta zľava doprava. Platí:
+\[
+a - b - c = (a - b) - c.
+\]
+V prípadoch, kde od daného čísla ‒ menšenca, odčítame viacero čísel ‒ menšíteľov, môžeme meniť poradie odčítania, ak všetkých menšiteľov odčítavame od toho istého menšenca. Platí:
+\[
+a - b - c = a - c - b.
+\]
+Príklad zámeny poradia menšiteľov:
 \[
 320 - 70 - 15 = 250 - 15 = 235, \hspace{5em} 320 - 15 - 70 = 305 - 70 = 235.
 \]
 
 \subsection{Násobenie prirodzených čísel}
 
-Násobenie je operácia, pri ktorej jedno číslo sčítame samo so sebou určítý počet krát. Čísla, ktoré násobíme, sa nazývajú činitele a výsledok násobenia sa nazýva súčin. Slovom súčin označujeme tiež zápis násobenia. Operátor násobenia je buď znak bodka \enquote{\(\, \cdot\, \)} alebo znak násobenia \enquote{\(\times\)}. Násobenie čísla \(a\) a čísla \(b\) zapisujeme ako \(a \cdot b\) alebo aj bez znamienka krát ako \(ab\).
+Násobenie je operácia, pri ktorej jedno číslo sčítame samo so sebou určítý počet krát. Čísla, ktoré násobíme, sa nazývajú činitele a výsledok násobenia sa nazýva súčin. Slovom súčin označujeme tiež zápis násobenia. Operátor násobenia je buď znak bodka \enquote{\(\, \cdot\, \)} alebo znak násobenia \enquote{\(\, \times \,\)}. Násobenie čísla \(a\) a čísla \(b\) zapisujeme ako \(a \cdot b\) alebo aj bez znamienka krát ako \(ab\).
 
 Násobenie prirodzených čísel môžeme definovať ako opakované sčítanie rovnakého čísla:
 \[
@@ -625,7 +623,7 @@ Druhého činiteľa napíšeme pod prvého činiteľa, napíšeme znamienko nás
   \hline
 \end{array}
 \]
-\\[6em]
+\\
 
 Vynásobíme prvého činiteľa číslicou druhého činiteľa na mieste jednotiek.
 \[
@@ -641,7 +639,7 @@ Prvý čiastkový súčin zapíšeme pod druhého činiteľa.
       1 & 3 & 8 & 6 \\
 \end{array}
 \]
-\\[6em]
+\\
 
 Vynásobíme prvého činiteľa číslicou druhého činiteľa na mieste desiatok.
 \[
@@ -658,7 +656,7 @@ Druhý čiastkový súčin zapíšeme pod prvý čiastkový súčin o jednu čí
   1 & 1 & 5 & 5 & \\
 \end{array}
 \]
-\\[6em]
+\\
 
 Druhý čiastkový súčin podčiarkneme, dva čiastkové súčiny sčítame.
 \[
@@ -680,9 +678,35 @@ Výsledný súčet zapíšeme pod čiaru.
 
 \end{longtable}
 
+\subsubsection{Vlastnosti násobenia prirodzených čísel}
+
+Násobenie je komutatívne. Súčin sa nezmení, ak poradie činiteľov zameníme. Činitele môžeme zamieňať. Platí:
+\[
+a \cdot b = b \cdot a.
+\]
+Násobenie je asociatívne. Súčin sa nezmení, ak činitele združíme. Môžeme meniť zoskupenie činiteľov. Platí:
+\[
+(a \cdot b) \cdot c = a \cdot (b \cdot c).
+\]
+Násobenie je distributívne vzhľadom na sčítanie a odčítanie. Ak násobíme súčet alebo rozdiel dvoch čísel tretím číslom, dva sčítance alebo menšenca a menšiteľa môžeme vynásobiť tretím číslom. Násobenie môžeme roznásobiť cez sčítanie alebo odčítanie. Platí:
+\[
+\begin{aligned}
+  a \cdot (b + c) &= a \cdot b + a \cdot c, \\
+  a \cdot (b - c) &= a \cdot b - a \cdot c.
+\end{aligned}
+\]
+Keď číslo vynásobíme jednotkou, číslo sa nezmení. Jednotka je neutrálny prvok násobenia. Platí:
+\[
+a \cdot 1 = a.
+\]
+Každé číslo vynásobené nulou je nula. Nula je pohlcujúci prvok násobenia. Platí:
+\[
+a \cdot 0 = 0.
+\]
+
 \subsection{Delenie prirodzených čísel}
 
-Delenie je operácia, pri ktorej zisťujeme, koľkokrát sa jedno číslo nachádza v druhom, alebo rozdeľujeme dané množstvo na rovnaké časti. Prvý operand sa nazýva delenec a druhý operand sa nazýva deliteľ. Výsledok delenia sa nazýva podiel. Slovom podiel označujeme tiež zápis delenia. Operátor delenia je buď znak dvojbodka \enquote{\(\, :\, \)} alebo znak delenia \enquote{\(\div\)}. Delenia čísla \(a\) číslom \(b\) zapisujeme ako \(a : b\).
+Delenie je operácia, pri ktorej zisťujeme, koľkokrát sa jedno číslo nachádza v druhom, alebo rozdeľujeme dané množstvo na rovnaké časti. Prvý operand sa nazýva delenec a druhý operand sa nazýva deliteľ. Výsledok delenia sa nazýva podiel. Slovom podiel označujeme tiež zápis delenia. Operátor delenia je buď znak dvojbodka \enquote{\(\, :\, \)} alebo znak delenia \enquote{\(\, \div \,\)}. Delenia čísla \(a\) číslom \(b\) zapisujeme ako \(a : b\).
 
 Delenie prirodzených čísel môžeme definovať ako opakované odčítanie rovnakého čísla určitý počet krát:
 \[
@@ -823,5 +847,24 @@ Podiel čísel je \(136\). Zvyšok \(9\) je zvyšok po delení.
 \]
 
 \end{longtable}
+
+\subsubsection{Vlastnosti delenia prirodzených čísel}
+
+Pri delení rozlišujeme poradie operandov, delenec je to číslo, ktoré delíme deliteľom. Delenie nie je komutatívne, ak zameníme delenca a deliteľa, podiel môže byť iné číslo. Delenie je ľavo-združované (ľavo-asociatívne). To znamená, že pri viacerých deleniach sa štandardne počíta zľava doprava. Platí:
+\[
+a : b : c = (a : b) : c.
+\]
+V prípadoch, kde dané číslo ‒ delenca, delíme viacerým počtom čísel ‒ deliteľov, môžeme meniť poradie deliteľov, ak delenca postupne delíme všetkými deliteľmi. Platí:
+\[
+a : b : c = a : c : b.
+\]
+Príklad zámeny poradia deliteľov:
+\[
+60 : 3 : 5 = 20 : 5 = 4, \hspace{5em} 60 : 5 : 3 = 12 : 3 = 4.
+\]
+Každé prirodzené číslo delené jednotkou zostáva rovnaké. Platí:
+\[
+a : 1 = a.
+\]
 
 \end{document}

@@ -7,12 +7,13 @@
             "command": "latexmk",
             "args": [
                 "-synctex=0",
+                // "--shell-escape",
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdf",
-                "-outdir=%OUTDIR%",
-                "-auxdir=%AUXDIR%",
-                "%DOC%"
+                // "-outdir=%OUTDIR%",
+                // "-auxdir=%AUXDIR%",
+                "%DOCFILE%"
             ]
         }
     ],

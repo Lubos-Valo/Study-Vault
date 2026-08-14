@@ -98,40 +98,62 @@ Meradlo môže mať iba konečný počet značiek, preto pri meraní musíme po�
 
 \subsection{Meranie dĺžky}
 
-Dĺžka je miera vzdialenosti medzi dvoma bodmi. Vzdialenosť udáva, koľko priestoru je medzi týmito bodmi. Základnou jednotkou dĺžky je meter (m). Menšie jednotky dĺžky sú decimeter (dm), centimeter (cm), milimeter (mm), väčšou jednotkou je kilometer (km). Medzi jednotkami dĺžky platia tieto vzťahy:
+Ľudia už v dávnych dobách potrebovali robiť rôzne merania. Chceli vedieť, akú rozlohu má ich pole, koľko váži obilie, ktoré sa im urodilo na poli atď. Veľmi často potrebovali poznať rozmery predmetov, ktoré ich obklopujú. Rozmery vyjadrovali ako šírku, výšku a hĺbku. Všetky rozmery merali jednu a tú istú veličinu ‒ dĺžku. Dĺžka je miera vzdialenosti medzi dvoma bodmi. Vzdialenosť udáva, koľko priestoru je medzi týmito bodmi. Na meranie dĺžok zhotovili rôzne nástroje ‒ pravítko, meter, meracie pásmo, posuvné meradlo.
 
-\noindent
-\begin{tabularx}{\textwidth}{@{}XXXX@{}}
-  \[
-  \begin{aligned}
-    \SI{1}{\km} &= \SI{1 000}{\m}, \\
-    \SI{1}{\km} &= \SI{10 000}{\dm}, \\
-    \SI{1}{\km} &= \SI{100 000}{\cm}, \\
-    \SI{1}{\km} &= \SI{1000 000}{\mm},
-  \end{aligned}
-  \]
-  &
-  \[
-  \begin{aligned}
-    \SI{1}{\m} &= \SI{10}{\dm}, \\
-    \SI{1}{\m} &= \SI{100}{\cm}, \\
-    \SI{1}{\m} &= \SI{1000}{\mm},
-  \end{aligned}
-  \]
-  &
-  \[
-  \begin{aligned}
-    \SI{1}{\dm} &= \SI{10}{\cm}, \\
-    \SI{1}{\dm} &= \SI{100}{\mm},
-  \end{aligned}
-  \]
-  &
-  \[
-  \begin{aligned}
-    \SI{1}{\cm} &= \SI{10}{\mm}.
-  \end{aligned}
-  \]
-  \\
-\end{tabularx}
+Dĺžku predmetov vyjadrovali v rôznych jednotkách, ktoré spočiatku odvodili z rozmerov ľudského teľa. Tak vznikli jednotky ako lakeť, stopa, palec atď. Pretože takéto jednotky dĺžky mohli byť v každom meste iné, dohodli sa na používaní jednotiek, ktoré sú vo veľkej časti sveta rovnaké. Takto vznikla v roku 1790 vo Francúzsku metrická sústava (alebo metrický systém) so základnou jednotkou \(1\) meter. Postupne bolo používaných niekoľko mierne odlišných metrických sústav, v súčasnosti je používaná \emph{Medzinárodná sústava jednotiek} nazývaná ako SI (z fr. \textbf{S}ystème \textbf{I}nternational (d'Unités)).
+
+Základnou jednotkou dĺžky je \emph{meter} (m). Menšie jednotky dĺžky sú \emph{decimeter} (dm), \emph{centimeter} (cm), \emph{milimeter} (mm), väčšou jednotkou je \emph{kilometer} (km). Medzi jednotkami dĺžky platia tieto vzťahy:
+
+\vspace{1em}\noindent
+\[
+\begin{array}{@{}c@{\qquad}c@{\qquad}c@{\qquad}c@{}}
+\begin{aligned}[t]
+  \SI{1}{\km} &= \SI{1\,000}{\m} \\
+  \SI{1}{\km} &= \SI{10\,000}{\dm} \\
+  \SI{1}{\km} &= \SI{100\,000}{\cm} \\
+  \SI{1}{\km} &= \SI{1\,000\,000}{\mm}
+\end{aligned}
+&
+\begin{aligned}[t]
+  \SI{1}{\m} &= \SI{10}{\dm} \\
+  \SI{1}{\m} &= \SI{100}{\cm} \\
+  \SI{1}{\m} &= \SI{1\,000}{\mm}
+\end{aligned}
+&
+\begin{aligned}[t]
+  \SI{1}{\dm} &= \SI{10}{\cm} \\
+  \SI{1}{\dm} &= \SI{100}{\mm}
+\end{aligned}
+&
+\begin{aligned}[t]
+  \SI{1}{\cm} &= \SI{10}{\mm}
+\end{aligned}
+\end{array}
+\]
+
+Dĺžku meriame rôznymi meradlami dĺžky:
+\begin{itemize}
+  \item Pravítko ‒ na meranie kratších dĺžok, zvyčajne v milimetroch a centimetroch. Existuje viacero druhov pravítok podľa tvaru, účelu a presnosti:
+  \begin{itemize}
+    \item Rovné pravítko – najbežnejšie, na meranie a rysovanie rovných čiar.
+    \item Trojuholníkové pravítko (trojuholník s ryskou) – na rysovanie kolmíc, rovnobežiek a uhlov, najmä \(\SI{30}{\degree}\), \(\SI{45}{\degree}\), \(\SI{60}{\degree}\) a \(\SI{90}{\degree}\).
+    \item T-pravítko – používa sa najmä v technickom kreslení na rysovanie vodorovných čiar.
+    \item Stupnicové pravítko – má vyznačenú stupnicu, napríklad v milimetroch a centimetroch.
+    \item Šablónové pravítko – obsahuje rôzne tvary a symboly na obkresľovanie.
+    \item Flexibilné pravítko – ohybné pravítko, ktoré sa dá prispôsobiť zakriveným povrchom.
+  \end{itemize}
+  \item Meter (metrové pravítko) ‒ pevné meradlo dlhé 1 meter.
+  \item Pásmo ‒ ohybná meracia páska, vhodná na väčšie vzdialenosti.
+  \item Svinovací meter ‒ kovové alebo plastové pásmo navinuté v puzdre.
+  \item Meracie koleso ‒ používa sa na meranie dlhších vzdialeností, napríklad pri geodézii alebo stavebníctve.
+  \item Posuvné meradlo (šuplera) ‒ umožňuje presne merať vonkajšie, vnútorné aj hĺbkové rozmery.
+  \item Mikrometer ‒ veľmi presné meradlo na malé rozmery, napríklad hrúbku súčiastok.
+  \item Kaliber ‒ používa sa na kontrolu alebo meranie presných rozmerov výrobkov.
+  \item Laserový diaľkomer ‒ elektronicky meria vzdialenosť pomocou laserového lúča.
+\end{itemize}
+
+\subsubsection{Meranie dĺžky úsečky}
+
+\subsubsection{Premena jednotiek dĺžky}
 
 \end{document}

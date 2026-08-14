@@ -1,0 +1,76 @@
+\documentclass{article}
+
+\usepackage{../../common}
+
+\graphicspath{
+  {../../../media/images/}
+}
+\addbibresource{../../references.bib}
+
+\title{Rovinné geometrické útvary}
+
+\begin{document}
+
+\maketitle
+
+\section{Rovinné geometrické útvary}
+
+Rovinné geometrické útvary sú útvary, ktoré môžeme nakresliť na rovnej ploche, teda v jednej rovine. Sú to napríklad útvary ako trojuholník, štvorec, obdĺžnik, kružnica atď. Rovinné útvary majú dva rozmery: dĺžku a šírku. Na rozdiel priestorové útvary (kocka, guľa, valec) majú tri rozmery: dĺžku, šírku a výšku.
+
+\subsection{Kružnica a kruh}
+
+Kružnica je súbor bodov, ktoré majú rovnakú vzdialenosť od jedného pevného bodu nazývaného ako stred kružnice. Kružnicu označujeme malými písmenami abecedy \(k\), \(l\), \(m\)\dots Vzdialenosť stredu kružnice od ľubovoľného bodu sa nazýva polomer, označujeme \(r\). Priemer je dvojnásobok polomeru, označujeme \(d\). Kružnica je iba súbor bodov, ktorý tvorí oblúk, vnútro krúžnice je prázdne. Ak chceme zahrnúť aj vnútro, hovoríme o kruhu. Kruh je súbor bodov, ktoré majú menšiu alebo rovnakú vzdialenosť od jedného pevného bodu nazývaného ako stred kruhu. Kruh označujeme veľkými písmenami abecedy \(K\), \(L\), \(M\)\dots Polomer a priemer zachovávajú význam.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[scale=1.2]
+    \draw (0,0) circle (2cm);
+    
+    \fill (0,0) circle (1.5pt);
+    \node[below left] at (0,0) {$S$};
+    
+    \draw (0,0) -- (1.42,1.42);
+    \fill (1.42,1.42) circle (1.5pt);
+    \node[above left] at (0.707,0.707) {$r$};
+    \node[above right] at (1.42,1.42) {$A$};
+    
+    \draw (-2,0) -- (2,0);
+    \fill (2,0) circle (1.5pt);
+    \fill (-2,0) circle (1.5pt);
+    \node[below] at (1,0) {$d$};
+    \node[above left] at (-2,0) {$B$};
+    \node[above right] at (2,0) {$C$};
+    
+    \node[below right] at (1.4,-1.4) {$k$};
+  \end{tikzpicture}
+  \begin{tikzpicture}[scale=1.2]
+    \filldraw[
+        pattern=north east lines,
+        pattern color=red!40
+    ] (0,0) circle (2cm);
+    
+    \fill (0,0) circle (1.5pt);
+    \node[below left] at (0,0) {$S$};
+    
+    \draw (0,0) -- (1.42,1.42);
+    \fill (1.42,1.42) circle (1.5pt);
+    \node[above left] at (0.707,0.707) {$r$};
+    \node[above right] at (1.42,1.42) {$A$};
+    
+    \draw (-2,0) -- (2,0);
+    \fill (2,0) circle (1.5pt);
+    \fill (-2,0) circle (1.5pt);
+    \node[below] at (1,0) {$d$};
+    \node[above left] at (-2,0) {$B$};
+    \node[above right] at (2,0) {$C$};
+    
+    \node[below right] at (1.4,-1.4) {$k$};
+  \end{tikzpicture}
+
+  \caption{Kružnica \(k\) a kruh \(K\).}
+\end{figure}
+
+
+
+
+\end{document}

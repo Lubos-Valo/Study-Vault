@@ -127,6 +127,124 @@ Trojuholník môžeme narysovať vtedy, keď poznáme dĺžky všetkých jeho st
 
 \subsection{Štvoruholníky}
 
-Štvoruholník je rovinný geometrický útvar, ktorý je ohraničený štyrmi úsečkami. Štvoruholník má štyri vrcholy a štyri strany. Štvoruholníky označujeme štyrmi veľkými písmenami podľa jeho vrcholov, napríklad \(ABCD\). Vrcholy zapisujeme v poradí, ako idú za sebou po obvode štvoruholníka, teda štvoruholník \(ABCD\) má strany \(AB\), \(BC\), \(CD\) a \(DA\).
+Štvoruholník je rovinný geometrický útvar, ktorý je ohraničený štyrmi úsečkami. Štvoruholník má štyri vrcholy a štyri strany. Štvoruholníky označujeme štyrmi veľkými písmenami podľa jeho vrcholov, napríklad \(ABCD\). Vrcholy zapisujeme v poradí, ako idú za sebou po obvode štvoruholníka, teda štvoruholník \(ABCD\) má strany \(AB\), \(BC\), \(CD\) a \(DA\). Štvoruholníky delíme podľa veľkosti strán a počtu rovnobežných strán.
+\begin{itemize}
+  \item Ak štvoruholník má dve dvojice rovnobežných strán, takýto štvoruholník nazývame rovnobežník (alebo kosodĺžnik). Rovnobežník, ktorý má všetky strany rovnako dlhé, nazývame kosoštvorec. Ak má rovnobežník všetky uhly pravé, nazývame ho obdĺžnik. Obdĺžnik, ktorý má všetky strany rovnako dlhé, nazývame štvorec.
+  \item Ak štvoruholník má jednu dvojicu rovnobežných strán, takýto štvoruholník nazývame lichobežník.
+  \item Ak štvoruholník má dve dvojice susedných strán rovnakej dĺžky, takýto štvoruholník nazývame deltoid.
+  \item Štvoruholník, ktorý nespĺňa žiadnu z týchto podmienok, nazývame všeobecný štvoruholník.
+\end{itemize}
+
+\noindent
+\begin{minipage}{\textwidth}
+  \begin{center}
+
+    \begin{minipage}{0.2\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2]
+      \draw (0,0) rectangle (1,1);
+      \node[below] at (0.5,0) {Štvorec};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2]
+      \draw (0,0) rectangle (2,1);
+      \node[below] at (1,0) {Obdĺžnik};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2.7]
+      \draw (0,0) -- (1,0) -- (1.707,0.707) --
+            (0.707,0.707) -- cycle;
+      \node[below] at (0.8535,0) {Kosoštvorec};
+    \end{tikzpicture}
+    \end{minipage}
+
+    \vspace{1cm}
+
+    \begin{minipage}{0.4\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1.5]
+      \draw (0,0) -- (3,0) -- (4,1) -- (1,1) -- cycle;
+      \node[below] at (2,0) {Rovnobežník};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.2\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \draw (0,0) -- (1,1) -- (2,0) -- (1,-2) -- cycle;
+      \node[below] at (1,-2) {Deltoid};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \draw (0,0) -- (4,0) -- (3,2) -- (1,2) -- cycle;
+      \node[below] at (2,0) {Lichobežník};
+    \end{tikzpicture}
+    \end{minipage}
+
+  \end{center}
+\end{minipage}
+
+\subsubsection{Vlastnosti štvoruholníkov}
+
+Rovnobežník má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Protiľahlé strany rovnobežníka sú rovnobežné a majú rovnakú dĺžku \(a = c\), \(b = d\). Susedné strany rovnobežníka nie sú kolmé. Uhlopriečky rovnobežníka \(e\), \(f\) nemajú rovnakú dĺžku a nie sú na seba kolmé.
+
+Kosoštvorec má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Všetky strany kosoštvorca majú rovnakú dĺžku \(a = b = c = d\). Protiľahlé strany kosoštvorca sú rovnobežné ale nie sú kolmé. Uhlopriečky kosoštvorca \(e\), \(f\) sú na seba kolmé, ale nemajú rovnakú dĺžku.
+
+Obdĺžnik má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Susedné strany obdĺžnika sú kolmé a protiľahlé strany obdĺžnika sú rovnobežné a majú rovnakú dĺžku \(a = c\), \(b = d\). Uhlopriečky obdĺžnika \(e\), \(f\) majú rovnakú dĺžku \(e = f\), ale nie sú na seba kolmé.
+
+Štvorec má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Všetky strany štvorca majú rovnakú dĺžku \(a = b = c = d\). Susedné strany štvorca sú kolmé a protiľahlé strany štvorca sú rovnobežné. Uhlopriečky štvorca \(e\), \(f\) majú rovnakú dĺžku \(e = f\) a sú na seba kolmé.
+
+\subsubsection{Konštrukcie rovnobežníkov}
+
+Konštrukcie štvoruholníkov sa lísia podľa ich typov. Konštrukcie rovnobežníkov sa až na malé zmeny zhodujú v ich postupe. Vždy vychádzame z dĺžky úsečiek a vnútorných uhlov. Konštrukcie všetkých štyroch typov sú opísané nižšie.
+
+Štvorec vieme narysovať, ak poznáme dĺžku jeho strany. Konštrukcia štvorca \(ABCD\) so stranou \(a\) je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany štvorca \(a\).
+  \item Zostrojíme kolmice \(p\), \(q\) na úsečku \(AB\) prechádzajúce cez body \(A\) a \(B\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany štvorca \(a\). Priesečník kolmice \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany štvorca \(a\). Priesečník kolmice \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme štvorec \(ABCD\).
+\end{enumerate}
+
+Obdĺžnik vieme narysovať, ak poznáme dĺžky jeho dvoch strán. Dĺžky strán môžeme zamienať, existujú teda dva spôsoby, ako zostrojiť obdĺžnik podľa jeho strán. Konštrukcia obdĺžnika \(ABCD\) so stranami \(a\), \(b\), ktoré nie sú rovnobežné, je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany obdĺžnika \(a\).
+  \item Zostrojíme kolmice \(p\), \(q\) na úsečku \(AB\) prechádzajúce cez body \(A\) a \(B\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany obdĺžnika \(b\). Priesečník kolmice \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany obdĺžnika \(b\). Priesečník kolmice \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme obdĺžnik \(ABCD\).
+\end{enumerate}
+
+Kosoštvorec vieme narysovať, ak poznáme dĺžku jeho strany. Veľkosť vnútorných uhlov nie je podstatná. Konštrukcia kosoštvorca \(ABCD\) so stranou \(a\) je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany kosoštvorca \(a\).
+  \item Zostrojíme dve rovnobežné priamky \(p\), \(q\), ktoré prechádzajúce cez body \(A\) a \(B\) a nie sú kolmé na úsečku \(AB\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany kosoštvorca \(a\). Priesečník priamky \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany kosoštvorca \(a\). Priesečník priamky \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme kosoštvorec \(ABCD\).
+\end{enumerate}
+
+Rovnobežník vieme narysovať, ak poznáme dĺžky jeho dvoch strán. Dĺžky strán môžeme zamienať, existujú teda dva spôsoby, ako zostrojiť rovnobežník podľa jeho strán. Veľkosť vnútorných uhlov nie je podstatná. Konštrukcia rovnobežníka \(ABCD\) so stranami \(a\), \(b\), ktoré nie sú rovnobežné, je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany rovnobežníka \(a\).
+  \item Zostrojíme dve rovnobežné priamky \(p\), \(q\), ktoré prechádzajúce cez body \(A\) a \(B\) a nie sú kolmé na úsečku \(AB\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany rovnobežníka \(b\). Priesečník priamky \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany rovnobežníka \(b\). Priesečník priamky \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme rovnobežník \(ABCD\).
+\end{enumerate}
 
 \end{document}

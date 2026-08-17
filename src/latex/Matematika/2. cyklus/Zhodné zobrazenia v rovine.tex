@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{../../common}
+
+\graphicspath{
+  {../../../media/images/}
+}
+\addbibresource{../../references.bib}
+
+\title{Zhodné zobrazenia v rovine}
+
+\begin{document}
+
+\maketitle
+
+Zhodnosť znamená, že dva geometrické útvary majú rovnaký tvar aj rovnakú veľkosť. Ak jeden útvar môžeme posunúť, otočiť alebo preklopiť tak, aby sa navzájom kryli, potom sú tieto útvary zhodné. Zhodné útvary majú rovnakú veľkosť strán a veľkosť vnútorných uhlov. Zhodné útvary dokážeme vytvoriť pomocou zhodných zobrazení.
+
+Zhodné zobrazenie v rovine je zobrazenie, pri ktorom sa nemení tvar ani veľkosť útvaru. Zachováva vzdialenosti medzi bodmi. Zhodné zobrazenie zobrazí každý bod \(X\) geometrického útvaru na bod \(X'\). Bod \(X\) nazývame vzor a bod \(X'\) nazývame obraz bodu \(X\). Zobrazenie je zhodné, ak pre každé dva body geometrického útvaru \(X\), \(Y\) a ich zobrazené body \(X'\), \(Y'\) platí:
+\[
+|XY| = |X'Y'|.
+\]
+
+Zhodné zobrazenia v rovine sú posúvanie (translácia), otáčanie (rotácia), osová súmernosť a stredová súmernosť. Pri zhodných zobrazeniach rozlišujeme súhlasné zhodnosti a nesúhlasné zhodnosti podľa toho, či sa zachová alebo mení orientácia útvaru. Súhlasné zhodnosti zachovávajú orientáciu útvaru, zatiaľ čo nesúhlasné zhodnosti menia orientáciu útvaru tým, že útvar \enquote{preklopia}. Súhlasné zhodnosti sú posúvanie a otáčanie, nesúhlasné zhodnosti sú osová a stredová súmernosť.
+
+\section{Posúvanie}
+
+Posúvanie (nepresne \enquote{posunutie}) je zhodné zobrazenie, pri ktorom sa každý bod útvaru posunie o rovnakú vzdialenosť a v rovnakom smere. Pre posúvanie musí byť určená dĺžka posúvania a aj smer posúvania. Graficky sa posunutie znázorňuje orientovanou úsečkou dĺžky posúvania a smeru zhodnom so smerom posúvania. Pre obraz \(X'\) ľubovoľného bodu \(X\) v posúvaní platí, že ak orientovaná úsečka znázorňujúca posúvanie má začiatočný bod \(X\), jej koncový bod je bod \(X'\).
+
+\section{Otáčanie}
+
+Otáčanie (nepresne \enquote{otočenie}) je zhodné zobrazenie, pri ktorom sa každý bod útvaru otočí okolo pevného bodu o rovnaký uhol. Tento pevný bod nazývame stred otáčania. Všetky body sa otáčajú okolo jedného stredu o rovnaký uhol, vzdialenosť bodov od stredu otáčania sa nemení. Otáčať môžeme v smere hodinových ručičiek a proti smeru hodinových ručičiek. Pre obraz \(X'\) ľubovoľného bodu \(X\) v otačaní okolo bodu \(S\) platí:
+\[
+|XS| = |X'S|.
+\]
+
+\section{Osová súmernosť}
+
+Osová súmernosť je zhodné zobrazenie v rovine určené priamkou \(o\) nazývanou ako os súmernosti, ktoré každému bodu \(X\) (vzor) priradí bod \(X'\) (obraz) tak, že platí:
+\begin{itemize}
+  \item úsečka \(XX'\) je kolmá na priamku \(o\),
+  \item stred úsečky \(XX'\) leží na priamke \(o\).
+\end{itemize}
+
+Body \(X\) a \(X'\) sa nazývajú osovo súmerné podľa osi \(o\). Vzdialenosť bodu \(X\) od osi \(o\) je rovnaká ako vzdialenosť bodu \(X'\) od osi \(o\). V osovej súmernosti môžu nastať niektoré špeciálne prípady:
+\begin{itemize}
+  \item Ak bod \(X\) leží na osi súmernosti \(o\), potom \(X'\) splýva s \(X\). Bod \(X\) sa nazýva samodružný bod a platí:
+  \[
+  X = X'.
+  \]
+  \item Priamka \(p\) kolmá na os \(o\) sa zobrazí sama na seba. Priamka \(p\) a jej obraz \(p'\) splývajú a platí:
+  \[
+  p = p'.
+  \]
+  \item Priamka \(p\) rovnobežná s osou \(o\) sa zobrazí na inú rovnobežnú priamku. Vzdialenosť od osi zostáva zachovaná.
+\end{itemize}
+
+Obrazom útvaru \(U\) v osovej súmernosti danej osou \(o\) rozumieme útvar \(U'\) obsahujúci práve tie body roviny, ktoré sú obrazmi bodov útvaru \(U\). Osová súmernosť \enquote{zrkadlovo preklopí} útvar \(U\) podľa priamky \(o\) na útvar \(U'\). Útvary \(U\) a \(U'\) sa nazývajú osovo súmerné podľa osi \(o\). Útvary \(U\) a \(U'\) sú zhodné.
+
+Útvar \(U\) je osovo súmerný (alebo symetrický), ak existuje os súmernosti \(o\) tak, že obraz \(U'\) v osovej súmernosti splýva s útvarom \(U\). Osovo súmerný útvar dokážeme \enquote{preklopiť} tak, aby sme dostaneme ten istý útvar. Útvar \(U\) môže mať jednu alebo viac osí súmernosti (vrátane nekonečna) alebo nemusí mať žiadnu, v tom prípade hovoríme, že útvar je osovo nesúmerný.
+
+Dva útvary, ktoré možno premiestniť tak, že sa prekrývajú, sa nazývajú zhodné. Teda osovo súmerný útvar sa skladá z dvoch zhodných častí oddelených priamkou ‒ osou súmernosti.
+
+V osovej súmernosti je bod \(A'\) obrazom vrcholu \(A\), bod \(B'\) obrazom vrcholu \(B\) a bod \(C'\) je obrazom vrcholu \(C\). Podobnú vlasnosť má aj bod \(X'\), ktorý je obrazom bodu \(X\) trojuholníka \(ABC\) v danej osovej súmernosti. Obraz \(A'B'C'\) trojuholníka \(ABC\) obsahuje obrazy všetkých bodov trojuholníka \(ABC\) a žiadne iné.
+
+\end{document}

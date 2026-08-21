@@ -1,0 +1,102 @@
+\documentclass{article}
+
+\usepackage{../../common}
+
+\graphicspath{
+  {../../../media/images/}
+}
+\addbibresource{../../references.bib}
+
+\title{Logika, kombinatorika, štatistika a pravdepodobnosť}
+
+\begin{document}
+
+\maketitle
+
+\section{Logika, dôvodenie, dôkazy}
+
+Logika (alebo matematická logika) je matematická disciplína, ktorá sa zaoberá uvažovaním, dokazovaním a formálnymi pravidlami myslenia. Logika je v matematike nutná, aby sa mohlo prejsť od známych informácií k záveru. Záver neplatí preto, že vyzerá správne, ale preto, že vyplýva z predchádzajúcich tvrdení podľa pravidiel logiky.
+
+Na logike je postavená celá matematika ako veda. Týmto sa matematika líši od iných vied, pretože zatiaľ čo vedy ako fyzika, biológia, chémia atď. sú založené na skúmaní prírodného sveta pomocou pozorovania a experimentov, v matematike sa výsledky získavajú deduktívnym uvažovaním. Definície a axiómy tvoria základ, na ktorom sa buduje celá moderná matematika.
+
+Axióma (alebo postulát, nesprávne axióm) je tvrdenie, ktoré sa považuje za pravdivé a slúži ako predpoklad alebo východiskový bod pre ďalšie uvažovanie a dôkazy. Slovo pochádza zo starogréckeho slova \enquote{axíōma}, ktoré znamená \enquote{to, čo sa považuje za hodné alebo vhodné} alebo \enquote{to, čo sa samo o sebe javí ako zrejmé}. Každé odvetvie matematiky je založené na malom súbore axióm, z ktorých vyplývajú všetky závery.
+
+Geometriu, akú používame dodnes, opísal Euklid vo svojej práci \emph{Základy}. V nej rozpracoval Euklidove postuláty, teda päť základných axióm euklidovskej geometrie, ktoré znejú v modernizovanej formulácii takto:
+\begin{itemize}
+  \item Cez ľubovoľné dva body možno viesť práve jednu priamku.
+  \item Úsečku možno ľubovoľne predĺžiť na priamku.
+  \item Z ľubovoľného stredu a s ľubovoľným polomerom možno opísať kružnicu.
+  \item Všetky pravé uhly sú navzájom zhodné.
+  \item Ak priamka pretína dve priamky a súčet vnútorných uhlov na jednej strane je menší ako dva pravé uhly, potom sa tieto dve priamky na tejto strane pretínajú.
+\end{itemize}
+Týchto päť axióm stačí na to, aby sme vedeli definovať a narysovať všetky geometrické útvary v rovine a v upravenej podobe aj v priestore. V súčasnosti sa základom pre euklidovskú geometriu považuje Hilbertov axiomatický systém z roku 1899, ktorý používa 20 axióm rozdelených do piatych skupín.
+
+Definícia je význam, ktorý je priradený termínu alebo slovu. Význam vyjadrujeme pomocou slov a iných definícií. Napríklad termín \emph{štvorec}, ktorý má definíciu \enquote{obdĺžnik, ktorý má všetky strany rovnako dlhé}, využíva termín obdĺžnika, ktorý má tiež svoju definíciu. Toto odkazovanie na definované termíny sa musí dopracovať k axiómam. Definície teda slúžia na vyjadrovanie významu pomocou jedného alebo viac slov, čo nám šetrí čas. V matematike musia byť definície jednoznačné a presné, aby sa zamedzilo nedorozumeniam a vychádzalo sa len z toho, čo už je známe.
+
+\section{Štatistika a spracovanie údajov}
+
+Štatistika je matematická disciplína, ktorá sa zaoberá zberom, spracovaním, triedením a vyhodnocovaním údajov na základe rôznych kritérií. Z veľkého súboru údajov nám pomáha zistiť, čo tieto údaje hovoria, čo platí atď. Cieľom štatistiky je premeniť surové údaje na informáciu, z ktorej môžeme urobiť záver.
+
+Hlavný nástroj, ktorým štatistika pomáha spracovať údaje, je grafické znázornenie. 
+
+\section{Kombinatorika}
+
+Kombinatorika (alebo kombinatorická matematika) je matematická disciplína, ktorá sa zaoberá konečnými súbormi objektov a ich počítaním podľa rôznych kritérií. Pomáha nám zistiť, koľko rôznych možností môžeme vytvoriť alebo koľkými spôsobmi sa dá niečo vybrať či usporiadať. Výsledky nejakého usporiadania nazývame kombinácie, a preto sa táto disciplína nazýva kombinatorika.
+
+V kombinatorike sa snažíme nájsť počet možností, ktoré vyhovujú podmienkám. Na počet týchto možností má vplyv mohutnosť súborov, s ktorými pracujeme. Mohutnosť (alebo kardinalita) vyjadruje počet prvkov v súbore. Každý konečný súbor prvkov má svoju mohutnosť. Mohutnosť konečného súboru prvkov je vždy prirodzené číslo. Pomocou mohutnosti vieme porovnávať \enquote{veľkosť} súborov.
+
+Na určenie počtu možností využívame rôzne postupy. Jedným z najľahších ale často zdĺhavých je vymenovanie všetkých možností, ktoré spĺňajú podmienky. Napríklad pri zmiešaní dvoch farieb z troch základných farieb červenej, zelenej a modrej by všetky možnosti výberu boli nasledujúce:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l}
+    Červená a Zelená \\
+    Červená a Modrá \\
+    Zelená a Modrá
+  \end{tabular}
+\end{table}
+
+\noindent
+Iné kombinácie farieb sú rovnaké ako už spomínané. Z vymenovaných možností je zrejmé, že existujú tri kombinácie, ako zmiešať tri základné farby. Pri malom počte prvkov je tento postup prijateľný, pri veľkom počte prvkov je už ale neprehľadný. Jeden spôsob sprehladnenia je použitie symbolickej formy prvkov. Napríklad namiesto celého mena sa použije začiatočné písmeno osoby:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ll ll ll ll}
+    A & Adam     & B & Barbora  & C & Cyril    & D & Dominika \\
+    E & Erik     & F & Filip    & G & Gabriela & H & Hana \\
+    I & Igor     & J & Jakub    & K & Katarína & L & Lukáš \\
+    M & Martina  & N & Nina     & O & Oliver   & P & Petra \\
+    Q & Quentin  & R & Roman    & S & Simona   & T & Tomáš \\
+    U & Urban    & V & Veronika & W & William  & X & Xavier \\
+    Y & Yvonne   & Z & Zuzana   &   &          &   &         \\
+  \end{tabular}
+\end{table}
+
+\noindent
+Pri vytváraní dvojíc sa použijú symbolické písmená na reprezentovanie danej osoby. Ak by sme vytvárali dvojice skupiny Adam, Barbora, Cyril, Dominika, Erik, Filip, Gabriela a Hana, použili by sme symboly A, B, C, D, E, F, G, H. Zápis možností potom je nasledujúci:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{*{8}{l}}
+    AB & BC & CD & DE & EF & FG & GH & \\
+    AC & BD & CE & DF & EG & FH & & \\
+    AD & BE & CF & DG & EH & & & \\
+    AE & BF & CG & DH & & & & \\
+    AF & BG & CH & & & & & \\
+    AG & BH & & & & & & \\
+    AH & & & & & & & \\
+  \end{tabular}
+\end{table}
+
+\noindent
+Počet možných dvojíc je \(28\).
+
+\section{Pravdepodobnosť}
+
+Pravdepodobnosť je matematická disciplína, ktorá sa zaoberá náhodnými javmi. Slovo pravdepodobnosť znamená šanca, neistota. Pravdepodobnosť vyjadruje, aká veľká je šanca, že sa niečo stane.
+
+Každá minca má dve strany, nazývame ich líce a rub. To, či pri hode mincou padne líce alebo rub, závisí od náhody. Preto hod mincou nazývame náhodný pokus. Líce a rub sú výsledky pokusu.
+
+Hod kockou je náhodný pokus. Jeho výsledok závisí od náhody.
+
+\end{document}

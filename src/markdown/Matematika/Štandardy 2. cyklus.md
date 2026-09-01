@@ -2,7 +2,7 @@
 
 ## Výkonový štandard
 
-### 1. cieľ
+### cieľ
 
 Pracovať s prirodzenými číslami, zlomkami, desatinnými číslami a s celými zápornými číslami pri riešení úloh a problémov.
 
@@ -12,7 +12,7 @@ Pracovať s prirodzenými číslami, zlomkami, desatinnými číslami a s celým
 - Používať a interpretovať desatinné čísla v reálnych situáciách, vykonávať jednoduché operácie s desatinnými číslami a využívať ich pri premenách jednotiek.
 - Používať reprezentácie a poznať význam záporných čísel v bežnom živote a porovnávať celé záporné čísla.
 
-### 2. cieľ
+### cieľ
 
 Analyzovať, opísať a uplatniť pravidlá vo vzoroch a postupnostiach a riešiť praktické úlohy s využitím závislostí medzi veličinami alebo využitím vzťahov medzi rôznymi jednotkami miery.
 
@@ -20,20 +20,20 @@ Analyzovať, opísať a uplatniť pravidlá vo vzoroch a postupnostiach a rieši
 - Objavovať priamu úmernosť v reálnom živote a opísať ju matematickým jazykom a využiť matematické nástroje pri riešení úloh s priamou úmernosťou.
 - Riešiť praktické úlohy vyžadujúce odhady a prevody jednotiek času, hmotnosti a objemu.
 
-### 3. cieľ
+### cieľ
 
 Zbierať, zaznamenávať, usporiadať a triediť údaje, hľadať vhodnú organizáciu údajov, tvoriť jednoduché frekvenčné tabuľky a grafy a interpretovať výsledky.
 
 - Zbierať reálne a kontextovo relevantné údaje na základe pozorovania, merania alebo jednoduchého experimentu, prezentovať ich pomocou frekvenčných tabuliek, diagramov a aritmetického priemeru a interpretovať údaje z reálneho života v jednoduchých súvislostiach.
 
-### 4. cieľ
+### cieľ
 
 Riešiť jednoduché kombinatorické a pravdepodobnostné situácie.
 
 - Modelovať a riešiť jednoduché kombinatorické situácie pomocou organizačného princípu, odhadovať a overovať ich výsledky, rozpoznávať ich v reálnom živote a hľadať stratégie na ich riešenie.
 - Modelovať a riešiť jednoduché pravdepodobnostné situácie vykonávaním experimentov, odhadovať a overovať ich výsledky, rozpoznávať ich v reálnom živote a posúdiť pravdepodobnosť udalosti.
 
-### 5. cieľ
+### cieľ
 
 Analyzovať zložitejšie geometrické útvary v rovine a priestore, využívať polohové a metrické vlastnosti útvarov pri riešení jednoduchých geometrických úloh.
 
@@ -43,14 +43,14 @@ Analyzovať zložitejšie geometrické útvary v rovine a priestore, využívať
 - Určovať mieru jednoduchých rovinných a priestorových útvarov pomocou vlastných a univerzálnych jednotiek dĺžky, obvodu, obsahu a objemu a používať ju v reálnom kontexte.
 - Určovať súmerné útvary a určovať zhodné útvary, používať osovú súmernosť a posunutie v jednoduchých aplikačných úlohách a hrách.
 
-### 6. cieľ
+### cieľ
 
 Riešiť úlohy na orientáciu v rovine a v priestore a úlohy rozvíjajúce priestorovú predstavivosť.
 
 - Orientovať sa v priestore, opísať a zaznamenať polohu a pohyb v priestore.
 - Objavovať súvislosti medzi rovinnými a priestorovými útvarmi a riešiť problémy zaznamenávania jednoduchých stavieb z kociek.
 
-### 7. cieľ
+### cieľ
 
 Formulovať zložitejšie logické úvahy, objavovať a vysvetliť chyby v postupe, navrhovať stratégie a riešiť aplikačné úlohy.
 
@@ -60,7 +60,7 @@ Formulovať zložitejšie logické úvahy, objavovať a vysvetliť chyby v postu
 
 ### Čísla a operácie s číslami
 
-#### 1. Rozširovanie oboru prirodzených čísel
+#### Rozširovanie oboru prirodzených čísel
 
 Pojmy:
 
@@ -99,7 +99,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Komunikácia o primerane veľkých prirodzených číslach pri riešení úloh.
 - Používanie znaku "$-$" pre zápis záporného čísla, čítanie a písanie celých čísel v intervale $〈-100, 100〉$.
 
-#### 2. Základy práce so zlomkami
+#### Základy práce so zlomkami
 
 Pojmy:
 
@@ -137,7 +137,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Používanie proporčných vzťahov vyjadrených zlomkom v komunikácii a argumentácii.
 - Vysvetľovanie významu a použitie zlomkov v jednoduchých súvislostiach.
 
-#### 3. Základy práce s desatinnými číslami
+#### Základy práce s desatinnými číslami
 
 Pojmy:
 
@@ -171,7 +171,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Vysvetľovanie jednoduchých súvislostí medzi desatinnými číslami a desatinnými zlomkami.
 - Interpretovanie výsledkov riešenia úloh s desatinnými číslami a diskutovanie o relevantnosti výsledkov v kontexte aplikačnej úlohy.
 
-#### 4. Číselné výrazy a jednoduché rovnice a nerovnice v riešení úloh
+#### Číselné výrazy a jednoduché rovnice a nerovnice v riešení úloh
 
 Pojmy:
 
@@ -214,7 +214,7 @@ Matematický jazyk, komunikácia a argumentácia:
 
 ### Závislosti, vzťahy a práca s údajmi
 
-#### 1. Práca so vzormi a postupnosťami
+#### Práca so vzormi a postupnosťami
 
 Pojmy:
 
@@ -250,7 +250,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Komunikácia a diskutovanie o vlastnostiach vzorov a číselných postupností.
 - Zdôvodňovanie zaradenia a poradia prvkov vo vzore a postupnosti.
 
-#### 2. Rozšírené nástroje na prácu so závislosťami a vzťahmi
+#### Rozšírené nástroje na prácu so závislosťami a vzťahmi
 
 Pojmy:
 
@@ -296,7 +296,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Slovné opisovanie priamej úmernosti, interpretovanie súvislostí medzi priamo úmernými veličinami a zdôvodňovanie riešenia úloh s priamou úmernosťou.
 - Aktívne používanie jednotiek času, hmotnosti a objemu v komunikácii.
 
-#### 3. Rozšírené kombinatorické postupy a nástroje
+#### Rozšírené kombinatorické postupy a nástroje
 
 Pojmy:
 
@@ -326,7 +326,7 @@ Matematický jazyk, komunikácia a argumentácia:
 
 - Opisovanie, zaznamenávanie a zdôvodňovanie systému usporiadania a vypisovania možností v kombinatorických situáciách.
 
-#### 4. Riešenie jednoduchých pravdepodobnostných situácií
+#### Riešenie jednoduchých pravdepodobnostných situácií
 
 Pojmy:
 
@@ -358,7 +358,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Komunikácia o viac alebo menej pravdepodobných situáciách, spolupráca pri realizácii jednoduchých pravdepodobnostných experimentov, interpretovanie a prezentovanie ich výsledkov.
 - Diskutovanie o stratégiách jednoduchých hier.
 
-#### 5. Rozšírené nástroje na prácu s údajmi
+#### Rozšírené nástroje na prácu s údajmi
 
 Pojmy:
 
@@ -394,7 +394,7 @@ Matematický jazyk, komunikácia a argumentácia:
 
 ### Geometria
 
-#### 1. Jednoduché rovinné geometrické útvary, vlastnosti a vzťahy
+#### Jednoduché rovinné geometrické útvary, vlastnosti a vzťahy
 
 Pojmy:
 
@@ -447,7 +447,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Nachádzanie inkluzívnych (podmnožinových) vzťahov medzi štvoruholníkmi, diskutovanie o nich a komunikovanie o rôznych triediacich kritériách štvoruholníkov.
 - Diskutovanie a argumentovanie o podmienkach existencie geometrických útvarov.
 
-#### 2. Jednoduché priestorové geometrické útvary, vlastnosti a vzťahy
+#### Jednoduché priestorové geometrické útvary, vlastnosti a vzťahy
 
 Pojmy:
 
@@ -499,7 +499,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Diskutovanie o existencii a počte sietí kocky a kvádra.
 - Používanie karteziánskej súradnicovej sústavy pri komunikácii o polohách bodov a útvarov v prvom kvadrante a pri opise pohybu (cesty) v rovine.
 
-#### 3. Práca s uhlom a operácie s uhlami
+#### Práca s uhlom a operácie s uhlami
 
 Pojmy:
 
@@ -535,7 +535,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Používanie geometrických pojmov pri komunikácii o uhloch, ich označovanie.
 - Zdôvodňovanie svojho odhadu typu uhla, klasifikácie uhlov.
 
-#### 4. Rozšírené postupy merania a určovania miery
+#### Rozšírené postupy merania a určovania miery
 
 Pojmy:
 
@@ -583,7 +583,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Odhadovanie miery útvarov na základe predstavy o jednotkách dĺžky (vzdialenosť, obvod), predstavy o jednotkových štvorcoch (obsah), jednotkových kockách (objem) a diskutovanie o presnosti odhadu a merania.
 - Diskutovanie o vzťahu medzi obvodom a obsahom útvarov v štvorcovej sieti a argumentovanie o nejednoznačnosti tohto vzťahu pomocou príkladov.
 
-#### 5. Skúmanie vlastností súmernosti a základy posunutia
+#### Skúmanie vlastností súmernosti a základy posunutia
 
 Pojmy:
 

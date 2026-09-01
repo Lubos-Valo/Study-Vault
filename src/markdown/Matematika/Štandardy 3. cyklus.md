@@ -198,7 +198,7 @@ Pojmy:
   - Veľkosť uhla, uhlomer.
   - Stupeň, minúta.
   - Obvod, jednotky dĺžky.
-  - Obsah, jednotky obsahu (mm, cm, dm, m, km, a, ha).
+  - Obsah, jednotky obsahu ($mm^2$, $cm^2$, $dm^2$, $m^2$, $km^2$, $a$, $ha$).
 
 Vzťahy:
 
@@ -242,16 +242,15 @@ Pojmy:
 - Aktívne:
   - Osová a stredová súmernosť, stred súmernosti, os súmernosti, vzor a obraz.
   - Osovo a stredovo súmerné útvary.
-  - Zhodné a podobné trojuholníky, pomer/koeficient podobnosti.
+  - Zhodné trojuholníky, pomer/koeficient podobnosti.
 
 - Pasívne:
-  - Zhodnosť a podobnosť geometrických útvarov.
+  - Zhodnosť geometrických útvarov.
 
 Vzťahy:
 
 - Objavovanie vzťahov medzi súmernosťou a zhodnosťou geometrických útvarov.
 - Vety o zhodnosti trojuholníkov (sss, sus, usu).
-- Vety o podobnosti trojuholníkov (sss, sus, uu).
 
 Postupy:
 
@@ -261,7 +260,6 @@ Postupy:
 - Identifikácia osovo a stredovo súmerných útvarov.
 - Určovanie vzorov a obrazov útvarov v osovej a stredovej súmernosti (bod, úsečka, trojuholník, štvoruholník, kružnica/kruh alebo iný jednoduchý útvar), určovanie stredu/osi v stredovej/osovej súmernosti.
 - Konštrukcia osovo a stredovo súmerného útvaru pomocou rysovacích alebo digitálnych nástrojov.
-- Podobné zobrazenia – rozhodovanie o podobnosti útvarov, objavovanie podmienok pre podobnosť trojuholníkov na základe analógie s vetami o zhodnosti trojuholníkov.
 
 Matematické reprezentácie:
 
@@ -521,8 +519,8 @@ Pojmy:
 
 - Aktívne:
   - Povrch a objem telies (kocka, kváder, ihlan, valec).
-  - Jednotky povrchu (mm, cm, dm, m, km), jednotky objemu (mm, cm, dm, m, cl, ml, dl, l, hl).
-  - Jednotky hmotnosti (g, dg, kg, t).
+  - Jednotky povrchu ($mm^2$, $cm^2$, $dm^2$, $m^2$, $km^2$), jednotky objemu ($mm^3$, $cm^3$, $dm^3$, $m^3$, $cl$, $ml$, $dl$, $l$, $hl$).
+  - Jednotky hmotnosti ($g$, $dg$, $kg$, $t$).
   - číslo pí (π).
 
 - Pasívne:
@@ -531,15 +529,13 @@ Pojmy:
 Vzťahy:
 
 - Vzťahy medzi jednotkami povrchu a ich premeny.
-- Vzťahy medzi jednotkami objemu a ich premeny, empirická skúsenosť (1l = 1 dm).
+- Vzťahy medzi jednotkami objemu a ich premeny, empirická skúsenosť ($1l = 1 dm^3$).
 - Vzťahy medzi jednotkami hmotnosti.
 - Vzťah súčtu vnútorných uhlov trojuholníka a štvoruholníka.
 - Vzťah medzi priemerom a polomerom kruhu/kružnice.
 - Vzťah medzi obvodom kruhu a jeho priemerom (využitie historických alebo iných aktivít pre objasnenie približnej hodnoty čísla π ako vzťahu medzi obvodom kruhu a jeho priemerom ‒ odhady a približné hodnoty čísla π a jeho geometrická interpretácia).
-- Pytagorova veta a jej význam.
 
 Postupy:
-- Využitie Pytagorovej vety, odhad a výpočet obvodu útvarov (rovnobežník, trojuholník, lichobežník, pravidelný n-uholník, kruh, resp. dĺžka kružnice a kružnicového oblúka) úvahou a aplikovaním odvodených vzťahov.
 - Odhad a výpočet obsahu útvarov (rovnobežník, trojuholník, lichobežník, kruh, kruhový výsek, zložený útvar) úvahou a aplikovaním odvodených vzťahov.
 - Odhad a výpočet objemu a povrchu telies úvahou a aplikovaním odvodených vzťahov.
 - Premeny jednotiek hmotnosti a ich využitie v praxi.
@@ -557,7 +553,6 @@ Matematický jazyk, komunikácia a argumentácia:
 
 - Používanie správnej terminológie a symbolického jazyka v kontexte určovania miery rovinných a priestorových útvarov.
 - Slovné interpretovanie a vysvetľovanie vzťahov súvisiacich s mierou a jednotkami miery.
-- Diskutovanie o rôznych postupoch merania a ich presnosti, porovnávanie nameraných hodnôt s predbežným odhadom i výpočtom, argumentácia o dostatočnosti odhadu či potreby presného merania v praktických situáciách.
 
 #### Skúmanie množín bodov v geometrii
 
@@ -892,7 +887,7 @@ Postupy:
 - Zapisovanie súčinu väčšieho počtu rovnakých činiteľov v tvare mocniny a opačne.
 - Algoritmy počítania druhých a tretích mocnín, resp. mocnín racionálnych čísel s celočíselným exponentom s využitím digitálnych nástrojov.
 - Práca s mocninami čísla 10, čítanie, zapisovanie, znázorňovanie na číselnej osi, približné hodnoty reálnych čísel a ich porovnávanie.
-- Používanie vedeckého zápisu čísla ().
+- Používanie vedeckého zápisu čísla ($a \cdot 10^n, 1 \leq a \leq 10$).
 - Narábanie s veľmi veľkými a veľmi malými číslami (umocnenie čísel medzi 0 a 1, umocnenie čísel väčších ako 1).
 - Odhadovanie a zaokrúhľovanie reálnych čísel.
 
@@ -966,7 +961,7 @@ Matematický jazyk, komunikácia a argumentácia:
 - Slovná interpretácia výrazov a rovníc/nerovníc.
 - Diskutovanie o neznámej vo vyjadrení výrazu, vo vyjadrení rovnice/nerovnice a o podmienkach riešiteľnosti úlohy.
 - Interpretovanie, obhajovanie a odôvodňovanie postupu a výsledku v kontexte riešenej situácie.
-- Diskutovanie o častých chybách pri použití algebrických identít (napríklad ) a argumentácia s pomocou reprezentácií.
+- Diskutovanie o častých chybách pri použití algebrických identít (napríklad $(a + b)^2 \neq a^2 + b^2$) a argumentácia s pomocou reprezentácií.
 
 #### Pomer, úmernosti a postupnosti
 
@@ -1062,9 +1057,41 @@ Matematický jazyk, komunikácia a argumentácia:
 
 #### Pokročilé postupy merania a určovania miery
 
+Vzťahy:
+
+- Pytagorova veta a jej význam.
+
+Postupy:
+- Využitie Pytagorovej vety, odhad a výpočet obvodu útvarov (rovnobežník, trojuholník, lichobežník, pravidelný n-uholník, kruh, resp. dĺžka kružnice a kružnicového oblúka) úvahou a aplikovaním odvodených vzťahov.
+
+Matematické reprezentácie:
+- Používanie vlastných a univerzálnych jednotiek, rozličné meracie nástroje (vrátane digitálnych) na meranie a určovanie miery útvarov.
+- Používanie manipulácie alebo vhodných grafických reprezentácií na objavenie vzťahu pre súčet vnútorných uhlov trojuholníka a štvoruholníka a vzťahu medzi vnútornými a vonkajšími uhlami trojuholníka.
+
+Matematické modelovanie:
+
+- Vytváranie a riešenie geometrických situácií zameraných na proces merania, riešenie primeraných aplikačných úloh na určenie miery rovinných a priestorových útvarov (veľkosť uhla, dĺžka úsečky, obvod, obsah, objem, povrch) aj s využitím premeny jednotiek.
+- Využívanie polohových a metrických vlastností útvarov pri riešení konštrukčných úloh.
+
+Matematický jazyk, komunikácia a argumentácia:
+
+- Diskutovanie o rôznych postupoch merania a ich presnosti, porovnávanie nameraných hodnôt s predbežným odhadom i výpočtom, argumentácia o dostatočnosti odhadu či potreby presného merania v praktických situáciách.
+
 #### Skúmanie množín bodov v geometrii
 
 #### Skúmanie zhodných a podobných zobrazení v rovine a ich vlastností
+
+Pojmy:
+
+- Aktívne:
+  - Podobné trojuholníky, pomer/koeficient podobnosti.
+
+- Pasívne:
+  - Podobnosť geometrických útvarov.
+
+Vzťahy:
+
+- Vety o podobnosti trojuholníkov (sss, sus, uu).
 
 Postupy:
 

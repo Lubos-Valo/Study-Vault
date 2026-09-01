@@ -2,115 +2,89 @@
 
 ## Údaje a informácie
 
-- Rastrová a vektorová grafika
+### Rastrová grafika
 
-  - obrázok v rastrovom tvare
-  - obrázok vo vektorovom tvare
-  - vlastnosti rastrových a vektorových obrázkov
-  - možnosti úprav obrázkov
-  - formáty súborov
-  - vzťah formátu súboru k uloženému obrázku
-  - porovnávanie rastrových a vektorových obrázkov
-  - digitalizácia grafickej informácie
-  - voľba vhodného formátu súboru
+- Tvorba a úprava obrázka v rastrovom tvare
 
-- Prezentácie
+### Vektorová grafika
 
-  - tvorba a úprava prezentácií
-  - snímky
-  - poradie snímok
-  - odrážky a číslovanie
-  - manipulácia s poradím snímok
-  - vloženie prepojenia
-  - používanie nástrojov editora prezentácií
+- Porovnanie rastrových a vektorových obrázkov
+- Tvorba a úprava obrázka vo vektorovom tvare
 
-- Multimédiá – video, zvuk a text
+### Prezentácie
 
-  - kombinovanie videa, zvuku a textu
-  - video ako postupnosť klipov
-  - efekty
-  - prechody
-  - časová os
-  - strihanie videa
-  - úprava a kombinovanie multimediálneho obsahu
+- Zásady tvorby prezentácií
+- Tvorba a úprava prezentácií
 
-- Reprezentácia informácií
+### Animácie
 
-  - vzťahy medzi grafikou, textom, číslami a zvukom
-  - vhodná reprezentácia reálnej informácie
-  - zakódovanie informácie podľa pokynov
-  - jednoduché reprezentácie informácií
-  - dekódovanie informácie
-  - text a hypertext
-  - vyhľadávanie reťazcov v texte
-  - rozdiel medzi vyhľadávaním v texte a grafike
+- Tvorba a úprava animácií
+- 2D animácie
+- 3D animácie
 
-- Získavanie a digitalizácia informácií
+### Videá
 
-  - vyhľadávanie informácií v informačnom systéme a databáze
-  - databáza
-  - knižnica
-  - elektronický obchod
-  - rezervácie lístkov
-  - získavanie grafickej informácie skenovaním
-  - získavanie informácie fotografovaním
-  - nahrávanie zvuku
-  - nahrávanie videa
-  - získavanie informácií rôznych typov pomocou konkrétnych nástrojov
+- Tvorba a úprava videa
+- Nahrávanie videa
+
+### Zvuk
+
+- Tvorba a úprava zvuku a hudby
+- Nahrávanie zvuku
+
+### Multimédiá – video, zvuk a text
+
+- Úprava a kombinovanie multimediálneho obsahu
+- Kombinovanie videa, zvuku a textu
+- Vzťahy medzi grafikou, textom, číslami a zvukom
+
+### Digitalizácia
+
+- Digitalizácia tlačeného textu
+- Digitalizácia obrázkov
+- Digitalizácia zvuku
+- Digitalizácia videa
+- Digitalizácia analógového signálu
+- Skenovanie a tlačenie
+- Získavanie informácií rôznych typov pomocou konkrétnych nástrojov
+
+### Získavanie informácií
+
+- Vyhľadávanie informácií v informačnom systéme a databáze
+- Databáza
+- Knižnica
+- Elektronický obchod
+- Rezervácie lístkov
 
 ## Technológie
 
-- Hardvér a softvér
+### Počítačový hardvér
 
-  - program
-  - procesor
-  - pamäť
-  - hardvér
-  - softvér
-  - operačný systém
-  - aplikácia
-  - rozdiel medzi hardvérom a softvérom
-  - rôzne typy súborov pre rôzne typy informácií
+- Počítač a typy počítačov
+- Komponenty počítača
+- Periférie
+- Skladanie počítača
+- IoT
 
-- Súbory, priečinky a cesta
+### Počítačový softvér
 
-  - súbor
-  - priečinok
-  - cesta k súboru
-  - cesta k priečinku
-  - štruktúra priečinkov
-  - navrhovanie štruktúry priečinkov
-  - preorganizovanie súborov
-  - parametre súborov a priečinkov
-  - rôzne typy súborov
+- Program
+- Operačný systém
+- Aplikačný softvér
+- Grafické používateľské rozhranie
 
-- Pamäťové a prídavné zariadenia
+### Súborový systém
 
-  - pamäťové zariadenia
-  - prídavné zariadenia
-  - prenášanie informácií
-  - ukladanie informácií
-  - kopírovanie informácií
-  - práca s údajmi rôznych typov
+- Správca súborov
+- Formát a typ súborov
 
-- Vstupné a výstupné zariadenia
+### Nastavenia a práca s aplikáciami
 
-  - vstupné zariadenia
-  - výstupné zariadenia
-  - rozlišovanie vstupných a výstupných zariadení
-  - procesor a pamäť
-  - zariadenia na komunikáciu s počítačom
-  - zariadenia na digitalizáciu údajov
+- Nastavenie zvuku, pracovnej plochy, klávesnice, 
+- Prenášanie informácií medzi spustenými aplikáciami
+- Nástroje na modelovanie a simulovanie systémov
 
-- Nastavenia a práca s aplikáciami
-
-  - nastavenie zvuku
-  - nastavenie pracovnej plochy
-  - nastavenie klávesnice
-  - prenášanie informácií medzi spustenými aplikáciami
-  - schránka
-  - nástroje na simulovanie
-  - nástroje na modelovanie
+### Spotrebiče a vnorené systémy
 
 ## Digitálna spoločnosť
 
@@ -220,6 +194,8 @@
   - digitálne technológie ako nástroje modelovania
   - vplyv digitálnych technológií na ostatných
   - možnosti a riziká digitálnych technológií
+
+### Autorské právo a licencie
 
 # 8. ročník
 

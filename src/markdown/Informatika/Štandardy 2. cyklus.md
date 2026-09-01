@@ -1,3 +1,171 @@
+# 4. ročník
+
+## Výkonový štandard
+
+### 1. cieľ
+
+Analyzovať problémy a spoznávať pravidlá elementárnej logiky.
+
+- Identifikovať opakujúce sa vzory.
+- Rozhodnúť o pravdivosti/nepravdivosti tvrdenia (výroku), vybrať prvky alebo možnosti podľa pravdivosti tvrdenia.
+- Uvažovať o budúcom riešení.
+
+### 2. cieľ
+
+Riešiť elementárne problémy programovaním postupnosti príkazov a cyklov s konkrétnym počtom opakovaní.
+
+### 3. cieľ
+
+Skúmať a hodnotiť správnosť riešenia a opravovať chyby.
+
+### 4. cieľ
+
+Zoznámiť sa s nástrojmi na prácu s textom, grafikou, prezentáciami, zvukom a videom.
+
+- Použiť konkrétne nástroje na tvorbu a úpravu obrázkov, animácií, textov, príbehov a prezentácií, na spúšťanie zvukov a videa.
+- Hľadať, odhaľovať a opraviť chyby pri úprave obrázkov, animácií, textov a prezentácií.
+- Kombinovať grafiku rôznych typov a z rôznych zdrojov.
+- Voliť vhodný nástroj na prácu s textom.
+- Používať nástroje na vyhľadanie a nahradenie textu.
+- Skúmať nové nástroje v konkrétnom editore.
+
+### 5. cieľ
+
+Získavať, vyhľadávať a spracovávať informácie rôznych typov.
+
+- Vyhľadávať a získavať informácie v informačnom systéme a databáze.
+- Získavať informácie rôznych typov pomocou konkrétnych nástrojov.
+- Vyberať vhodné nástroje na spracovanie informácií.
+- Zašifrovať a rozšifrovať text podľa jednoduchých pravidiel (reprezentovať znaky a slová).
+
+### 6. cieľ
+
+Spoznať elementárne princípy a koncepty informatiky, vrátane reprezentácie údajov v tabuľkách, stromoch a grafoch.
+
+### 7. cieľ
+
+Zoznámiť sa s prácou s počítačom, zariadeniami, súbormi, priečinkami a aplikáciami.
+
+- Pracovať so základnými vstupnými a výstupnými zariadeniami.
+- Ukladať produkt do súboru.
+- Otvoriť rozpracovaný produkt zo súboru.
+- Orientovať sa v konkrétnej štruktúre priečinkov.
+- Spustiť program/aplikáciu a otvoriť v nej dokument.
+- Použiť rôzny aplikačný softvér, ktorý je primeraný veku.
+
+### 8. cieľ
+
+Zoznámiť sa s vyhľadávaním a získavaním informácií v počítačovej sieti.
+
+- Získavať informácie z webových stránok a použiť ich vo svojich produktoch.
+- Vyhľadávať rôzne typy informácií na webe.
+- Diskutovať o výsledkoch vyhľadávania (či spĺňajú naše očakávania).
+- Diskutovať o rizikách na internete.
+
+### 9. cieľ
+
+Bezpečne sa pohybovať v digitálnom prostredí.
+
+## Obsahový štandard
+
+### Programovanie
+
+#### Analýza problému
+
+#### Konštrukcie jazyka
+
+#### Interpretácia zápisu riešenia, hľadanie, opravovanie chýb
+
+### Údaje
+
+#### Práca s údajmi rôznych typov
+
+Pojmy:
+
+- Schránka, oblasť, animácia, pozadie, snímka, prezentácia, odrážky, číslovanie.
+
+Vzťahy:
+
+- Obrázok v rastri alebo ako vektorová grafika, animácia ako postupnosť obrázkov, poradie snímok v príbehu a prezentácii.
+
+Procesy:
+
+- Používanie nástrojov na kreslenie, prácu s textom, vytváranie animácií, príbehov a prezentácií, prehrávanie zvuku a videa.
+
+Činnosti:
+
+- Používanie konkrétneho nástroja na tvorbu a úpravu obrázkov, animácií, textov, príbehov a prezentácií, na spúšťanie zvukov a videa.
+- Hľadanie, odhaľovanie a oprava chýb pri úprave obrázkov, animácií, textov a prezentácií.
+- Kombinovanie grafiky rôznych typov a z rôznych zdrojov, používanie schránky, oblasti.
+- Voľba vhodného nástroja na úpravu animácie, pozadia, snímky, prezentácie, odrážok, číslovania.
+- Používanie nástrojov na vyhľadanie a nahradenie textu.
+- Skúmanie nových nástrojov v konkrétnom editore.
+- Diskusia o vlastnostiach obrázka v rastri alebo ako vektorovej grafiky, o animácii ako postupnosti obrázkov, o poradí snímok v príbehu a prezentácii.
+
+#### Informácie
+
+Pojmy:
+
+- Vzťahy medzi jednotlivými typmi informácie (grafika, text, čísla, zvuk).
+
+Činnosti:
+
+- Vyhľadávanie a získavanie informácií v informačnom systéme a databáze.
+- Získavanie informácií rôznych typov (grafika, text, zvuk, čísla) pomocou konkrétnych nástrojov.
+- Výber vhodných nástrojov na spracovanie informácií.
+- Zašifrovanie a rozšifrovanie textu podľa jednoduchých pravidiel (rôzna reprezentácia znakov a slov).
+
+#### Údajové štruktúry
+
+### Technológie
+
+#### Hardvér a softvér
+
+Pojmy:
+
+- Súbor, priečinok.
+
+Vzťahy:
+
+- Vstupné a výstupné zariadenie ako nástroj na komunikáciu s počítačom, rôzne typy súborov pre rôzne typy informácií.
+
+Procesy:
+
+- Vytvorenie, ukladanie dokumentov, používanie školského vzdelávacieho softvéru, práca s digitálnou učebnicou a encyklopédiou.
+
+Činnosti:
+
+- Práca so základnými vstupnými a výstupnými zariadeniami ako nástrojmi na komunikáciu s počítačom.
+- Ukladanie produktov a dokumentov s informáciami rôznych typov do súboru v danom priečinku.
+- Otvorenie rozpracovaného produktu alebo dokumentu zo súboru.
+- Orientovanie sa v konkrétnej štruktúre priečinkov.
+- Spustenie programu/aplikácie a otvorenie dokumentu v nej.
+- Používanie rôzneho aplikačného softvéru (napríklad školského vzdelávacieho softvéru, digitálnej učebnice, encyklopédie), ktorý je primeraný veku.
+
+#### Počítačové siete
+
+Pojmy:
+
+- Vyhľadávač.
+
+Vzťahy:
+
+- Text a hypertext ako súčasť dokumentov na internete a v encyklopédiách, riziká na internete.
+
+Procesy:
+
+- Vyhľadávanie textov, stránok, obrázkov, videa, spoznávanie bezpečného a etického správania na internete.
+
+Činnosti:
+
+- Vyhľadávanie informácií rôznych typov (textov, stránok, obrázkov, videa) na webe.
+- Získavanie informácií z webových stránok a ich používanie vo svojich produktoch.
+- Diskusia o texte a hypertexte ako súčasti dokumentov na internete a v encyklopédiách.
+- Diskusia o výsledkoch vyhľadávania (či spĺňajú očakávania).
+- Diskusia o rizikách a etickom správaní na internete.
+
+#### Digitálna spoločnosť
+
 # 5. ročník
 
 ## Výkonový štandard
@@ -210,48 +378,7 @@ Procesy:
 
 #### Hardvér a softvér
 
-Pojmy:
-
-- Súbor, priečinok.
-
-Vzťahy:
-
-- Vstupné a výstupné zariadenie ako nástroj na komunikáciu s počítačom, rôzne typy súborov pre rôzne typy informácií.
-
-Procesy:
-
-- Vytvorenie, ukladanie dokumentov, používanie školského vzdelávacieho softvéru, práca s digitálnou učebnicou a encyklopédiou.
-
-Činnosti:
-
-- Práca so základnými vstupnými a výstupnými zariadeniami ako nástrojmi na komunikáciu s počítačom.
-- Ukladanie produktov a dokumentov s informáciami rôznych typov do súboru v danom priečinku.
-- Otvorenie rozpracovaného produktu alebo dokumentu zo súboru.
-- Orientovanie sa v konkrétnej štruktúre priečinkov.
-- Spustenie programu/aplikácie a otvorenie dokumentu v nej.
-- Používanie rôzneho aplikačného softvéru (napríklad školského vzdelávacieho softvéru, digitálnej učebnice, encyklopédie), ktorý je primeraný veku.
-
 #### Počítačové siete
-
-Pojmy:
-
-- Vyhľadávač.
-
-Vzťahy:
-
-- Text a hypertext ako súčasť dokumentov na internete a v encyklopédiách, riziká na internete.
-
-Procesy:
-
-- Vyhľadávanie textov, stránok, obrázkov, videa, spoznávanie bezpečného a etického správania na internete.
-
-Činnosti:
-
-- Vyhľadávanie informácií rôznych typov (textov, stránok, obrázkov, videa) na webe.
-- Získavanie informácií z webových stránok a ich používanie vo svojich produktoch.
-- Diskusia o texte a hypertexte ako súčasti dokumentov na internete a v encyklopédiách.
-- Diskusia o výsledkoch vyhľadávania (či spĺňajú očakávania).
-- Diskusia o rizikách a etickom správaní na internete.
 
 #### Digitálna spoločnosť
 

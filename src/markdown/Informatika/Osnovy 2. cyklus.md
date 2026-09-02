@@ -188,6 +188,8 @@
 
 ## Programovanie
 
+### Programovanie v Scratchy
+
 - Analýza problému a elementárna logika
 
   - platí – neplatí
@@ -237,6 +239,9 @@
 
 ## Údaje
 
+### Práca s textom
+
+- Písanie na klávesnici
 - Text a práca s textom
 
   - textové informácie
@@ -246,7 +251,7 @@
   - vyhľadanie a nahradenie textu
   - voľba vhodného nástroja na prácu s textom
 
-- Grafika a obrázky
+### Grafika a obrázky
 
   - grafická informácia
   - obrázok v rastri
@@ -265,7 +270,7 @@
   - poradie snímok v príbehu
   - odhaľovanie a oprava chýb pri tvorbe animácie a príbehu
 
-- Prezentácie
+### Prezentácie
 
   - snímka
   - prezentácia
@@ -276,7 +281,7 @@
   - tvorba a úprava prezentácie
   - vyhľadávanie a oprava chýb v prezentácii
 
-- Zvuk a video
+### Zvuk a video
 
   - zvukové informácie
   - video
@@ -285,7 +290,7 @@
   - používanie nástrojov na prácu so zvukom a videom
   - kombinovanie rôznych typov informácií – grafika, text, zvuk, čísla
 
-- Získavanie a spracovanie informácií
+### Získavanie a spracovanie informácií
 
   - grafika, text, čísla a zvuk ako rôzne typy informácií
   - vyhľadávanie a získavanie informácií v informačnom systéme a databáze
@@ -329,14 +334,14 @@
 
 ## Technológie
 
-- Hardvér a vstupno-výstupné zariadenia
+### Hardvér a vstupno-výstupné zariadenia
 
   - základné vstupné zariadenia
   - základné výstupné zariadenia
   - zariadenia ako nástroje komunikácie s počítačom
   - používanie vstupných a výstupných zariadení
 
-- Súbory a priečinky
+### Súbory a priečinky
 
   - súbor
   - priečinok
@@ -347,7 +352,7 @@
   - otvorenie rozpracovaného produktu zo súboru
   - orientácia v štruktúre priečinkov
 
-- Aplikácie a aplikačný softvér
+### Aplikácie a aplikačný softvér
 
   - spustenie programu/aplikácie
   - otvorenie dokumentu v aplikácii
@@ -356,7 +361,7 @@
   - digitálna učebnica
   - digitálna encyklopédia
 
-- Vyhľadávanie na internete
+### Vyhľadávanie na internete
 
   - vyhľadávač
   - webové stránky
@@ -366,7 +371,7 @@
   - získavanie informácií z webových stránok
   - využívanie získaných informácií vo vlastných produktoch
 
-- Hodnotenie výsledkov vyhľadávania
+### Hodnotenie výsledkov vyhľadávania
 
   - posudzovanie, či výsledky vyhľadávania spĺňajú očakávania
   - dôveryhodnosť získaných informácií

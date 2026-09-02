@@ -2,6 +2,8 @@
 
 ## Údaje a informácie
 
+### Údaj a informácie
+
 ### Rastrová grafika
 
 - Tvorba a úprava obrázka v rastrovom tvare
@@ -10,6 +12,7 @@
 
 - Porovnanie rastrových a vektorových obrázkov
 - Tvorba a úprava obrázka vo vektorovom tvare
+- Tvorba plagátu
 
 ### Prezentácie
 
@@ -64,7 +67,7 @@
 - Komponenty počítača
 - Periférie
 - Skladanie počítača
-- IoT
+- Rozšírená a virtuálna realita (AR / VR)
 
 ### Počítačový softvér
 
@@ -86,6 +89,9 @@
 
 ### Spotrebiče a vnorené systémy
 
+- Spotrebiteľ a obchod
+- IoT
+
 ## Digitálna spoločnosť
 
 # 7. ročník
@@ -93,6 +99,8 @@
 ## Údaje a informácie
 
 - Práca s textovými a grafickými údajmi
+- MS Word
+- Typografia slovenského jazyka
 
   - textová informácia
   - grafická informácia
@@ -106,7 +114,11 @@
 
 ## Technológie
 
-- Počítačové siete
+### Počítačové siete
+
+- Sieťový hardvér
+- Topológia siete
+- Internet
 
   - sieť
   - počítačová sieť
@@ -117,7 +129,9 @@
   - cesta ako zápis identifikujúci údaje v sieti
   - internet ako celosvetová počítačová sieť
 
-- Zdieľanie a prenos súborov v sieti
+
+
+### Zdieľanie a prenos súborov v sieti
 
   - zdieľanie súborov
   - kopírovanie súborov
@@ -126,7 +140,11 @@
   - sťahovanie súborov
   - posielanie súborov
 
-- Web a elektronická komunikácia
+### Web a elektronická komunikácia
+
+- E-mail
+- Chat
+- Netiketa
 
   - prispievanie do webového obsahu
   - správa
@@ -139,7 +157,15 @@
   - pripájanie prílohy k správe
   - zobrazovanie prijatej prílohy
 
-- Vyhľadávanie a hodnotenie informácií
+### WebApps
+
+- Webové rozhranie
+
+### Šifrovanie
+
+### Digitálna hygiena
+
+### Vyhľadávanie a hodnotenie informácií
 
   - vyhľadávanie informácií
   - výstup vyhľadávania
@@ -149,7 +175,7 @@
 
 ## Digitálna spoločnosť
 
-- Škodlivý softvér a vírusy
+### Škodlivý softvér a vírusy
 
   - škodlivý softvér
   - vírus ako program
@@ -157,7 +183,7 @@
   - antivírus ako program na blokovanie škodlivých činností
   - ochrana pred škodlivým softvérom
 
-- Nebezpečné webové stránky a služby
+### Nebezpečné webové stránky a služby
 
   - nebezpečné webové stránky
   - nebezpečné služby
@@ -165,21 +191,21 @@
   - ochrana pred nebezpečnými stránkami a službami
   - bezpečné správanie na internete
 
-- Spam a bezpečnosť komunikácie
+### Spam a bezpečnosť komunikácie
 
   - spam ako nevyžiadaná správa
   - riziká elektronickej komunikácie
   - ochrana pred spamom
   - bezpečné správanie pri práci s elektronickou poštou
 
-- Hekeri a bezpečnosť
+### Hekeri a bezpečnosť
 
   - činnosť hekerov
   - riziká spojené s neoprávnenými zásahmi
   - ochrana pred nebezpečnými aktivitami
   - bezpečné správanie sa v digitálnom prostredí
 
-- Internet a sociálne siete
+### Internet a sociálne siete
 
   - riziká na internete
   - riziká na sociálnych sieťach
@@ -187,7 +213,7 @@
   - bezpečné správanie na internete
   - zodpovedné používanie digitálnych technológií
 
-- Digitálne technológie a ich vplyv
+### Digitálne technológie a ich vplyv
 
   - digitálne technológie ako nástroje pre výpočet
   - digitálne technológie ako nástroje komunikácie
@@ -196,6 +222,15 @@
   - možnosti a riziká digitálnych technológií
 
 ### Autorské právo a licencie
+
+### Autentifikácia a autorizácia
+
+### Green IT a ekologická stopa technológií
+
+### Dvojfaktorová autentifikácia
+
+- Autentifikátory
+- QR kódy
 
 # 8. ročník
 
@@ -299,10 +334,28 @@
   - návrh vylepšenia riešenia
   - dopĺňanie, dokončovanie a modifikovanie rozpracovaného programu
 
+### Python
+
+### Mikrokontroléry a mechanotronika
+
+### HTML a CSS
+
+### SQL
+
 ## Údaje a informácie
 
-- Tabuľky a údajové štruktúry
+### Binárna sústava
 
+### Logické operácie
+
+### Boolova algebra
+
+### Tabuľky a údajové štruktúry
+
+- Excel
+- Databázy
+- Dátová gramotnosť a vizualizácia dát
+- Grafy
   - postupnosť
   - tabuľka
   - frekvenčná tabuľka
@@ -335,15 +388,22 @@
 
 ## Digitálna spoločnosť
 
-- Umelá inteligencia
+### Digitálna suverenita, transparentnosť a regulácia (EU AI Act)
+
+### Umelá inteligencia
+
+- Generatívna umelá inteligencia
+- Deepfakes
 
   - umelá inteligencia
   - možnosti umelej inteligencie
   - obmedzenia umelej inteligencie
   - diskusia o využití umelej inteligencie
 
-- Informatika ako povolanie
+### Informatika ako povolanie
 
-  - informatika z pohľadu povolania
+- Informatika z pohľadu povolania
+
+  
   - využitie informatiky v pracovnom živote
   - digitálne technológie v rôznych oblastiach

@@ -23,6 +23,15 @@
 - Správca súborov
 - Formát a typ súborov
 
+## Zálohovanie
+
+- Zálohovanie súborov
+
+## Aktualizácia a upgrade
+
+- Aktualizácia
+- Upgrade
+
 ## Nastavenia a práca s aplikáciami
 
 - Nastavenie zvuku, pracovnej plochy, klávesnice, 
@@ -33,15 +42,7 @@
 
 - IoT
 
-## Rastrová grafika
 
-- Tvorba a úprava obrázka v rastrovom tvare
-
-## Vektorová grafika
-
-- Porovnanie rastrových a vektorových obrázkov
-- Tvorba a úprava obrázka vo vektorovom tvare
-- Tvorba plagátu
 
 ## Prezentácie
 
@@ -118,6 +119,7 @@
 
 - Zdieľanie a sťahovanie súborov
 
+
 ## Autentifikácia a autorizácia
 
 - Dvojfaktorová autentifikácia
@@ -141,6 +143,12 @@
 - Knižnica
 - Elektronický obchod
 - Rezervácie lístkov
+
+## Masmédiá
+
+## Digitálne súkromie
+
+- Osobné a všeobecné údaje
 
 ## Škodlivý softvér
 
@@ -197,6 +205,7 @@
 - Interpretácia a krokovanie programu
 - Hľadanie a oprava chýb
 - Hodnotenie a vylepšovanie riešení
+- Údajové štruktúry
 
 ## Mikrokontroléry a mechanotronika
 

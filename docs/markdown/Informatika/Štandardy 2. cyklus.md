@@ -1,3 +1,41 @@
+# Výkonový štandard
+
+## Programovanie
+
+- Uplatňovať pravidlá elementárnej logiky v zložitejších tvrdeniach.
+- Identifikovať opakujúce sa vzory.
+- Vytvoriť program, ktorý vyžaduje známy počet opakovaní.
+- Krokovať program s cyklami.
+- Modifikovať rozpracovaný zložitejší program.
+- Interpretovať zložitejší program.
+- Opraviť rozpoznanú chybu v nesprávne pracujúcom programe.
+- Navrhnúť vylepšené riešenia.
+- Opísať rozdiel medzi programom, ktorý vykonáva vopred zapísanú postupnosť príkazov a nástrojom AI založeným na rozpoznávaní vzorov v údajoch.
+
+## Údaje
+
+- Použiť konkrétne nástroje aplikácie na tvorbu a úpravu obsahu.
+- Opraviť identifikované chyby pri úprave obsahu.
+- Skúmať nové nástroje v konkrétnom editore.
+- Získať informácie zo štruktúry.
+- Šifrovať informáciu podľa jednoduchých pravidiel.
+- Organizovať informácie do štruktúr.
+- Interpretovať údaje zo štruktúr.
+- Hodnotiť správnosť riešenia.
+
+## Technológie
+
+- Pracovať so základným softvérom a hardvérom na používateľskej úrovni.
+- Získať informácie z webových stránok.
+- Posúdiť úspešnosť vyhľadávania.
+- Získať skúsenosti s používaním nástrojov AI so zachovaním vlastnej zodpovednosti za výslednú prácu.
+- Uviesť vplyv digitálnych technológií vrátane AI na vlastný život.
+- Poznať základné riziká digitálnych technológií vrátane AI a internetu.
+- Uviesť príklady využitia digitálnych technológií a nástrojov v rôznych situáciách.
+- Formulovať jasné a cielené zadania – prompty pre AI nástroj.
+- Upraviť prompt na základe získaného výstupu tak, aby výsledok lepšie zodpovedal stanovenému cieľu.
+- Rozlíšiť situácie, kedy je použitie AI zmysluplné a kedy je lepšie úlohu vyriešiť samostatne.
+
 # 4. ročník
 
 ## Výkonový štandard

@@ -95,6 +95,7 @@
 ## Telekomunikačné technológie
 
 - Drôtové a bezdrôtové komunikácie
+- NFC
 
 ## Internet
 
@@ -192,7 +193,7 @@
 - Deepfakes
 - Digitálna suverenita, transparentnosť a regulácia (EU AI Act)
 
-## Programovanie v Pythone
+## Programovanie v Scratchy
 
 - Analýza problému a tvorba plánu riešenia
 - Premenné a údaje v programe

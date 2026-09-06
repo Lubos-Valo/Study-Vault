@@ -1,3 +1,56 @@
+# Výkonový štandard
+
+## Programovanie
+
+- Vlastnými slovami sformulovať plán budúceho riešenia.
+- Rozhodnúť sa o pravdivosti/nepravdivosti tvrdenia/výroku.
+- Uviesť príklady a kontra-príklady pri rozhodovaní o pravdivosti tvrdenia/výroku.
+- Vytvoriť program, ktorý bude pracovať náhodne.
+- Vytvoriť program, ktorý si pamätá a používa neštruktúrované hodnoty.
+- Vytvoriť program, ktorý vyžaduje vopred neznámy počet opakovaní.
+- Vytvoriť program, ktorý vyžaduje vetvenie s jednoduchou podmienkou.
+- Určiť rozdiel medzi použitím cyklu s podmienkou a vetvením v programe.
+- Vytvoriť program, ktorý reaguje na vstup.
+- Vytvoriť program, ktorý obsahuje podprogramy.
+- Modifikovať rozpracovaný program.
+- Opraviť chybu v nesprávne pracujúcom programe.
+- Navrhnúť vylepšenie programu.
+- Posúdiť riešiteľnosť úlohy.
+
+## Údaje
+
+- Získať digitálne informácie rôznych typov pomocou konkrétnych nástrojov.
+- Zvoliť vhodný formát súboru pre uloženie médií a dát rôznych typov.
+- Posudzovať vplyv formátovacích nástrojov a skrytých znakov na výsledný text a operácie s textom.
+- Použiť nástroje editora na tvorbu a úpravu textov, tabuliek, prezentácií, obrázkov, videa a zvuku.
+- Použiť konkrétne nástroje editora na skombinovanie videa, zvuku a textu.
+- Voliť vhodnú reprezentáciu reálnej informácie.
+- Zakódovať informáciu podľa pokynov do konkrétnej reprezentácie.
+- Dekódovať informáciu z jednoduchých reprezentácií.
+- Získať informácie v informačnom systéme a databáze.
+- Organizovať informácie do štruktúr.
+- Interpretovať údaje zo štruktúr.
+- Použiť konkrétne nástroje na prácu s tabuľkami.
+- Použiť funkcie pre jednoduché výpočty.
+- Analyzovať úlohu údajov pri strojovom učení.
+
+## Technológie
+
+- Pracovať s pamäťovými a prídavnými zariadeniami.
+- Rozlíšiť vstupné a výstupné zariadenia.
+- Pracovať so súbormi a priečinkami.
+- Použiť nástroje na prácu so súbormi v rámci počítačovej siete.
+- Pracovať so sieťovými zariadeniami.
+- Použiť nástroj na prispievanie do webového obsahu.
+- Posúdiť správnosť a kvalitu vyhľadaných/získaných informácií.
+- Pracovať s prílohami správy.
+- Bezpečne a zodpovedne využívať AI pri svojej práci.
+- Samostatne voliť vhodné AI nástroje pre rôzne typy úloh.
+- Pomenovať základné princípy a vlastnosti moderných technológii a strojového učenia.
+- Pomenovať základné princípy ochrany seba a iných v online priestore a pri používaní digitálnych technológií.
+- Pomenovať základné princípy manipulácie s informáciami pomocou digitálnych technológií.
+- Diskutovať o informatike z pohľadu povolania a jej vplyvu na budúcnosť.
+
 # 6. ročník
 
 ## Výkonový štandard

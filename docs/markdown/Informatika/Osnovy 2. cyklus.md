@@ -15,11 +15,11 @@
 ## Základy práce s textom
 
 - Písanie textu na klávesnici
-- Formátovanie textu
 
 ## Základy práce v textovom procesore
 
 - Základy práce v Microsoft Word
+- Formátovanie textu
 
 ## Základy práce v tabuľkovom procesore
 

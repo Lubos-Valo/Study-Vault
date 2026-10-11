@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 
 \usepackage{../../common}
 
@@ -7,10 +7,247 @@
 }
 \addbibresource{../../references.bib}
 
-\title{Prirodzené čísla a počtové výkony s prirodzenými číslami}
+\title{Matematika pre druhý cyklus}
+
 \begin{document}
 
 \maketitle
+
+\part{Čísla a operácie s číslami}
+
+\chapter{Číselné sústavy}
+
+Číselná sústava je spôsob zápisu a vyjadrenia čísel pomocou vopred určeného súboru cifier a pravidiel ich používania. Určuje, aké cifry možno použiť a akým spôsobom sa z nich vytvárajú zápisy čísel. Číslica (alebo cifra) je symbol, ktorým zapisujeme hodnotu v danej sústave. Existujú dva typy číselných sústav: pozičné a nepozičné číselné sústavy.
+
+\section{Nepozičné číselné sústavy}
+
+Nepozičná číselná sústava je číselná sústava, v ktorej hodnota číslice nezávisí od jej pozície v zápise čísla. Každá číslica má vždy rovnakú hodnotu bez ohľadu na to, kde sa v zápise nachádza. Nepozičné číselné sústavy majú oproti pozičným číselnym sústavam nevýhodu v tom, že je zložité zapisovanie veľkých čísel a ťažšie sa s nimi vykonávajú matematické výpočty.
+
+\subsection{Unárna číselná sústava}
+
+Unárna číselná sústava (nazývaná aj jednotková číselná sústava) je najjednoduchšia a pravdepodobne najstaršia forma zapisovania čísel. Je to nepozičná číselná sústava, ktorá na vyjadrenie počtu používa iba jeden symbol. Hodnota čísla sa rovná počtu použitých symbolov.
+
+Napríklad pri použití symbolu $\vert$ sa čísla zapisujú takto:
+\[
+\begin{aligned}
+  1 &= \vert \\
+  2 &= \vert \vert \\
+  3 &= \vert \vert \vert \\ 
+  4 &= \vert \vert \vert \vert \\
+  5 &= \vert \vert \vert \vert \vert \\
+  & \hspace{5pt} \vdots \\
+  10 &= \vert \vert \vert \vert \vert \vert \vert \vert \vert \vert \vert \\
+\end{aligned}
+\]
+
+Unárna sústava sa používala už v praveku, napríklad vo forme zárezov do kostí, dreva alebo kameňov pri evidovaní počtu zvierat, dní alebo predmetov. S podobným spôsobom zápisu sa stretávame aj dnes, napríklad pri ručnom počítaní hlasov alebo bodov pomocou čiarok.
+
+Hlavnou výhodou unárnej sústavy je jej jednoduchosť a názornosť. Nevýhodou je však neefektívnosť pri zapisovaní väčších čísel, pretože počet symbolov rýchlo narastá, a tiež problematický zápis čísel iných než celých. Preto bola nahradená číselnými sústavami, ako sú desiatková alebo dvojková sústava.
+
+\subsection{Aditívna číselná sústava}
+
+Aditívna číselná sústava je typ nepozičnej číselnej sústavy, v ktorej sa hodnota čísla určuje sčítaním hodnôt jednotlivých symbolov bez ohľadu na ich pozíciu v zápise. Každý symbol má pevnú hodnotu a výsledné číslo vznikne súčtom všetkých použitých symbolov. Dodnes sa používajú napríklad pri peniazoch a rímskych číslach.
+
+Príkladom aditívnej sústavy je staroegyptská číselná sústava. Egypťania používali rôzne hieroglyfy pre jednotky, desiatky, stovky, tisíce a ďalšie hodnoty. Ak chceli zapísať číslo \(243\), použili dva symboly pre stovky, štyri symboly pre desiatky a tri symboly pre jednotky. Hodnota čísla sa získala ich sčítaním:
+\[
+243 = 200 + 40 + 3.
+\]
+Egyptský hieroglyfický číselný systém obsahoval čísla \(1\), \(10\), \(100\), \(1\ 000\), \(10\ 000\), atď.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.35\textwidth]{Staroegyptská číselná sústava.png}
+  \caption{Egyptský číselný systém. \cite{Egyptský_číselný_systém}} 
+\end{figure}
+Podobný princíp využíva aj rímska číselná sústava. Rímska číselná sústava je historická nepozičná číselná sústava, ktorú používali obyvatelia starovekého Ríma. Na zapisovanie čísel využíva písmená latinskej abecedy, pričom každé písmeno má určenú číselnú hodnotu. Základné rímske číslice sú:
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|ccccccc}
+    \hline
+    Symbol & I & V & X & L & C & D & M \\
+    \hline
+    Hodnota & 1 & 5 & 10 & 50 & 100 & 500 & 1000 \\
+    \hline
+  \end{tabular}
+  \caption{Rímske číslice a ich hodnoty.}
+\end{table}
+Ľahká mnemotechnická pomôcka pre zapamätanie si hodnôt vyšších rímskych číslic: LaCo DoMa.
+
+Rímska číselná sústava je o niečo zložitejšia. Nie je úplne čisto nepozičná, ak ju chápeme podľa všetkých historických pravidiel. Tradične sa označuje ako nepozičná sústava, pretože väčšina znakov má stálu hodnotu bez ohľadu na miesto. Číslica X má vždy hodnotu 10. Avšak existujú zápisy, kde poradie číslic určuje ich význam. Poznáme dva typy zápisu rímskych čísel: sčítací (alebo aditívny) a odčítací (alebo subtraktívny).
+
+V sčítacom tvare má každá číslica stálu hodnotu, bez ohľadu na jej pozíciu v čísle. Na zápis čísla \(3738\) v čo najkratšom tvare sa použijú tri symboly M, jeden symbol D, dva symboly C, tri symboly X, jeden symbol V a tri symboly I. Vznikne tak rímske číslo MMMDCCXXXVIII. Sčítaním jednotlivých číslic by sme dostali:
+\begin{align*}
+  MMMDCCXXXVIII &= MMM + D + CC + XXX + V + III, \\
+  3738 &= 3000 + 500 + 200 + 30 + 5 + 3.
+\end{align*}
+Toto číslo by sa dalo zapísať aj ako MMDMCXIXVIXIC. Z dôvodu prehľadnosti sa najväčšie číslice vždy píšu pred menšími.
+
+V odčítacom tvare záleži na tom, či je menšia číslica pred väčšou. Ak sa menšia rímska číslica nachádza pred väčšou, jej hodnota sa od väčšej odčíta namiesto toho, aby sa sčítala. Napríklad číslo \(9\) by sa v odčítacom tvare zapísalo ako IX.
+
+Rímska sústava používaná dnes je aditívno‑subtraktívna. To znamená, že číslice sa väčšinou sčítavajú, ale v niektorých prípadoch sa menšia číslica pred väčšou odčítava. Čísla sa zapisujú tak, aby v ich zápise bolo čo najmenej číslic. Platia nasledovné pravidlá:
+
+\begin{itemize}
+  \item Ak je menšia alebo rovnaká číslica za väčšou, hodnoty sa sčítajú. Číslo VIII znamená \(5 + 1 + 1 + 1 = 8\).
+  \item Ak je menšia číslica pred väčšou, od väčšej sa odčíta. Číslo XXIX znamená \(10 + 10 + 10 - 1 = 29\). Správne kombinácie:
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    IV & IX & XL & XC & CD & CM \\
+    4 & 9 & 40 & 90 & 400 & 900 \\
+    \end{tabular}
+  \end{center}
+  Iné odčítacie kombinácie sa nepoužívajú.
+  \item Číslice I, X, C, M sa môžu opakovať najviac trikrát za sebou. Číslice V, L, D sa neopakujú.
+  \item Číslice sa zapisujú od najväčšej hodnoty k najmenšej, s výnimkou povolených odčítacích dvojíc.
+  \item Rímska sústava nemá vlastný symbol pre nulu. Nula sa v klasickom rímskom zápise nepoužívala.
+\end{itemize}
+
+Rímske číslice sa používajú dodnes najmä na označovanie, nie na bežné počítanie. V modernej matematike ich nahradila desiatková pozičná sústava, ale zostali zachované v niektorých oblastiach tradície a označovania. Najčastejšie sa používajú na ciferníky hodín, označenie panovníkov a pápežov, číslovanie kapitol a častí kníh, filmy, seriály a pokračovania diel, športové a kultúrne podujatia, roky na budovách a pamätníkoch a chemické, vedecké a technické označenia.
+
+\section{Pozičné číselné sústavy}
+
+Pozičná číselná sústava je taká číselná sústava, v ktorej hodnota číslice závisí od jej polohy (pozície) v čísle. Každá číslica v pozičnej číselnej sústave má na základe svojej pozície v čísle danú váhu na výpočet celkovej hodnoty čísla. Preto môže mať tá istá číslica rôznu hodnotu podľa toho, kde sa nachádza.
+
+Jednou číslicou dokážeme vyjadriť toľko rôznych hodnôt, koľko existuje cifier v danej číselnej sústave. Ostatné hodnoty dokažeme vyjadriť kombináciou číslic a ich usporiadaním za sebou. Tak vznikajú nové čísla, každé z nich unikátne vyjadruje určitú hodnotu.
+
+V súčasnosti sa najviac používajú pozičné číselné sústavy, najmä desiatková pozičná číselná sústava. Podstatne uľahčujú vykonávanie výpočtov ako sčítanie, odčítanie, násobenie, delenie, porovnávanie a vhodnou voľbou základu v nich dokážeme veľmi ľahko zapísať ľubovoľne veľké číslo. Majú ale jednu nevýhodu v tom, že hodnota čísla sa veľmi ľahko môže zmeniť pripísaním číslice pred pôvodné číslo. Preto sa pred peňažné čiastky zvyčajne píše vlnovka, ktorá taký spôsob falšovania znemožňuje.
+
+\subsection{Základ číselnej sústavy}
+
+Každá pozičná sústava má svoj základ. Základ určuje, koľko rôznych číslic sústava používa. Každá číslica sama o sebe vyjadruje nejakú určitú hodnotu. Napríklad desiatková číselná sústava má základ \(10\), vieme v nej akejkoľvek skupine objektov priradiť početnosť pomocou číslic, ak je ich menej ako desať. Pre väčšie počty používame všeobecný zápis čísla. V tomto zápise má každá pozícia v čísle určitú váhu danú jej rádom.
+
+\subsection{Rád číslice}
+
+Rád číslice určuje, koľkokrát sa má hodnota číslice zväčšiť podľa základu sústavy. Celková hodnota číslice vznikne vynásobením číslice hodnotou jej rádu. Napríklad v desiatkovej sústave číslo \(592\) má:
+\begin{itemize}
+  \item číslica \(5\) číselný rád stoviek a jej hodnota je \(5 \cdot 100 = 500\),
+  \item číslica \(9\) číselný rád desiatok a jej hodnota je \(9 \cdot 10 = 90\),
+  \item číslica \(2\) číselný rád jednotiek a jej hodnota je \(2 \cdot 1 = 2\).
+\end{itemize}
+Celková hodnota čísla je súčet všetkých čiastkových hodnôt, v tomto prípade \(500 + 90 + 2\).
+
+\subsection{Zápis čísla v pozičnej číselnej sústave}
+
+V pozičných číselných sústavách existujú dva základné spôsoby zápisu čísel: skrátený (alebo pozičný, číslicový) zápis a rozvinutý (alebo polynomiálny) zápis.
+
+V skrátenom zápise sa číslo zapisuje ako usporiadaná postupnosť cifier, pričom hodnota každej cifry závisí od jej pozície (rádu) v čísle. Smerom doľava hodnoty rastú, smerom doprava sa hodnoty zmenšujú. Posledná číslica predstavuje rád jednotiek. Ostatné číslice nadobúdajú svoju hodnotu podľa svojej polohy vzhľadom na rád jednotiek. Napríklad číslo \(476\) má na pozícii stoviek cifru \(4\), na pozícii desiatok cifru \(7\) a na pozícii jednotiek cifru \(6\). Skrátený zápis je bežný spôsob zapisovania čísel.
+
+V rozvinutom zápise sa číslo zapisuje ako súčet jednotlivých cifier vynásobených hodnotou ich rádu. Sú v ňom všetky číslice daného čísla zapísané od najvyššieho číselného rádu po najnižši (jednotky). Číslo nemusíme počítať, stačí číslice opísať. Aby bol rozvinutý zápis čísla správny, musia v ňom byť zapísané všetky číslice tohto čísla, teda aj nuly. Napríklad číslo \(1\ 052\) by sa v rozvinutom zápise zapísalo ako
+\[
+1 \cdot 1\ 000 + 0 \cdot 100 + 5 \cdot 10 + 2 \cdot 1.
+\]
+V tomto zápise sú aj nulové číslice daného čísla. Číslo vieme podľa tohto zápisu vypočítať. Rozvinutý zápis názorne ukazuje, ako je číslo vytvorené z jednotlivých rádov a predstavuje základný princíp pozičných číselných sústav.
+
+Každá pozičná sústava používa nulu ako zástupnú číslicu na označenie, že určitý rád neobsahuje žiadnu hodnotu, pričom jeho pozícia v zápise zostáva zachovaná. Preto čísla ako \(102\) alebo \(3\ 000\) musia obsahovať nuly, aby bolo jednoznačné, že v príslušnom ráde nie je žiadna hodnota. Nuly v rádoch väčších ako rád poslednej nenulovej číslice sa pri bežnom zápise nepíšu, preto číslo \(56\) nezapisujeme ako \(056\) ani \(0056\) (v skutočnosti tam sú).
+
+\subsection{Desiatková pozičná sústava}
+
+Desiatková číselná sústava (alebo dekadická číselná sústava, zo starogr. deka – 10) je pozičná číselná sústava so základom 10. Je to najpoužívanejšia sústava v každodennom živote a používa sa na zapisovanie a vykonávanie matematických operácií. Mnohé číselné sústavy starovekých civilizácií používajú desiatkovú sústavu, pravdepodobne preto, že na oboch rukách máme desať prstov a pre ľudí bolo prirodzené počítanie pomocou prstov. Počítanie v týchto sústavách bolo ťažké a iba skúsení matematici vedeli násobiť a deliť. Všetky ťažkosti ale vyriešila hinduisticko‑arabská desiatková číselná sústava, ktorú používame dodnes. Európa ju prevzala od Arabov v 12. storočí, od ktorých tiež prevzala konkrétne tvary cifier. Preto sa cifry tejto sústavy nazývajú arabské číslice.
+
+V desiatkovej sústave je desať rôznych číslic, \(0\), \(1\), \(2\), \(3\), \(4\), \(5\), \(6\), \(7\), \(8\) a \(9\). Každá číslica vyjadruje určitú hodnotu. Napríklad čislica \(6\) v desiatkovej sústave vyjadruje početnosť šesť. Je to prijateľné množstvo symbolov na to, aby sme vedeli vyjadriť veľké čísla v krátkom zápise.
+
+\subsubsection{Zápis čísla v desiatkovej sústave}
+
+Desiatkový zápis (alebo desiatková notácia) je spôsob zápisu čísel v desiatkovej pozičnej sústave, pri ktorom sa číslo vyjadruje pomocou číslic 0 až 9 a ich pozícií. Desiatková sústava má základ \(10\), každý rád číslice je desaťnásobne väčší ako ten predchádzajúci. Sú to rády jednotiek, desiatok, stoviek, tisícov, desaťtisícov, stotisícov a ďalšie. Rád desiatok je desaťnásobné väčší ako rád jednotiek, rád stoviek je desaťnásobne väčši ako rád desiatok a pod. Týchto rádov je nekonečne veľa, vieme teda vyjadriť ľubovoľne veľké čísla.
+
+Čísla zapisujeme a čítame zľava smerom doprava. Začiatočná číslica má hodnotu najväčšieho rádu, smerom doprava hodnota rádu klesá. Každé číslo musí končiť rádom jednotiek. Číslo, ktoré má:
+\begin{itemize}
+  \item rád tisícov číslicu \(7\), rád stoviek číslicu \(6\), rád desiatok číslicu \(2\), rád jednotiek číslicu \(3\),
+  \item na mieste tisícov číslicu \(7\), na mieste stoviek číslicu \(6\), na mieste desiatok číslicu \(2\), na mieste jednotiek číslicu \(3\),
+  \item \(7\) tisícok, \(6\) stoviek, \(2\) desiatky, \(3\) jednotky,
+\end{itemize}
+zapíšeme ako \(7\ 623\).
+
+Pri skrátenom zápise viacciferných čísel platí zásada rozdelenia číslic do trojíc (rádov) sprava. Medzery zlepšujú čitateľnosť veľkých čísel a uľahčujú určenie jednotlivých rádov. Zoskupujeme rád jednotiek, desiatok a stoviek, potom rád tisícov, desaťtisícov, stotisícov, ďalej miliónov, desať miliónov, sto miliónov atď. Príklady skrátených zápisov čísel: \(1\ 000\), \(12\ 563\), \(300\ 187\), \(1\ 000\ 000\), \(684\ 170\ 385\), \(3\ 158\ 032\ 902\), atď.
+
+\subsubsection{Zápis čísla v rozvinutom tvare}
+
+V desiatkovej číselnej sústave sa číslo zapisuje v rozvinutom tvare ako súčet hodnôt jednotlivých cifier podľa ich rádov. Každá cifra sa vynásobí hodnotou rádu, na ktorom sa nachádza. Niektoré hodnoty rádov v desiatkovej číselnej sústave sú:
+
+\begin{table}[H]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|r|r|}
+    \hline
+    \textbf{Číselný rád} & \textbf{Hodnota rádu} \\
+    \hline
+    Jednotky & \(1\) \\
+    \hline
+    Desiatky & \(10\) \\
+    \hline
+    Stovky & \(100\) \\
+    \hline
+    Tisíce & \(1\ 000\) \\
+    \hline
+    Desaťtisíce & \(10\ 000\) \\
+    \hline
+    Státisíce & \(100\ 000\) \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Číslo \(70\ 208\) má rozvinutý tvar:
+\[
+70\ 208 = 7 \cdot 10\ 000 + 0 \cdot 1\ 000 + 2 \cdot 100 + 0 \cdot 10 + 8 \cdot 1.
+\]
+Aj keď niektoré členy majú hodnotu nula, v rozvinutom zápise sa ponechávajú, pretože jasne ukazujú, že dané rády existujú, ale neobsahujú žiadnu hodnotu.
+
+\subsection{Šesťdesiatková pozičná sústava}
+
+Šesťdesiatková číselná sústava (alebo sexagesimálna sústava) je pozičná číselná sústava so základom \(60\). Je to jedna z najstarších známych pozičných číselných sústav. Vznikla približne pred 4 000 rokmi v starovekej Mezopotámii, kde ju používali Sumeri a neskôr Babylončania. Slúžila na obchod, astronómiu, geometriu a meranie času. Starovekí Babylončania nepoužívali číslice \(0\) až \(59\), ako ich zapisujeme dnes. Mali iba dva základné klinové znaky: znak pre jednotku a znak pre desiatku. Pomocou ich kombinácií vytvárali všetky hodnoty od \(1\) do \(59\). Napríklad číslo \(47\) by malo štyri znaky pre desiatku a sedem znakov pre jednotku.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Babylónske číslice.png}
+    \caption{Babylónske číslice. \cite{wikimedia:Babylonian_numerals}} 
+\end{figure}
+
+Hlavnou nevýhodou šesťdesiatkovej číselnej sústavy je veľké množstvo znakov a obtiažnosť zapamätania si malej násobilky. Dodnes sa používa napríklad na meranie času a uhlov.
+
+\subsubsection{Zápis čísla v šesťdesiatkovej sústave}
+
+Čísla v šesťdesiatkovej sústave sa zapisujú ako postupnosť číslic oddelenými čiarkami alebo dvojbodkami, pričom každá číslica predstavuje hodnotu od \(0\) do \(59\). Po dosiahnutí hodnoty \(60\) vzniká nový rád. Hodnota číslice závisí od jej pozície (rádu), podobne ako v desiatkovej sústave. Príklady niektorých čísel zapísaných v desiatkovej a šesťdesiatkovej číselnej sústave:
+\begin{center}
+\begin{tabular}{r|l}
+
+\textbf{Desiatková sústava} & \textbf{Šesťdesiatková sústava} \\
+\hline
+\(25\) & \(25\) \\
+
+\(60\) & \(1,0\)  \\
+
+\(75\) & \(1,15\)  \\
+
+\(125\) & \(2,5\) \\
+
+\(3600\) & \(1,0,0\)  \\
+
+\(3665\) & \(1,1,5\)  \\
+
+\end{tabular}
+\end{center}
+
+V oblastiach, kde šesťdesiatková sústava prežila (čas a uhly), majú niektoré rády vlastné názvy:
+\begin{itemize}
+  \item 1 hodina = 60 minút,
+  \item 1 minúta = 60 sekúnd,
+  \item 1 stupeň = 60 uhlových minút,
+  \item 1 uhlová minúta = 60 uhlových sekúnd.
+\end{itemize}
+Číslo \(12, 25, 45\) má \(12\) hodín, \(25\) minút a \(45\) sekúnd. Pri meraní uhlov sa používajú uhlové minúty označované ako \SI{}{\arcminute} a uhlové sekundy označované ako \SI{}{\arcsecond}. Číslo \(60, 12, 36\) by sa v uhlovej miere zapísalo ako \(\SI{60}{\degree} \SI{12}{\arcminute} \SI{36}{\arcsecond}\).
+
+\subsection{Iné pozičné sústavy}
+
+Existuje ešte niekoľko praktických pozičných číselných sústav. Dvojková číselná sústava (alebo binárna sústava) je pozičná číselná sústava so základom 2. Používajú sa v nej iba dve cifry \(0\) a \(1\). Preto sa nazýva dvojková. V dvojkovej sústave je každý vyšší rád dvakrát väčší ako predchádzajúci. Číslo \(25\) by sa v dvojkovej sústave zapísalo ako \(11001\). Výhodou dvojkovej sústavy je malý počet číslic a jednoduché výpočty. Existujú v nej len štyri spoje sčítania a násobenia:
+\[
+\begin{aligned}
+0+0 &= 0 &\qquad 1+0 &= 1 \\
+0+1 &= 1 &\qquad 1+1 &= 10 \\[4pt]
+0\cdot0 &= 0 &\qquad 1\cdot0 &= 0 \\
+0\cdot1 &= 0 &\qquad 1\cdot1 &= 1
+\end{aligned}
+\]
+Pre nepraktický zápis veľkých čísel sa nepoužíva v bežnom živote. Osmičková číselná sústava (alebo oktálna sústava) je pozičná číselná sústava so základom 8. Používa iba cifry od \(0\) do \(8\). Šesťnásková pozičná sústava (alebo hexadecimálna sústava ) je pozičná číselná sústava so základom 16. Okrem arabských číslic používa písmena abecedy pre hodnoty väčšie ako \(9\). Tieto písmená sú \(A, B, C, D, E, F\) s hodnotami \(10, 11, 12, 13, 14, 15\). Dvojková, osmičková a šesťnásková sústava sa používajú najmä v informatike pri digitálnych počítačoch a elektronike.
+
+\chapter{Prirodzené čísla}
 
 Čísla $1$, $2$, $3$, $4$\dots\ sa nazývajú \textbf{prirodzené čísla}. Prirodzené čísla sa používajú na počítanie množstva vecí (jeden, dva, tri\dots) a na označenie poradia (prvý, druhý, tretí\dots). Najčastejšie sa označujú symbolom $\mathbb{N}$. V niektorých prípadoch sa uvádza aj číslo $0$ ako prirodzené číslo, vtedy používame na označenie prirodzených čísel symbol $\mathbb{N}_0$.
 
@@ -328,7 +565,6 @@ Príklady niektorých znázornení prirodzených čísel na číselnej osi:
       }
   \end{tikzpicture}
 \end{center}
-
 
 \section{Porovnávanie a usporiadanie prirodzených čísel}
 
@@ -1212,8 +1448,588 @@ Zásady práce s kalkulačkou:
   \item Ak ste praváci, pokúste sa navyknúť pracovať s kalkulačkou ľavou rukou (ľaváci pravou) a druhú ruku používajte na zapisovanie výsledkov do zošita.
 \end{enumerate}
 
+\part{Závislosti, vzťahy a práca s údajmi}
+
+\chapter{Postupnosti}
+
+\chapter{Logika, dôvodenie, dôkazy}
+
+Logika (alebo matematická logika) je matematická disciplína, ktorá sa zaoberá uvažovaním, dokazovaním a formálnymi pravidlami myslenia. Logika je v matematike nutná, aby sa mohlo prejsť od známych informácií k záveru. Záver neplatí preto, že vyzerá správne, ale preto, že vyplýva z predchádzajúcich tvrdení podľa pravidiel logiky.
+
+Na logike je postavená celá matematika ako veda. Týmto sa matematika líši od iných vied, pretože zatiaľ čo vedy ako fyzika, biológia, chémia atď. sú založené na skúmaní prírodného sveta pomocou pozorovania a experimentov, v matematike sa výsledky získavajú deduktívnym uvažovaním. Definície a axiómy tvoria základ, na ktorom sa buduje celá moderná matematika.
+
+Axióma (alebo postulát, nesprávne axióm) je tvrdenie, ktoré sa považuje za pravdivé a slúži ako predpoklad alebo východiskový bod pre ďalšie uvažovanie a dôkazy. Slovo pochádza zo starogréckeho slova \enquote{axíōma}, ktoré znamená \enquote{to, čo sa považuje za hodné alebo vhodné} alebo \enquote{to, čo sa samo o sebe javí ako zrejmé}. Každé odvetvie matematiky je založené na malom súbore axióm, z ktorých vyplývajú všetky závery.
+
+Geometriu, akú používame dodnes, opísal Euklid vo svojej práci \emph{Základy}. V nej rozpracoval Euklidove postuláty, teda päť základných axióm euklidovskej geometrie, ktoré znejú v modernizovanej formulácii takto:
+\begin{itemize}
+  \item Cez ľubovoľné dva body možno viesť práve jednu priamku.
+  \item Úsečku možno ľubovoľne predĺžiť na priamku.
+  \item Z ľubovoľného stredu a s ľubovoľným polomerom možno opísať kružnicu.
+  \item Všetky pravé uhly sú navzájom zhodné.
+  \item Ak priamka pretína dve priamky a súčet vnútorných uhlov na jednej strane je menší ako dva pravé uhly, potom sa tieto dve priamky na tejto strane pretínajú.
+\end{itemize}
+Týchto päť axióm stačí na to, aby sme vedeli definovať a narysovať všetky geometrické útvary v rovine a v upravenej podobe aj v priestore. V súčasnosti sa základom pre euklidovskú geometriu považuje Hilbertov axiomatický systém z roku 1899, ktorý používa 20 axióm rozdelených do piatych skupín.
+
+Definícia je význam, ktorý je priradený termínu alebo slovu. Význam vyjadrujeme pomocou slov a iných definícií. Napríklad termín \emph{štvorec}, ktorý má definíciu \enquote{obdĺžnik, ktorý má všetky strany rovnako dlhé}, využíva termín obdĺžnika, ktorý má tiež svoju definíciu. Toto odkazovanie na definované termíny sa musí dopracovať k axiómam. Definície teda slúžia na vyjadrovanie významu pomocou jedného alebo viac slov, čo nám šetrí čas. V matematike musia byť definície jednoznačné a presné, aby sa zamedzilo nedorozumeniam a vychádzalo sa len z toho, čo už je známe.
+
+\section{Štatistika a spracovanie údajov}
+
+Štatistika je matematická disciplína, ktorá sa zaoberá zberom, spracovaním, triedením a vyhodnocovaním údajov na základe rôznych kritérií. Z veľkého súboru údajov nám pomáha zistiť, čo tieto údaje hovoria, čo platí atď. Cieľom štatistiky je premeniť surové údaje na informáciu, z ktorej môžeme urobiť záver.
+
+Hlavný nástroj, ktorým štatistika pomáha spracovať údaje, je grafické znázornenie. 
+
+\chapter{Kombinatorika}
+
+Kombinatorika (alebo kombinatorická matematika) je matematická disciplína, ktorá sa zaoberá konečnými súbormi objektov a ich počítaním podľa rôznych kritérií. Pomáha nám zistiť, koľko rôznych možností môžeme vytvoriť alebo koľkými spôsobmi sa dá niečo vybrať či usporiadať. Výsledky nejakého usporiadania nazývame kombinácie, a preto sa táto disciplína nazýva kombinatorika.
+
+V kombinatorike sa snažíme nájsť počet možností, ktoré vyhovujú podmienkám. Na počet týchto možností má vplyv mohutnosť súborov, s ktorými pracujeme. Mohutnosť (alebo kardinalita) vyjadruje počet prvkov v súbore. Každý konečný súbor prvkov má svoju mohutnosť. Mohutnosť konečného súboru prvkov je vždy prirodzené číslo. Pomocou mohutnosti vieme porovnávať \enquote{veľkosť} súborov.
+
+Na určenie počtu možností využívame rôzne postupy. Jedným z najľahších ale často zdĺhavých je vymenovanie všetkých možností, ktoré spĺňajú podmienky. Napríklad pri zmiešaní dvoch farieb z troch základných farieb červenej, zelenej a modrej by všetky možnosti výberu boli nasledujúce:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l}
+    Červená a Zelená \\
+    Červená a Modrá \\
+    Zelená a Modrá
+  \end{tabular}
+\end{table}
+
+\noindent
+Iné kombinácie farieb sú rovnaké ako už spomínané. Z vymenovaných možností je zrejmé, že existujú tri kombinácie, ako zmiešať tri základné farby. Pri malom počte prvkov je tento postup prijateľný, pri veľkom počte prvkov je už ale neprehľadný. Jeden spôsob sprehladnenia je použitie symbolickej formy prvkov. Napríklad namiesto celého mena sa použije začiatočné písmeno osoby:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ll ll ll ll}
+    A & Adam     & B & Barbora  & C & Cyril    & D & Dominika \\
+    E & Erik     & F & Filip    & G & Gabriela & H & Hana \\
+    I & Igor     & J & Jakub    & K & Katarína & L & Lukáš \\
+    M & Martina  & N & Nina     & O & Oliver   & P & Petra \\
+    Q & Quentin  & R & Roman    & S & Simona   & T & Tomáš \\
+    U & Urban    & V & Veronika & W & William  & X & Xavier \\
+    Y & Yvonne   & Z & Zuzana   &   &          &   &         \\
+  \end{tabular}
+\end{table}
+
+\noindent
+Pri vytváraní dvojíc sa použijú symbolické písmená na reprezentovanie danej osoby. Ak by sme vytvárali dvojice skupiny Adam, Barbora, Cyril, Dominika, Erik, Filip, Gabriela a Hana, použili by sme symboly A, B, C, D, E, F, G, H. Zápis možností potom je nasledujúci:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{*{8}{l}}
+    AB & BC & CD & DE & EF & FG & GH & \\
+    AC & BD & CE & DF & EG & FH & & \\
+    AD & BE & CF & DG & EH & & & \\
+    AE & BF & CG & DH & & & & \\
+    AF & BG & CH & & & & & \\
+    AG & BH & & & & & & \\
+    AH & & & & & & & \\
+  \end{tabular}
+\end{table}
+
+\noindent
+Počet možných dvojíc je \(28\).
+
+\chapter{Pravdepodobnosť}
+
+Pravdepodobnosť je matematická disciplína, ktorá sa zaoberá náhodnými javmi. Slovo pravdepodobnosť znamená šanca, neistota. Pravdepodobnosť vyjadruje, aká veľká je šanca, že sa niečo stane.
+
+Každá minca má dve strany, nazývame ich líce a rub. To, či pri hode mincou padne líce alebo rub, závisí od náhody. Preto hod mincou nazývame náhodný pokus. Líce a rub sú výsledky pokusu.
+
+Hod kockou je náhodný pokus. Jeho výsledok závisí od náhody.
+
+\part{Geometria}
+
+\chapter{Geometria a meranie}
+
+Geometria (grécky \enquote{Geo} ako zem a \enquote{metro} ako miera) je disciplína matematiky zaoberajúca sa vlastnosťami priestoru, ako je vzdialenosť, tvar, veľkosť a vzájomná poloha útvarov. Geometria je spolu s aritmetikou jednou z najstarších odvetví matematiky. Najstaršie známky geometrie sa dajú sledovať už v starovekom Egypte. V súčasnosti delíme odvetvia geometrie na euklidovskú a neeuklidovskú geometriu.
+
+Euklidovská geometria je matematický systém pripisovaný Euklidovi, starogréckemu matematikovi v 3. storočí pred n. l., ktorý opísal vo svojej učebnici geometrie \emph{Základy}. Zahŕňa pojmy bod, priamka, rovina, vzdialenosť, uhol, plocha a krivka ako základné pojmy. Až do 19. storočia sa geometria venovala takmer výlučne euklidovskej geometrii. Je to jeden z najstarších systémov geometrie a je používaný dodnes. V praxi sa pod pojmom geometria najčastejšie myslí euklidovská geometria.
+
+\section{Základné pojmy v geometrii}
+
+Bod je geometrický útvar, ktorý predstavuje presnú polohu bez rozmeru. Body sa zvyčajne považujú za základné nedeliteľné prvky tvoriace priestor. Všetky geometrické útvary pozostávajú z bodov. Body najčastejšie znázorňujeme krížikom, v geometrických útvaroch ich znázorňujeme bodkami alebo čiarkami. Body označujeme veľkými písmenami abecedy \(A\), \(B\), \(C\), \dots, \(X\), \(Y\), \(Z\).
+
+\vspace{5em}
+\begin{tikzpicture}
+  \node (2, 3) {\(\times\)} node[below right] {$A$};
+\end{tikzpicture}
+\vspace{5em}
+
+V bežnom živote aj v rôznych povolaniach ľudia často potrebujú svoje predstavy znázorniť. Niekedy stačí nakresliť ich voľnou rokou, niekedy ich treba presne narysovať. Na rysovanie používame rysovacie pomôcky: ceruzku, gumu, kružidlo, meradlo (lineár, pravítko), trojuholníkové pravítka a trojuholníkové pravítko s ryskou. Používame ceruzku s čiernou tuhou tvrdosti: č. \(3\) ‒ označenie F, č. \(3 \frac{1}{2}\) ‒ označenie H, č. \(2 \frac{1}{2}\) ‒ označenie HB. Tuha má byť zabrúsená do tvaru rotačného kužeľa.
+
+Pri rysovaní dodržujeme tieto zásady:
+\begin{itemize}
+  \item Ceruzku máme stále zastrúhanú.
+  \item Ceruzkou netlačíme.
+  \item Ceruzku pri rysovaní neotáčame, držíme ju v tej istej polohe.
+  \item Gumu používame len výnimočne.
+  \item Tuhu v kružidle máme stále zastrúhanú.
+  \item Trojuholníkové pravítka a meradlo máme stále čisté.
+\end{itemize}
+
+Na rysovanie budeme používať rôzne druhy čiar. Podľa hrúbky rozdeľujeme čiary na tenké a hrubé. Tenké čiary rysujeme ceruzkou tvrdosti \(3\) a \(3 \frac{1}{2}\) (F a H), na rysovanie hrubých čiar a na popis používame ceruzky tvrdosti \(2 \frac{1}{2}\) (HB). Podľa druhu rozdeľujeme čiary na plné, čiarkované a bodkočiarkované. Hrubé plné čiary sa v geometrii používajú na vyznačenie výsledkov úloh a obrysov útvarov. Čiarkované čiary sa používajú najčastejšie na vyznačenie neviditeľných hrán a rysujú sa tenkou čiarou. Striedame čiarky dlhé asi \(\SI{4}{\mm}\) s medzerami dĺžky \(\SI{1}{\mm}\). Bodkočiarkované čiary sa používajú na vyznačenie osí útvarov v geometrii, v strojárstve a staviteľstve. Striedame čiarky dlhé asi \(\SI{7}{\mm}\) a bodky. Pri rysovaní útvarov dbáme na správne vyznačenie, správne rysovanie a na správne popisovanie.
+
+Ak sa dve čiarkované čiary pretínajú, rysujeme ich tak, aby sa vždy pretínali čiarky.
+Ak sa dve bodkočiarkované čiary pretínajú, rysujeme ich tak, aby sa vždy pretínali čiarky.
+Pri popisovaní číara nesmie pretínať písmeno.
+
+Priamku si môžeme predstaviť ako dokonale rovnú čiaru, ktorú môžeme podľa potreby na obe strany predlžovať, ale vždy len o úseky konečnej dĺžky. Priamky budeme označovať malými písmenami, napr. \(a\), \(b\), \dots, \(p\), \(q\) atď. Ak sú na priamke zvolené dva rôzne body, môžeme ju označiť pomocou týchto bodov: \(\overleftrightarrow{AB}\). Priamku nikdy nevieme narysovať celú, vždy narysujeme iba jej časť. Niektoré časti priamky majú svoje pomenovanie.
+
+\begin{tikzpicture}
+  \draw (0,0) -- (3,2) node[below] {$p$};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,0) -- (5,0);
+
+  \fill (1,0) circle (2pt) node[below] {$A$};
+  \fill (4,0) circle (2pt) node[below] {$B$};
+\end{tikzpicture}
+
+Časť priamky, ktorá je ohraničená dvoma bodmi \(A\) a \(B\), sa nazýva úsečka. Budeme ju označovať \(AB\). Body \(A\), \(B\) sú krajné úsečky \(AB\).
+
+\begin{tikzpicture}
+  \draw (0,0) -- (3,0);
+
+  \fill (0,0) circle (2pt) node[below] {$A$};
+  \fill (3,0) circle (2pt) node[below] {$B$};
+\end{tikzpicture}
+
+Časť priamky, ktorá vznikne tak, že úsečku \(AB\) predĺžime za bod \(B\), sa nazýva polpriamka. Budeme ju označovať \(\overrightarrow{AB}\). Bod \(A\) je začiatočný bod a bod \(B\) je vnútorný bod polpriamky \(\overrightarrow{AB}\).
+
+\begin{tikzpicture}
+  \draw (0,0) -- (4,0);
+
+  \fill (0,0) circle (2pt) node[below] {$A$};
+  \fill (3,0) circle (2pt) node[below] {$B$};
+\end{tikzpicture}
 
 
+Pri rysovaní rôznych geometrických útvarov je často treba narysovať niekoľko rovnobežných priamok alebo niekoľko kolmíc na danú priamku.
+
+Rovnobežné priamky v jednej rovine sú také priamky, ktoré sa nikdy nepretnú. Priamky, ktoré sa pretnú, sa nazývajú rôznobežné. Bod, v ktorom sa pretínajú, je ich priesečník. Kolmica je priamka, ktorá je kolmá na druhú priamku. Všetky kolmice zostrojené na tú istú priamku sú navzájom rovnobežné.
+
+\section{Meranie}
+
+Meranie je proces priraďovania veľkosti nejakej vlastnosti objektu. Výsledok merania je miera, ktorú vyjadrujeme pomocou čísla a jednotky. Merať môžeme veľkosť, množstvo, dĺžku, hmotnosť, čas, atď. Napríklad \(\SI{15}{\cm}\) je miera dĺžky. Pri meraní používame rôzne meradlá, napríklad pravítko, meter, váhu, hodiny alebo teplomer. Pomocou nich môžeme priradiť veľkosť odmeranej hodnote.
+
+Podľa toho, čo meriame a akým meradlom meriame, zisťujeme veľkosť určitej veličiny v určitých jednotkách. Každá miera musí mať jednotku. Jednotka je dohodnutá veľkosť, pomocou ktorej meriame a vyjadrujeme veličiny. Bez jednotky by samotné číslo nedávalo zmysel. Preto musí každý výsledok merania byť číslo a k nej priradená jednotka. Vo väčšine krajín na svete (ako aj na Slovensku) sa používa dohodnutý súbor jednotiek nazývaný ako metrický systém. Iba tri štáty oficiálne metrický systém nepoužívajú: Mjanmarsko, USA a Libéria.
+
+Meranie slúži na porovnávanie veľkostí. Veľkosti sú vyjadrené relatívne k nejakej dohodnutej hodnote. Napríklad \(1\) meter je určitá dĺžka, ku ktorej porovnávame odmeranú vzdialenosť. Dĺžka \(2\) metre je dvojnásobok dĺžky jedného metra. Miery s rovnakou jednotkou alebo k nim odvodeným jednotkám môžeme medzi sebou porovnávať na základe ich číselnej hodnoty.
+
+Každé meradlo má svoju stupnicu. Stupnica je označená čiara alebo súbor značiek s číslami na meracom prístroji, podľa ktorých odčítavame nameranú hodnotu. Každé číslo určuje presnú mieru v jednotkách, ktoré sú zvyčajne napísané na meradle. Na stupnici nemusia byť číslom označené všetky možné miery, ktoré možno namerať. Rozdiel hodnôt medzi dvoma susednými značkami určuje, ako presne dokážeme merať. Každá stupnica má určitý merací rozsah. Merací rozsah stupnice je rozsah hodnôt od najmenšej po najväčšiu hodnotu, ktorú môžeme daným meradlom zmerať.
+
+Meradlo môže mať iba konečný počet značiek, preto pri meraní musíme počítať aj s odchýlkou merania. Odchýlka merania je rozdiel medzi nameranou hodnotou a skutočnou alebo správnou hodnotou. Vzniká vtedy, keď nameraná hodnota \enquote{spadá} medzi dve značky. V takom prípade sa za nameranú hodnotu považuje tá značka, ktorá je bližšie k skutočnej hodnote. Odchýlku merania je možné vyčísliť. Odchýlka merania je vždy polovica rozdielu medzi dvoma susednými značkami. Napríklad ak je rozdiel susedných značiek \(\SI{1}{\cm}\), odchýlka merania je \(\pm \SI{5}{\mm}\). To znamená, že skutočná hodnota je niekde v rozmedzí \(-\SI{5}{\mm}\) až \(+\SI{5}{\mm}\) od nameranej hodnoty.
+
+\subsection{Meranie dĺžky}
+
+Ľudia už v dávnych dobách potrebovali robiť rôzne merania. Chceli vedieť, akú rozlohu má ich pole, koľko váži obilie, ktoré sa im urodilo na poli atď. Veľmi často potrebovali poznať rozmery predmetov, ktoré ich obklopujú. Rozmery vyjadrovali ako šírku, výšku a hĺbku. Všetky rozmery merali jednu a tú istú veličinu ‒ dĺžku. Dĺžka je miera vzdialenosti medzi dvoma bodmi. Vzdialenosť udáva, koľko priestoru je medzi týmito bodmi. Na meranie dĺžok zhotovili rôzne nástroje ‒ pravítko, meter, meracie pásmo, posuvné meradlo.
+
+Dĺžku predmetov vyjadrovali v rôznych jednotkách, ktoré spočiatku odvodili z rozmerov ľudského teľa. Tak vznikli jednotky ako lakeť, stopa, palec atď. Pretože takéto jednotky dĺžky mohli byť v každom meste iné, dohodli sa na používaní jednotiek, ktoré sú vo veľkej časti sveta rovnaké. Takto vznikla v roku 1790 vo Francúzsku metrická sústava (alebo metrický systém) so základnou jednotkou \(1\) meter. Postupne bolo používaných niekoľko mierne odlišných metrických sústav, v súčasnosti je používaná \emph{Medzinárodná sústava jednotiek} nazývaná ako SI (z fr. \textbf{S}ystème \textbf{I}nternational (d'Unités)).
+
+Základnou jednotkou dĺžky je \emph{meter} (m). Menšie jednotky dĺžky sú \emph{decimeter} (dm), \emph{centimeter} (cm), \emph{milimeter} (mm), väčšou jednotkou je \emph{kilometer} (km). Medzi jednotkami dĺžky platia tieto vzťahy:
+
+\vspace{1em}\noindent
+\[
+\begin{array}{@{}c@{\qquad}c@{\qquad}c@{\qquad}c@{}}
+\begin{aligned}[t]
+  \SI{1}{\km} &= \SI{1\,000}{\m} \\
+  \SI{1}{\km} &= \SI{10\,000}{\dm} \\
+  \SI{1}{\km} &= \SI{100\,000}{\cm} \\
+  \SI{1}{\km} &= \SI{1\,000\,000}{\mm}
+\end{aligned}
+&
+\begin{aligned}[t]
+  \SI{1}{\m} &= \SI{10}{\dm} \\
+  \SI{1}{\m} &= \SI{100}{\cm} \\
+  \SI{1}{\m} &= \SI{1\,000}{\mm}
+\end{aligned}
+&
+\begin{aligned}[t]
+  \SI{1}{\dm} &= \SI{10}{\cm} \\
+  \SI{1}{\dm} &= \SI{100}{\mm}
+\end{aligned}
+&
+\begin{aligned}[t]
+  \SI{1}{\cm} &= \SI{10}{\mm}
+\end{aligned}
+\end{array}
+\]
+
+Dĺžku meriame rôznymi meradlami dĺžky:
+\begin{itemize}
+  \item Pravítko ‒ na meranie kratších dĺžok, zvyčajne v milimetroch a centimetroch. Existuje viacero druhov pravítok podľa tvaru, účelu a presnosti:
+  \begin{itemize}
+    \item Rovné pravítko – najbežnejšie, na meranie a rysovanie rovných čiar.
+    \item Trojuholníkové pravítko (trojuholník s ryskou) – na rysovanie kolmíc, rovnobežiek a uhlov, najmä \(\SI{30}{\degree}\), \(\SI{45}{\degree}\), \(\SI{60}{\degree}\) a \(\SI{90}{\degree}\).
+    \item T-pravítko – používa sa najmä v technickom kreslení na rysovanie vodorovných čiar.
+    \item Stupnicové pravítko – má vyznačenú stupnicu, napríklad v milimetroch a centimetroch.
+    \item Šablónové pravítko – obsahuje rôzne tvary a symboly na obkresľovanie.
+    \item Flexibilné pravítko – ohybné pravítko, ktoré sa dá prispôsobiť zakriveným povrchom.
+  \end{itemize}
+  \item Meter (metrové pravítko) ‒ pevné meradlo dlhé 1 meter.
+  \item Pásmo ‒ ohybná meracia páska, vhodná na väčšie vzdialenosti.
+  \item Svinovací meter ‒ kovové alebo plastové pásmo navinuté v puzdre.
+  \item Meracie koleso ‒ používa sa na meranie dlhších vzdialeností, napríklad pri geodézii alebo stavebníctve.
+  \item Posuvné meradlo (šuplera) ‒ umožňuje presne merať vonkajšie, vnútorné aj hĺbkové rozmery.
+  \item Mikrometer ‒ veľmi presné meradlo na malé rozmery, napríklad hrúbku súčiastok.
+  \item Kaliber ‒ používa sa na kontrolu alebo meranie presných rozmerov výrobkov.
+  \item Laserový diaľkomer ‒ elektronicky meria vzdialenosť pomocou laserového lúča.
+\end{itemize}
+
+\subsubsection{Meranie dĺžky úsečky}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{Meter.png}
+  \caption{Meradlo dĺžky s rozsahom \(\SI{0}{\cm}\) až \(\SI{15}{\cm}\), rozdielom medzi susednými dielikmi \(\SI{1}{\mm}\) a odchýlkou merania \(\pm \SI{0,5}{\mm}\).}
+\end{figure}
+
+\subsubsection{Premena jednotiek dĺžky}
+
+\section{Rovinné geometrické útvary}
+
+Rovinné geometrické útvary sú útvary, ktoré môžeme nakresliť na rovnej ploche, teda v jednej rovine. Sú to napríklad útvary ako trojuholník, štvorec, obdĺžnik, kružnica atď. Rovinné útvary majú dva rozmery: dĺžku a šírku. Na rozdiel priestorové útvary (kocka, guľa, valec) majú tri rozmery: dĺžku, šírku a výšku.
+
+\subsection{Kružnica a kruh}
+
+Kružnica je súbor bodov, ktoré majú rovnakú vzdialenosť od jedného pevného bodu nazývaného ako stred kružnice. Kružnicu označujeme malými písmenami abecedy \(k\), \(l\), \(m\)\dots Vzdialenosť stredu kružnice od ľubovoľného bodu sa nazýva polomer, označujeme \(r\). Priemer je dvojnásobok polomeru, označujeme \(d\). Kružnicu \(k\) so stredom \(S\) a polomerom \(r\) označujeme ako \(k(S, r)\). Každá kružnica je jednoznačne určená jej stredom a polomerom.
+
+Kružnica je iba súbor bodov, ktorý tvorí oblúk, vnútro krúžnice je prázdne. Ak chceme zahrnúť aj vnútro, hovoríme o kruhu. Kruh je súbor bodov, ktoré majú menšiu alebo rovnakú vzdialenosť od jedného pevného bodu nazývaného ako stred kruhu. Kruh označujeme veľkými písmenami abecedy \(K\), \(L\), \(M\)\dots Polomer a priemer zachovávajú význam. Kruh \(K\) so stredom \(S\) a polomerom \(r\) označujeme ako \(K(S, r)\). Každý kruh je jednoznačne určený jeho stredom a polomerom.
+
+Kružnica a kruh, spolu s priamkami a úsečkami, sú základné rovinné geometrické útvary. Pomocou nich dokážeme zostrojiť zložitejšie rovinné geometrické útvary, ako sú obdĺžniky, štvorce, päťuholníky atď.
+
+\begin{center}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+      \draw (0,0) circle (2cm);
+      
+      \fill (0,0) circle (1.5pt);
+      \node[below left] at (0,0) {$S$};
+      
+      \draw (0,0) -- (1.42,1.42);
+      \fill (1.42,1.42) circle (1.5pt);
+      \node[above left] at (0.707,0.707) {$r$};
+      \node[above right] at (1.42,1.42) {$A$};
+      
+      \draw (-2,0) -- (2,0);
+      \fill (2,0) circle (1.5pt);
+      \fill (-2,0) circle (1.5pt);
+      \node[below] at (1,0) {$d$};
+      \node[above left] at (-2,0) {$B$};
+      \node[above right] at (2,0) {$C$};
+      
+      \node[below right] at (1.4,-1.4) {$k$};
+    \end{tikzpicture}
+    \[
+      \begin{aligned}
+      \text{kružnica}\ & k(S, r) \\
+      \text{polomer kružnice}\ & r = |SA| \\
+      \text{priemer kružnice}\ & d = |BC| = 2r
+      \end{aligned}
+    \]
+  \end{minipage}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+      \filldraw[
+          pattern=north east lines,
+          pattern color=red!40
+      ] (0,0) circle (2cm);
+      
+      \fill (0,0) circle (1.5pt);
+      \node[below left] at (0,0) {$S$};
+      
+      \draw (0,0) -- (1.42,1.42);
+      \fill (1.42,1.42) circle (1.5pt);
+      \node[above left] at (0.707,0.707) {$r$};
+      \node[above right] at (1.42,1.42) {$A$};
+      
+      \draw (-2,0) -- (2,0);
+      \fill (2,0) circle (1.5pt);
+      \fill (-2,0) circle (1.5pt);
+      \node[below] at (1,0) {$d$};
+      \node[above left] at (-2,0) {$B$};
+      \node[above right] at (2,0) {$C$};
+      
+      \node[below right] at (1.4,-1.4) {$k$};
+    \end{tikzpicture}
+    \[
+      \begin{aligned}
+      \text{kruh}\ & K(S, r) \\
+      \text{polomer kruhu}\ & r = |SA| \\
+      \text{priemer kruhu}\ & d = |BC| = 2r
+      \end{aligned}
+    \]
+  \end{minipage}
+\end{center}
+
+\subsubsection{Konštrukcia kružnice a kruhu}
+
+\begin{enumerate}[label=\arabic*)]
+  \item Na kružidlo nanesieme dĺžku polomeru kružnice \(r\).
+  \item Kružidlo zapichneme ostrým koncom do bodu \(S\).
+  \item Kružidlom zostrojíme kružnicu \(k\) s polomerom \(r\).
+\end{enumerate}
+
+\subsection{Trojuholník}
+
+Trojuholník je rovinný geometrický útvar, ktorý je ohraničený tromi úsečkami. Trojuholník má tri vrcholy a tri strany. Trojuholník označujeme tromi veľkými písmenami podľa jeho vrcholov, napríklad \(ABC\). Tri rôzne body, ktoré neležia na tej istej priamke, jednoznačne určujú trojuholník. Oproti vrcholom ležia ich strany, ktoré označujeme malými písmenami rovnakej hlásky. V trojuholníku \(ABC\) je oproti vrcholu \(A\) strana \(a\), oproti vrcholu \(B\) strana \(b\) a oproti vrcholu \(C\) strana \(c\).
+
+V každom trojuholníku platí \emph{trojuholníková nerovnosť}. Súčet dĺžok ľubovoľných dvoch strán trojuholníka je vždy väčší ako dĺžka jeho tretej strany. Pre trojuholník \(ABC\) so stranami dĺžkami strán \(a\), \(b\), \(c\) platia nerovnosti:
+\[
+\begin{aligned}
+  a + b &> c, \\
+  a + c &> b, \\
+  b + c &> a.
+\end{aligned}
+\]
+
+\subsubsection{Konštrukcia trojuholníka}
+
+Trojuholník môžeme narysovať vtedy, keď poznáme dĺžky všetkých jeho strán.
+
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany \(c\).
+  \item Narysujeme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany \(b\).
+  \item Narysujeme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany \(a\).
+  \item Priesečník dvoch kružníc \(k_1\) a \(k_2\) je bod \(C\).
+  \item Narysujeme úsečky \(AC\) a \(BC\).
+  \item Zostrojili sme trojuholník \(ABC\).
+\end{enumerate}
+
+\subsection{Štvoruholníky}
+
+Štvoruholník je rovinný geometrický útvar, ktorý je ohraničený štyrmi úsečkami. Štvoruholník má štyri vrcholy a štyri strany. Štvoruholníky označujeme štyrmi veľkými písmenami podľa jeho vrcholov, napríklad \(ABCD\). Vrcholy zapisujeme v poradí, ako idú za sebou po obvode štvoruholníka, teda štvoruholník \(ABCD\) má strany \(AB\), \(BC\), \(CD\) a \(DA\). Štvoruholníky delíme podľa veľkosti strán a počtu rovnobežných strán.
+\begin{itemize}
+  \item Ak štvoruholník má dve dvojice rovnobežných strán, takýto štvoruholník nazývame rovnobežník (alebo kosodĺžnik). Rovnobežník, ktorý má všetky strany rovnako dlhé, nazývame kosoštvorec. Ak má rovnobežník všetky uhly pravé, nazývame ho obdĺžnik. Obdĺžnik, ktorý má všetky strany rovnako dlhé, nazývame štvorec.
+  \item Ak štvoruholník má jednu dvojicu rovnobežných strán, takýto štvoruholník nazývame lichobežník.
+  \item Ak štvoruholník má dve dvojice susedných strán rovnakej dĺžky, takýto štvoruholník nazývame deltoid.
+  \item Štvoruholník, ktorý nespĺňa žiadnu z týchto podmienok, nazývame všeobecný štvoruholník.
+\end{itemize}
+
+\noindent
+\begin{minipage}{\textwidth}
+  \begin{center}
+
+    \begin{minipage}{0.2\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2]
+      \draw (0,0) rectangle (1,1);
+      \node[below] at (0.5,0) {Štvorec};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2]
+      \draw (0,0) rectangle (2,1);
+      \node[below] at (1,0) {Obdĺžnik};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=2.7]
+      \draw (0,0) -- (1,0) -- (1.707,0.707) --
+            (0.707,0.707) -- cycle;
+      \node[below] at (0.8535,0) {Kosoštvorec};
+    \end{tikzpicture}
+    \end{minipage}
+
+    \vspace{1cm}
+
+    \begin{minipage}{0.4\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1.5]
+      \draw (0,0) -- (3,0) -- (4,1) -- (1,1) -- cycle;
+      \node[below] at (2,0) {Rovnobežník};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.2\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \draw (0,0) -- (1,1) -- (2,0) -- (1,-2) -- cycle;
+      \node[below] at (1,-2) {Deltoid};
+    \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=1]
+      \draw (0,0) -- (4,0) -- (3,2) -- (1,2) -- cycle;
+      \node[below] at (2,0) {Lichobežník};
+    \end{tikzpicture}
+    \end{minipage}
+
+  \end{center}
+\end{minipage}
+
+\subsubsection{Vlastnosti štvoruholníkov}
+
+Rovnobežník má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Protiľahlé strany rovnobežníka sú rovnobežné a majú rovnakú dĺžku \(a = c\), \(b = d\). Susedné strany rovnobežníka nie sú kolmé. Uhlopriečky rovnobežníka \(e\), \(f\) nemajú rovnakú dĺžku a nie sú na seba kolmé.
+
+Kosoštvorec má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Všetky strany kosoštvorca majú rovnakú dĺžku \(a = b = c = d\). Protiľahlé strany kosoštvorca sú rovnobežné ale nie sú kolmé. Uhlopriečky kosoštvorca \(e\), \(f\) sú na seba kolmé, ale nemajú rovnakú dĺžku.
+
+Obdĺžnik má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Susedné strany obdĺžnika sú kolmé a protiľahlé strany obdĺžnika sú rovnobežné a majú rovnakú dĺžku \(a = c\), \(b = d\). Uhlopriečky obdĺžnika \(e\), \(f\) majú rovnakú dĺžku \(e = f\), ale nie sú na seba kolmé.
+
+Štvorec má štyri vrcholy \(A\), \(B\), \(C\), \(D\) a štyri strany \(a\), \(b\), \(c\), \(d\). Všetky strany štvorca majú rovnakú dĺžku \(a = b = c = d\). Susedné strany štvorca sú kolmé a protiľahlé strany štvorca sú rovnobežné. Uhlopriečky štvorca \(e\), \(f\) majú rovnakú dĺžku \(e = f\) a sú na seba kolmé.
+
+\subsubsection{Konštrukcie rovnobežníkov}
+
+Konštrukcie štvoruholníkov sa lísia podľa ich typov. Konštrukcie rovnobežníkov sa až na malé zmeny zhodujú v ich postupe. Vždy vychádzame z dĺžky úsečiek a vnútorných uhlov. Konštrukcie všetkých štyroch typov sú opísané nižšie.
+
+Štvorec vieme narysovať, ak poznáme dĺžku jeho strany. Konštrukcia štvorca \(ABCD\) so stranou \(a\) je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany štvorca \(a\).
+  \item Zostrojíme kolmice \(p\), \(q\) na úsečku \(AB\) prechádzajúce cez body \(A\) a \(B\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany štvorca \(a\). Priesečník kolmice \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany štvorca \(a\). Priesečník kolmice \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme štvorec \(ABCD\).
+\end{enumerate}
+
+Obdĺžnik vieme narysovať, ak poznáme dĺžky jeho dvoch strán. Dĺžky strán môžeme zamienať, existujú teda dva spôsoby, ako zostrojiť obdĺžnik podľa jeho strán. Konštrukcia obdĺžnika \(ABCD\) so stranami \(a\), \(b\), ktoré nie sú rovnobežné, je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany obdĺžnika \(a\).
+  \item Zostrojíme kolmice \(p\), \(q\) na úsečku \(AB\) prechádzajúce cez body \(A\) a \(B\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany obdĺžnika \(b\). Priesečník kolmice \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany obdĺžnika \(b\). Priesečník kolmice \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme obdĺžnik \(ABCD\).
+\end{enumerate}
+
+Kosoštvorec vieme narysovať, ak poznáme dĺžku jeho strany. Veľkosť vnútorných uhlov nie je podstatná. Konštrukcia kosoštvorca \(ABCD\) so stranou \(a\) je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany kosoštvorca \(a\).
+  \item Zostrojíme dve rovnobežné priamky \(p\), \(q\), ktoré prechádzajúce cez body \(A\) a \(B\) a nie sú kolmé na úsečku \(AB\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany kosoštvorca \(a\). Priesečník priamky \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany kosoštvorca \(a\). Priesečník priamky \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme kosoštvorec \(ABCD\).
+\end{enumerate}
+
+Rovnobežník vieme narysovať, ak poznáme dĺžky jeho dvoch strán. Dĺžky strán môžeme zamienať, existujú teda dva spôsoby, ako zostrojiť rovnobežník podľa jeho strán. Veľkosť vnútorných uhlov nie je podstatná. Konštrukcia rovnobežníka \(ABCD\) so stranami \(a\), \(b\), ktoré nie sú rovnobežné, je nasledujúca:
+\begin{enumerate}[label=\arabic*)]
+  \item Narysujeme úsečku \(AB\) dĺžky strany rovnobežníka \(a\).
+  \item Zostrojíme dve rovnobežné priamky \(p\), \(q\), ktoré prechádzajúce cez body \(A\) a \(B\) a nie sú kolmé na úsečku \(AB\).
+  \item Zostrojíme kružnicu \(k_1\) so stredom v bode \(A\) a polomerom dĺžky strany rovnobežníka \(b\). Priesečník priamky \(p\) a kružnice \(k_1\) je bod \(D\).
+  \item Zostrojíme kružnicu \(k_2\) so stredom v bode \(B\) a polomerom dĺžky strany rovnobežníka \(b\). Priesečník priamky \(q\) a kružnice \(k_2\) je bod \(C\).
+  \item Narysujeme úsečku \(CD\).
+  \item Zostrojili sme rovnobežník \(ABCD\).
+\end{enumerate}
+
+\section{Obvod rovinných útvarov}
+
+Obvod je dĺžka čiary, ktorá tvorí okraj geometrického útvaru. Okraj geometrického útvaru môže byť ohraničený stranami, napríklad pri mnohouholníkoch, alebo krivkou, napríklad pri kruhu. Geometrické útvary ohraničené krivkou môžu mať zložité spôsoby výpočtu ich dĺžky. Pri geometrických útvaroch ohraničených stranami sa využíva dĺžka úsečky.
+
+Mnohouholník je útvar, ktorý je ohraničený aspoň tromi stranami. Strany sú úsečky, ktoré tvoria hranicu medzi vnútrom mnohouholníka a okolím. Úsečky majú dĺžku, ktoré môžeme sčítať, aby sme dostali dĺžku celej čiary, ktorá tvorí okraj mnohouholníka. Obvod ľubovoľného mnohouholníka sa vypočíta ako súčet dĺžok jeho strán.
+
+Trojuholník má tri strany a jeho obvod sa vypočíta ako súčet dĺžok týchto troch strán. Pre ľubovoľný trojuholník \(ABC\) so stranami \(a\), \(b\), \(c\) platí:
+\[
+o = a + b + c.
+\]
+Rovnostranný trojuholník má tri strany rovnakej dĺžky. Pre rovnostranný trojuholník \(ABC\) so stranou \(a\) platí:
+\[
+o = a + a + a = 3 \cdot a.
+\]
+Rovnoramenný trojuholník má dve strany rovnakej dĺžky, ktoré nazývame ramená, a tretiu stranu nazývame základňa. Pre rovnoramenný trojuholník \(ABC\) s ramenami \(a\) a základňou \(b\) platí:
+\[
+o = a + a + b = 2 \cdot a + b.
+\]
+Podobne, ako v trojuholníku, aj v štvorci je súčet dĺžok všetkých strán obvod štvorca. Keďže štvorec má všetky strany rovnako dlhé, pre obvod štvorca so stranou \(a\) platí:
+\[
+o = a + a + a + a = 4 \cdot a.
+\]
+Štvorec aj kosoštvorec s rovnakou dĺžkou strany majú rovnaké obvody.
+Súčet dĺžok všetkých strán obdĺžnika je obvod obdĺžnika. Keďže obdĺžnik má dve dvojice rovnako dlhých strán, pre obvod obdĺžnika so stranami \(a\), \(b\) platí:
+\[
+o = a + b + a + b = 2 \cdot (a + b) = 2 \cdot a + 2 \cdot b.
+\]
+Obdĺžnik aj rovnobežník s rovnakými dĺžkami strán majú rovnaké obvody.
+
+\section{Obsah rovinných útvarov v štvorčekovej sieti}
+
+\section{Zhodné zobrazenia v rovine}
+
+Zhodnosť znamená, že dva geometrické útvary majú rovnaký tvar aj rovnakú veľkosť. Ak jeden útvar môžeme posunúť, otočiť alebo preklopiť tak, aby sa navzájom kryli, potom sú tieto útvary zhodné. Zhodné útvary majú rovnakú veľkosť strán a veľkosť vnútorných uhlov. Zhodné útvary dokážeme vytvoriť pomocou zhodných zobrazení.
+
+Zhodné zobrazenie v rovine je zobrazenie, pri ktorom sa nemení tvar ani veľkosť útvaru. Zachováva vzdialenosti medzi bodmi. Zhodné zobrazenie zobrazí každý bod \(X\) geometrického útvaru na bod \(X'\). Bod \(X\) nazývame vzor a bod \(X'\) nazývame obraz bodu \(X\). Zobrazenie je zhodné, ak pre každé dva body geometrického útvaru \(X\), \(Y\) a ich zobrazené body \(X'\), \(Y'\) platí:
+\[
+|XY| = |X'Y'|.
+\]
+
+Zhodné zobrazenia v rovine sú posúvanie (translácia), otáčanie (rotácia), osová súmernosť a stredová súmernosť. Pri zhodných zobrazeniach rozlišujeme súhlasné zhodnosti a nesúhlasné zhodnosti podľa toho, či sa zachová alebo mení orientácia útvaru. Súhlasné zhodnosti zachovávajú orientáciu útvaru, zatiaľ čo nesúhlasné zhodnosti menia orientáciu útvaru tým, že útvar \enquote{preklopia}. Súhlasné zhodnosti sú posúvanie a otáčanie, nesúhlasné zhodnosti sú osová a stredová súmernosť.
+
+\subsection{Posúvanie}
+
+Posúvanie (nepresne \enquote{posunutie}) je zhodné zobrazenie, pri ktorom sa každý bod útvaru posunie o rovnakú vzdialenosť a v rovnakom smere. Pre posúvanie musí byť určená dĺžka posúvania a aj smer posúvania. Graficky sa posunutie znázorňuje orientovanou úsečkou dĺžky posúvania a smeru zhodnom so smerom posúvania. Pre obraz \(X'\) ľubovoľného bodu \(X\) v posúvaní platí, že ak orientovaná úsečka znázorňujúca posúvanie má začiatočný bod \(X\), jej koncový bod je bod \(X'\).
+
+\subsection{Otáčanie}
+
+Otáčanie (nepresne \enquote{otočenie}) je zhodné zobrazenie, pri ktorom sa každý bod útvaru otočí okolo pevného bodu o rovnaký uhol. Tento pevný bod nazývame stred otáčania. Všetky body sa otáčajú okolo jedného stredu o rovnaký uhol, vzdialenosť bodov od stredu otáčania sa nemení. Otáčať môžeme v smere hodinových ručičiek a proti smeru hodinových ručičiek. Pre obraz \(X'\) ľubovoľného bodu \(X\) v otačaní okolo bodu \(S\) platí:
+\[
+|XS| = |X'S|.
+\]
+
+\subsection{Osová súmernosť}
+
+Osová súmernosť je zhodné zobrazenie v rovine určené priamkou \(o\) nazývanou ako os súmernosti, ktoré každému bodu \(X\) (vzor) priradí bod \(X'\) (obraz) tak, že platí:
+\begin{itemize}
+  \item úsečka \(XX'\) je kolmá na priamku \(o\),
+  \item stred úsečky \(XX'\) leží na priamke \(o\).
+\end{itemize}
+
+Body \(X\) a \(X'\) sa nazývajú osovo súmerné podľa osi \(o\). Vzdialenosť bodu \(X\) od osi \(o\) je rovnaká ako vzdialenosť bodu \(X'\) od osi \(o\). V osovej súmernosti môžu nastať niektoré špeciálne prípady:
+\begin{itemize}
+  \item Ak bod \(X\) leží na osi súmernosti \(o\), potom \(X'\) splýva s \(X\). Bod \(X\) sa nazýva samodružný bod a platí:
+  \[
+  X = X'.
+  \]
+  \item Priamka \(p\) kolmá na os \(o\) sa zobrazí sama na seba. Priamka \(p\) a jej obraz \(p'\) splývajú a platí:
+  \[
+  p = p'.
+  \]
+  \item Priamka \(p\) rovnobežná s osou \(o\) sa zobrazí na inú rovnobežnú priamku. Vzdialenosť od osi zostáva zachovaná.
+\end{itemize}
+
+Obrazom útvaru \(U\) v osovej súmernosti danej osou \(o\) rozumieme útvar \(U'\) obsahujúci práve tie body roviny, ktoré sú obrazmi bodov útvaru \(U\). Osová súmernosť \enquote{zrkadlovo preklopí} útvar \(U\) podľa priamky \(o\) na útvar \(U'\). Útvary \(U\) a \(U'\) sa nazývajú osovo súmerné podľa osi \(o\). Útvary \(U\) a \(U'\) sú zhodné.
+
+Útvar \(U\) je osovo súmerný (alebo symetrický), ak existuje os súmernosti \(o\) tak, že obraz \(U'\) v osovej súmernosti splýva s útvarom \(U\). Osovo súmerný útvar dokážeme \enquote{preklopiť} tak, aby sme dostaneme ten istý útvar. Útvar \(U\) môže mať jednu alebo viac osí súmernosti (vrátane nekonečna) alebo nemusí mať žiadnu, v tom prípade hovoríme, že útvar je osovo nesúmerný.
+
+V osovej súmernosti je bod \(A'\) obrazom vrcholu \(A\), bod \(B'\) obrazom vrcholu \(B\) a bod \(C'\) je obrazom vrcholu \(C\). Podobnú vlasnosť má aj bod \(X'\), ktorý je obrazom bodu \(X\) trojuholníka \(ABC\) v danej osovej súmernosti. Obraz \(A'B'C'\) trojuholníka \(ABC\) obsahuje obrazy všetkých bodov trojuholníka \(ABC\) a žiadne iné.
+
+Úsečka má dve osi súmernosti.
+
+Štvorec má štyri osi súmernosti.
+
+Obdĺžnik má dve osi súmernosti.
+
+Rovnoramenný trojuholník má jednu os súmernosti.
+
+Rovnostranný trojuholník má tri osi súmernosti.
+
+Kruh a kružnica má nekonečne mnoho osí súmernosti. Každá priamka prechádzajúca stredom kruhu je jeho osou súmernosti.
+
+\subsection{Stredová súmernosť}
+
+Stredová súmernosť v rovine je určená stredom súmernosti \(S\). Dva body \(X\), \(X'\) nazývame súmerné podľa stredu \(S\), ak bod \(S\) je stredom úsečky \(XX'\). Bod \(X\) je vzor a bod \(X'\) je obraz bodu \(X\) v stredovej súmernosti.
+
+Obrazom úsečky je v stredovej súmernosti úsečka s ňou zhodná a rovnobežná.
+
+Bod \(S\) nazývame stredom súmernosti útvaru \(U\), ak každému bodu útvaru \(U\) v stredovej súmernosti podľa stredu \(S\) odpovedá bod tohto útvaru \(U\). Takémuto útvaru hovoríme, že je stredovo súmerný (alebo súmerný podľa stredu).
+
+Pravidelný mnohouholník s párnym počtom vrcholov je stredovo súmerný.
+Pravidelný mnohouholník s nepárnym počtom vrcholov je stredovo súmerný.
+
+Štvorec je stredovo súmerný. Stred súmernosti je priesečník uhlopriečok.
+
+Obdĺžnik súmernosti je priesečník uhlopriečok. Stred súmernosti je priesečník uhlopriečok.
+
+Kruh je stredovo súmerný. Stred súmernosti je stred kruhu.
 
 \printbibliography
 
